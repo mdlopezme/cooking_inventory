@@ -110,7 +110,47 @@ def check_recipe_availability_by_ingredients(required_ingredients):
 
     recipe_status.sort(key=lambda x: x[2])
     return recipe_status, headers
+
+def add_ingredient_to_pantry(new_ingredients):
+    pantry = load_ingredients()
+    ingredient_to_add = []
+    for new_ingredient in new_ingredients:
+        if new_ingredient in pantry:
+            if not pantry[new_ingredient]:
+                print(f"{new_ingredient} is already in the pantry but marked as unavailable.")
+                pantry[new_ingredient] = True
+        else:
+            ingredient_to_add.append(new_ingredient)
+
+    if not ingredient_to_add:
+        print("No new ingredients to add.")
+        return
+    # Ask the user for confirmation
+    print(f"Are you sure you want to add {', '.join(ingredient_to_add)} to the pantry? (y/n)")
+    confirmation = input().strip().lower()
+    if confirmation != 'y':
+        print("Operation cancelled.")
+        return
+    # Add the new ingredients to the pantry
+    for new_ingredient in ingredient_to_add:
+        pantry[new_ingredient] = True
+    print(f"Added {', '.join(ingredient_to_add)} to the pantry.")
+    file_path = os.path.join(os.path.dirname(__file__), 'db/ingredients.yaml')
+    with open(file_path, 'w') as file:
+        yaml.dump({"ingredients": pantry}, file)
+    print("Pantry updated.")
         
+def remove_ingredient_from_pantry(old_ingredients):
+    pantry = load_ingredients()
+    for old_ingredient in old_ingredients:
+        if old_ingredient in pantry:
+            pantry[old_ingredient] = False
+        else:
+            print(f"{old_ingredient} is not in the pantry.")
+    file_path = os.path.join(os.path.dirname(__file__), 'db/ingredients.yaml')
+    with open(file_path, 'w') as file:
+        yaml.dump({"ingredients": pantry}, file)
+    print("Pantry updated.")
 
 def print_recipe_availability(recipe_status, headers, print_limit):
     print(tabulate(recipe_status[:min(len(recipe_status), print_limit)], headers=headers, tablefmt="grid"))
@@ -121,8 +161,17 @@ def main():
     parser.add_argument("-r", "--recipe", type=str, help="Specify a recipe name to check availability")
     parser.add_argument("-i", "--ingredients", nargs="+", help="List of ingredients to check availability for.")
     parser.add_argument("-t", "--type", type=str, help="Specify a recipe type to check availability")
+    parser.add_argument("-a", "--add", nargs="+", help="Add ingredients to the pantry")
+    parser.add_argument("-d", "--delete", nargs="+", help="Remove ingredients from the pantry")
 
     args = parser.parse_args()
+
+    if args.add:
+        add_ingredient_to_pantry(args.add)
+        return
+    elif args.delete:
+        remove_ingredient_from_pantry(args.delete)
+        return
 
     if args.ingredients:
         recipe_status, headers = check_recipe_availability_by_ingredients(args.ingredients)

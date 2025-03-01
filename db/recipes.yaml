@@ -1,125 +1,11 @@
 recipes:
-- name: Crunchy Mango Beef Tacos
-  type: lunch
-  source: BWS Cookbook
-  ingredients:
-  - name: white_onion
-    required: true
-    substitutions:
-    - yellow_onion
-    - red_onion
-  - name: ground_beef
-    required: true
-    substitutions:
-    - ground_turkey
-    - ground_chicken
-  - name: taco_seasoning
-    required: true
-  - name: salt
-    required: true
-  - name: ground_black_pepper
-    required: true
-  - name: tomato
-    required: true
-  - name: mango
-    required: true
-  - name: scallions
-    required: true
-  - name: cilantro
-    required: true
-  - name: lime
-    required: true
-    substitutions:
-    - lemon
-  - name: sriracha
-    required: true
-    substitutions:
-    - hot_sauce
-  - name: taco_shell
-    required: true
-  - name: greek_yogurt
-    required: true
-  - name: guacamole
-    required: true
-    substitutions:
-    - holy_guacamole
-- name: Loaded Veggie Taco Bowl
-  type: lunch
-  source: BWS Cookbook
-  ingredients:
-  - name: extra_firm_tofu
-    required: true
-  - name: salt
-    required: true
-  - name: ground_black_pepper
-    required: true
-  - name: tomato
-    required: true
-  - name: red_bell_pepper
-    required: true
-    substitutions:
-    - yellow_bell_pepper
-    - green_bell_pepper
-  - name: brown_rice
-    required: true
-    substitutions:
-    - white_rice
-  - name: cauliflower_rice
-    required: true
-  - name: spinach
-    required: true
-  - name: garlic_powder
-    required: true
-  - name: paprika
-    required: true
-  - name: taco_sauce
-    required: true
-    substitutions:
-    - taco_seasoning
-  - name: guacamole
-    required: true
-    substitutions:
-    - holy_guacamole
-  - name: salsa
-    required: true
-- name: Toned Turkey Tacos
-  type: lunch
-  source: BWS Cookbook
-  ingredients:
-  - name: yellow_onion
-    required: true
-    substitutions:
-    - red_onion
-    - white_onion
-  - name: red_bell_pepper
-    required: true
-    substitutions:
-    - yellow_bell_pepper
-    - green_bell_pepper
-  - name: ground_turkey
-    required: true
-    substitutions:
-    - ground_beef
-    - ground_chicken
-  - name: salsa
-    required: true
-  - name: salt
-    required: true
-  - name: ground_black_pepper
-    required: true
-  - name: low_calorie_whole_wheat_tortilla
-    required: true
-  - name: lettuce
-    required: true
-  - name: greek_yogurt
-    required: true
 - name: Apple Crisp French Toast
   type: breakfast
   source: BWS Cookbook
   ingredients:
   - name: apple
     required: true
-  - name: syrup
+  - name: sugar_free_syrup
     required: true
   - name: egg_whites
     required: true
@@ -211,7 +97,7 @@ recipes:
     required: true
   - name: chopped_walnuts
     required: false
-  - name: syrup
+  - name: sugar_free_syrup
     required: false
   - name: banana
     required: false
@@ -264,7 +150,7 @@ recipes:
     required: true
     substitutions:
     - strawberry_jam
-  - name: low_fat_cream_cheese
+  - name: cream_cheese
     required: true
   - name: unsweetened_almond_milk
     required: true
@@ -272,7 +158,7 @@ recipes:
     required: true
   - name: thick_sliced_bread
     required: true
-  - name: syrup
+  - name: sugar_free_syrup
     required: false
   - name: blueberries
     required: false
@@ -280,7 +166,7 @@ recipes:
   type: lunch
   source: BWS Cookbook
   ingredients:
-  - name: low_calorie_whole_wheat_tortilla
+  - name: whole_wheat_tortilla
     required: true
     substitutions:
     - josephs_lavash
@@ -305,7 +191,7 @@ recipes:
     substitutions:
     - yellow_bell_pepper
     - green_bell_pepper
-  - name: low_fat_shredded_cheese
+  - name: shredded_cheese
     required: true
   - name: guacamole
     required: false
@@ -351,7 +237,7 @@ recipes:
     required: true
   - name: lime
     required: true
-  - name: low_calorie_whole_wheat_tortilla
+  - name: whole_wheat_tortilla
     required: true
   - name: lettuce
     required: true
@@ -444,7 +330,7 @@ recipes:
     required: true
   - name: ground_black_pepper
     required: true
-  - name: low_calorie_whole_wheat_tortilla
+  - name: whole_wheat_tortilla
     required: true
     substitutions:
     - josephs_lavash
@@ -454,7 +340,7 @@ recipes:
     required: true
   - name: lettuce
     required: true
-  - name: low_fat_shredded_cheese
+  - name: shredded_cheese
     required: true
   - name: mini_tortilla_chips
     required: true
@@ -476,7 +362,7 @@ recipes:
     required: true
   - name: all_purpose_flour
     required: true
-  - name: low_fat_shredded_cheese
+  - name: shredded_cheese
     required: true
   - name: nutritional_yeast
     required: true
@@ -494,10 +380,54 @@ recipes:
     required: true
   - name: unsweetened_almond_milk
     required: true
-  - name: syrup
+  - name: sugar_free_syrup
     required: false
   - name: banana
     required: true
+- name: Crunchy Mango Beef Tacos
+  type: lunch
+  source: BWS Cookbook
+  ingredients:
+  - name: white_onion
+    required: true
+    substitutions:
+    - yellow_onion
+    - red_onion
+  - name: ground_beef
+    required: true
+    substitutions:
+    - ground_turkey
+    - ground_chicken
+  - name: taco_seasoning
+    required: true
+  - name: salt
+    required: true
+  - name: ground_black_pepper
+    required: true
+  - name: tomato
+    required: true
+  - name: mango
+    required: true
+  - name: scallions
+    required: true
+  - name: cilantro
+    required: true
+  - name: lime
+    required: true
+    substitutions:
+    - lemon
+  - name: sriracha
+    required: true
+    substitutions:
+    - hot_sauce
+  - name: taco_shell
+    required: true
+  - name: greek_yogurt
+    required: true
+  - name: guacamole
+    required: true
+    substitutions:
+    - holy_guacamole
 - name: Eggs Royale
   type: breakfast
   source: BWS Cookbook
@@ -538,11 +468,11 @@ recipes:
     - taco_sauce
   - name: spinach
     required: true
-  - name: low_calorie_whole_wheat_tortilla
+  - name: whole_wheat_tortilla
     required: true
     substitutions:
     - josephs_lavash
-  - name: low_fat_shredded_cheese
+  - name: shredded_cheese
     required: true
   - name: greek_yogurt
     required: false
@@ -559,12 +489,46 @@ recipes:
     - white_onion
   - name: roast_beef
     required: true
-  - name: low_fat_shredded_cheese
+  - name: shredded_cheese
     required: true
   - name: whole_wheat_sub_roll
     required: true
   - name: beef_broth
     required: true
+- name: General Tso Chicken
+  type: lunch
+  source: BWS Cookbook
+  ingredients:
+  - name: chicken_breast
+    required: true
+  - name: salt
+    required: true
+  - name: ground_black_pepper
+    required: true
+  - name: ketchup
+    required: true
+  - name: soy_sauce
+    required: true
+  - name: stevia
+    required: true
+  - name: garlic
+    required: true
+  - name: fresh_ginger
+    required: true
+    substitutions:
+    - ground_ginger
+  - name: red_pepper_flakes
+    required: true
+  - name: sesame_seeds
+    required: false
+  - name: scallions
+    required: false
+  - name: cauliflower_rice
+    required: true
+  - name: brown_rice
+    required: true
+    substitutions:
+    - white_rice
 - name: Ginger-Spiced Carrot Cake Pancakes
   type: breakfast
   source: BWS Cookbook
@@ -612,7 +576,7 @@ recipes:
     required: true
   - name: taco_seasoning
     required: true
-  - name: low_fat_shredded_cheese
+  - name: shredded_cheese
     required: true
   - name: cilantro
     required: true
@@ -628,7 +592,7 @@ recipes:
   ingredients:
   - name: whole_wheat_bread
     required: true
-  - name: low_fat_shredded_cheese
+  - name: shredded_cheese
     required: true
   - name: deli_ham
     required: true
@@ -695,8 +659,10 @@ recipes:
     required: true
   - name: whole_wheat_english_muffin
     required: true
-  - name: low_fat_shredded_cheese
+  - name: cheese_slices
     required: true
+    substitutions:
+    - shredded_cheese
   - name: ketchup
     required: false
 - name: Lemon Blueberry Pancakes
@@ -719,13 +685,52 @@ recipes:
     required: true
   - name: egg_whites
     required: true
-  - name: syrup
+  - name: sugar_free_syrup
     required: true
   - name: unsweetened_almond_milk
     required: true
   - name: salt
     required: true
   - name: blueberries
+    required: true
+- name: Loaded Veggie Taco Bowl
+  type: lunch
+  source: BWS Cookbook
+  ingredients:
+  - name: extra_firm_tofu
+    required: true
+  - name: salt
+    required: true
+  - name: ground_black_pepper
+    required: true
+  - name: tomato
+    required: true
+  - name: red_bell_pepper
+    required: true
+    substitutions:
+    - yellow_bell_pepper
+    - green_bell_pepper
+  - name: brown_rice
+    required: true
+    substitutions:
+    - white_rice
+  - name: cauliflower_rice
+    required: true
+  - name: spinach
+    required: true
+  - name: garlic_powder
+    required: true
+  - name: paprika
+    required: true
+  - name: taco_sauce
+    required: true
+    substitutions:
+    - taco_seasoning
+  - name: guacamole
+    required: true
+    substitutions:
+    - holy_guacamole
+  - name: salsa
     required: true
 - name: Monte Cristo
   type: breakfast
@@ -735,7 +740,7 @@ recipes:
     required: true
   - name: unsweetened_almond_milk
     required: true
-  - name: syrup
+  - name: sugar_free_syrup
     required: true
   - name: cayenne_pepper
     required: true
@@ -761,7 +766,7 @@ recipes:
     required: true
   - name: ground_black_pepper
     required: true
-  - name: syrup
+  - name: sugar_free_syrup
     required: true
   - name: nutritional_yeast
     required: true
@@ -769,7 +774,7 @@ recipes:
     required: true
   - name: whole_wheat_english_muffin
     required: true
-  - name: low_fat_shredded_cheese
+  - name: shredded_cheese
     required: true
 - name: Not Pulled Pork Sanwhich
   type: lunch
@@ -791,6 +796,40 @@ recipes:
     required: true
   - name: pickles
     required: false
+- name: Orange Chicken
+  type: lunch
+  source: BWS Cookbook
+  ingredients:
+  - name: cornstarch
+    required: true
+  - name: salt
+    required: true
+  - name: chicken_breast
+    required: true
+  - name: egg_whites
+    required: true
+  - name: orange
+    required: true
+  - name: soy_sauce
+    required: true
+  - name: fresh_ginger
+    required: true
+    substitutions:
+    - ground_ginger
+  - name: garlic_powder
+    required: true
+  - name: ketchup
+    required: true
+  - name: stevia
+    required: false
+  - name: scallions
+    required: false
+  - name: cauliflower_rice
+    required: true
+  - name: brown_rice
+    required: true
+    substitutions:
+    - white_rice
 - name: Pizza Sub
   type: lunch
   source: BWS Cookbook
@@ -808,7 +847,7 @@ recipes:
     substitutions:
     - red_onion
     - white_onion
-  - name: low_fat_shredded_cheese
+  - name: shredded_cheese
     required: true
 - name: Protein Puffed Cereal
   type: breakfast
@@ -890,13 +929,13 @@ recipes:
     - dried_basil
   - name: ketchup
     required: false
-  - name: low_calorie_whole_wheat_bread
+  - name: whole_wheat_bread
     required: false
 - name: Sausage & Sun-Dried Tomato Breakfast Wrap
   type: breakfast
   source: BWS Cookbook
   ingredients:
-  - name: low_calorie_whole_wheat_tortilla
+  - name: whole_wheat_tortilla
     required: true
     substitutions:
     - josephs_lavash
@@ -920,7 +959,7 @@ recipes:
     required: true
   - name: nutritional_yeast
     required: true
-  - name: low_fat_shredded_cheese
+  - name: shredded_cheese
     required: true
   - name: ketchup
     required: true
@@ -932,7 +971,7 @@ recipes:
   type: breakfast
   source: BWS Cookbook
   ingredients:
-  - name: low_fat_shredded_cheese
+  - name: shredded_cheese
     required: true
   - name: eggs
     required: true
@@ -1001,7 +1040,7 @@ recipes:
     required: true
   - name: thick_sliced_bread
     required: true
-  - name: low_fat_cream_cheese
+  - name: cream_cheese
     required: true
   - name: unsweetened_almond_milk
     required: true
@@ -1011,3 +1050,73 @@ recipes:
     required: true
   - name: sugar_free_syrup
     required: false
+- name: Toned Turkey Tacos
+  type: lunch
+  source: BWS Cookbook
+  ingredients:
+  - name: yellow_onion
+    required: true
+    substitutions:
+    - red_onion
+    - white_onion
+  - name: red_bell_pepper
+    required: true
+    substitutions:
+    - yellow_bell_pepper
+    - green_bell_pepper
+  - name: ground_turkey
+    required: true
+    substitutions:
+    - ground_beef
+    - ground_chicken
+  - name: salsa
+    required: true
+  - name: salt
+    required: true
+  - name: ground_black_pepper
+    required: true
+  - name: whole_wheat_tortilla
+    required: true
+  - name: lettuce
+    required: true
+  - name: greek_yogurt
+    required: true
+- name: Unbuttered Butter Chicken
+  type: lunch
+  source: BWS Cookbook
+  ingredients:
+  - name: yellow_onion
+    required: true
+    substitutions:
+    - red_onion
+    - white_onion
+  - name: garlic
+    required: true
+  - name: chicken_breast
+    required: true
+  - name: salt
+    required: true
+  - name: ground_black_pepper
+    required: true
+  - name: paprika
+    required: true
+  - name: curry_powder
+    required: true
+  - name: tomato_puree
+    required: true
+  - name: coconut_milk
+    required: true
+  - name: stevia
+    required: true
+  - name: lime
+    required: true
+    substitutions:
+    - lemon
+  - name: cilantro
+    required: false
+  - name: cauliflower_rice
+    required: true
+  - name: brown_rice
+    required: true
+    substitutions:
+    - white_rice
