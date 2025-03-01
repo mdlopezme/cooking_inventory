@@ -1,97 +1,4 @@
 recipes:
-- name: Creamy Pad Thai
-  type: lunch
-  source: BWS Cookbook
-  ingredients:
-  - name: thai_rice_noodles
-    required: true
-  - name: powdered_peanut_butter
-    required: true
-  - name: soy_sauce
-    required: true
-  - name: chili_garlic_sauce
-    required: true
-    substitutions:
-    - red_pepper_flakes
-  - name: fish_sauce
-    required: true
-  - name: fresh_ginger
-    required: true
-    substitutions:
-    - ground_ginger
-  - name: garlic
-    required: true
-  - name: stevia
-    required: true
-  - name: lime
-    required: true
-    substitutions:
-    - lemon
-  - name: chicken_breast
-    required: true
-  - name: white_onion
-    required: true
-    substitutions:
-    - yellow_onion
-    - red_onion
-  - name: carrot
-    required: true
-  - name: red_bell_pepper
-    required: true
-    substitutions:
-    - yellow_bell_pepper
-    - green_bell_pepper
-  - name: salt
-    required: true
-  - name: ground_black_pepper
-    required: true
-  - name: peanuts
-    required: false
-  - name: cilantro
-    required: false
-- name: Chicken Chow Mein
-  type: lunch
-  source: BWS Cookbook
-  ingredients:
-  - name: chow_mein_noodles
-    required: true
-    substitutions:
-    - hokkien_noodles
-  - name: soy_sauce
-    required: true
-  - name: rice_wine_vinegar
-    required: true
-    substitutions:
-    - lime
-  - name: hoisin_sauce
-    required: true
-  - name: sriracha
-    required: true
-  - name: garlic_powder
-    required: true
-  - name: fresh_ginger
-    required: true
-    substitutions:
-    - ground_ginger
-  - name: sesame_seeds
-    required: true
-  - name: chicken_breast
-    required: true
-  - name: cabbage
-    required: true
-  - name: white_onion
-    required: true
-    substitutions:
-    - yellow_onion
-    - red_onion
-  - name: snap_peas
-    required: true
-  - name: salt
-    required: true
-  - name: ground_black_pepper
-    required: true
-  - name: scallions
-    required: true
 - name: Apple Crisp French Toast
   type: breakfast
   source: BWS Cookbook
@@ -124,7 +31,7 @@ recipes:
     required: true
   - name: stevia
     required: true
-  - name: all_purpose_flour
+  - name: whole_wheat_all_purpose_flour
     required: true
     substitutions:
     - oat
@@ -170,7 +77,7 @@ recipes:
   ingredients:
   - name: protein_powder
     required: true
-  - name: all_purpose_flour
+  - name: whole_wheat_all_purpose_flour
     required: true
     substitutions:
     - oat
@@ -269,7 +176,7 @@ recipes:
     required: true
     substitutions:
     - chili_powder
-  - name: nutritional_yeast
+  - name: nutricional_yeast
     required: true
   - name: lime
     required: true
@@ -294,6 +201,49 @@ recipes:
     required: false
     substitutions:
     - homemade_tangy_bbq_sauce
+- name: Chicken Chow Mein
+  type: lunch
+  source: BWS Cookbook
+  ingredients:
+  - name: chow_mein_noodles
+    required: true
+    substitutions:
+    - hokkien_noodles
+  - name: soy_sauce
+    required: true
+  - name: rice_wine_vinegar
+    required: true
+    substitutions:
+    - lime
+  - name: hoisin_sauce
+    required: true
+  - name: sriracha
+    required: true
+  - name: garlic_powder
+    required: true
+  - name: fresh_ginger
+    required: true
+    substitutions:
+    - ground_ginger
+  - name: sesame_seeds
+    required: true
+  - name: chicken_breast
+    required: true
+  - name: cabbage
+    required: true
+  - name: white_onion
+    required: true
+    substitutions:
+    - yellow_onion
+    - red_onion
+  - name: snap_peas
+    required: true
+  - name: salt
+    required: true
+  - name: ground_black_pepper
+    required: true
+  - name: scallions
+    required: true
 - name: Chili-Lime Streak Burrito
   type: lunch
   source: BWS Cookbook
@@ -380,7 +330,7 @@ recipes:
     required: true
   - name: lemon
     required: true
-  - name: nutritional_yeast
+  - name: nutricional_yeast
     required: true
   - name: tarragon
     required: true
@@ -441,6 +391,56 @@ recipes:
     required: false
     substitutions:
     - taco_sauce
+- name: Creamy Pad Thai
+  type: lunch
+  source: BWS Cookbook
+  ingredients:
+  - name: thai_rice_noodles
+    required: true
+  - name: powdered_peanut_butter
+    required: true
+  - name: soy_sauce
+    required: true
+  - name: chili_garlic_sauce
+    required: true
+    substitutions:
+    - red_pepper_flakes
+  - name: fish_sauce
+    required: true
+  - name: fresh_ginger
+    required: true
+    substitutions:
+    - ground_ginger
+  - name: garlic
+    required: true
+  - name: stevia
+    required: true
+  - name: lime
+    required: true
+    substitutions:
+    - lemon
+  - name: chicken_breast
+    required: true
+  - name: white_onion
+    required: true
+    substitutions:
+    - yellow_onion
+    - red_onion
+  - name: carrot
+    required: true
+  - name: red_bell_pepper
+    required: true
+    substitutions:
+    - yellow_bell_pepper
+    - green_bell_pepper
+  - name: salt
+    required: true
+  - name: ground_black_pepper
+    required: true
+  - name: peanuts
+    required: false
+  - name: cilantro
+    required: false
 - name: Crispy Chicken And Waffles
   type: breakfast
   source: BWS Cookbook
@@ -453,11 +453,11 @@ recipes:
     required: true
   - name: egg_whites
     required: true
-  - name: all_purpose_flour
+  - name: whole_wheat_all_purpose_flour
     required: true
   - name: shredded_cheese
     required: true
-  - name: nutritional_yeast
+  - name: nutricional_yeast
     required: true
   - name: paprika
     required: true
@@ -531,7 +531,7 @@ recipes:
     required: true
   - name: lemon
     required: true
-  - name: nutritional_yeast
+  - name: nutricional_yeast
     required: true
   - name: dill
     required: false
@@ -634,7 +634,7 @@ recipes:
     required: true
   - name: baking_powder
     required: true
-  - name: all_purpose_flour
+  - name: whole_wheat_all_purpose_flour
     required: true
     substitutions:
     - oat
@@ -683,7 +683,7 @@ recipes:
   type: lunch
   source: BWS Cookbook
   ingredients:
-  - name: whole_wheat_bread
+  - name: thick_sliced_bread
     required: true
   - name: shredded_cheese
     required: true
@@ -748,7 +748,7 @@ recipes:
     required: true
   - name: garlic_powder
     required: true
-  - name: nutritional_yeast
+  - name: nutricional_yeast
     required: true
   - name: whole_wheat_english_muffin
     required: true
@@ -764,7 +764,7 @@ recipes:
   ingredients:
   - name: cottage_cheese
     required: true
-  - name: all_purpose_flour
+  - name: whole_wheat_all_purpose_flour
     required: true
     substitutions:
     - oat
@@ -861,7 +861,7 @@ recipes:
     required: true
   - name: sugar_free_syrup
     required: true
-  - name: nutritional_yeast
+  - name: nutricional_yeast
     required: true
   - name: egg_whites
     required: true
@@ -883,7 +883,7 @@ recipes:
     required: true
     substitutions:
     - homemade_tangy_bbq_sauce
-  - name: nutritional_yeast
+  - name: nutricional_yeast
     required: true
   - name: whole_wheat_hamburger_bun
     required: true
@@ -983,7 +983,7 @@ recipes:
     required: true
   - name: salt
     required: true
-  - name: all_purpose_flour
+  - name: whole_wheat_all_purpose_flour
     required: true
     substitutions:
     - oat
@@ -1014,7 +1014,7 @@ recipes:
     required: true
   - name: egg_whites
     required: true
-  - name: nutritional_yeast
+  - name: nutricional_yeast
     required: true
   - name: fresh_basil
     required: true
@@ -1022,7 +1022,7 @@ recipes:
     - dried_basil
   - name: ketchup
     required: false
-  - name: whole_wheat_bread
+  - name: thick_sliced_bread
     required: false
 - name: Sausage & Sun-Dried Tomato Breakfast Wrap
   type: breakfast
@@ -1050,7 +1050,7 @@ recipes:
     required: true
   - name: garlic_powder
     required: true
-  - name: nutritional_yeast
+  - name: nutricional_yeast
     required: true
   - name: shredded_cheese
     required: true

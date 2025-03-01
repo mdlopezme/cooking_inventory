@@ -1,5 +1,5 @@
 ingredients:
-  apple: false
+  apple_cider_vinegar: true
   baking_powder: true
   black_beans: true
   blackberries: true
@@ -34,12 +34,13 @@ ingredients:
   panko_bread_crumbs: true
   paprika: true
   parsley_flakes: true
-  powdered_peanut_butter: true
   penne_pasta: true
   pickles: true
+  powdered_peanut_butter: true
   protein_powder: true
   pumpkin_pie_spice: true
   raspberries: true
+  red_apple: false
   red_pepper_flakes: true
   rosemary: true
   salt: true
@@ -55,8 +56,9 @@ ingredients:
   vanilla_instant_pudding_mix: true
   whipped_cream: true
   white_rice: true
+  white_vinegar: true
   whole_wheat_all_purpose_flour: true
-  whole_wheat_english_muffins: true
-  whole_wheat_hamburger_buns: true
+  whole_wheat_english_muffin: true
+  whole_wheat_hamburger_bun: true
   worcestershire_sauce: true
   yam: true

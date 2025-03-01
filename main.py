@@ -26,6 +26,7 @@ def load_recipes():
     return sorted_recipes
 
 def check_recipe_availability(recipe, ingredients_available):
+    in_stock = []
     missing = []
     optional = []
     substitutions = []
@@ -35,51 +36,33 @@ def check_recipe_availability(recipe, ingredients_available):
         is_required = item["required"]
 
         if ingredients_available.get(ingredient_name):
+            in_stock.append(ingredient_name)
             continue # If the ingredient is available, skip to the next one
 
         if not is_required:
             optional.append(ingredient_name)
             continue # If the ingredient is optional, skip to the next one
 
-        if not item.get("substitutions"):
-            missing.append(ingredient_name)
-            continue # If the ingredient is required and has no substitutions, mark it as missing
-        
-        for substitution in item["substitutions"]:
-            if ingredients_available.get(substitution):
-                substitutions.append(substitution)
-                break
+        if item.get("substitutions"):
+            found_substitution = False
+            for substitution in item["substitutions"]:
+                if ingredients_available.get(substitution):
+                    substitutions.append(substitution)
+                    in_stock.append(substitution)
+                    found_substitution = True
+                    break
+            if found_substitution:
+                continue
 
-        # Finally, if no substitutions are found, mark the ingredient as missing
-        missing.append(ingredient_name) # Add the ingredient to the missing list
-
+        missing.append(ingredient_name)
     missing = list(set(missing))
     substitutions = list(set(substitutions))
     optional = list(set(optional))
+    in_stock = list(set(in_stock))
 
-    return missing, substitutions, optional
+    return missing, substitutions, optional, in_stock
 
-def retrieve_recipe_availability():
-    ingredients = load_ingredients()
-    recipes = load_recipes()
 
-    recipe_status = []
-
-    for recipe in recipes:
-        missing, substitutions, optional = check_recipe_availability(recipe, ingredients)
-        recipe_status.append((
-            recipe["type"],
-            recipe["name"], 
-            len(missing), 
-            "\n".join(missing),
-            "\n".join(optional),
-            "\n".join(substitutions),
-            ))
-    headers = ["Type","Recipe Name", "Total Missing", "Missing Ingredients", "Optional Missing", "Substitutions"]
-
-    # Sort the recipe status by the number of missing ingredients
-    recipe_status.sort(key=lambda x: x[2])
-    return recipe_status, headers
 
 def recipe_contains_ingredients(recipe, ingredients):
     count = 0
@@ -89,25 +72,27 @@ def recipe_contains_ingredients(recipe, ingredients):
             count += 1
     return True if count == len(ingredients) else False
 
-def check_recipe_availability_by_ingredients(required_ingredients):
+def retrieve_recipe_availability(required_ingredients=None):
+    ingredients = load_ingredients()
     recipes = load_recipes()
-    available_ingredients = load_ingredients()
+
     recipe_status = []
 
     for recipe in recipes:
-        if recipe_contains_ingredients(recipe, required_ingredients):
-            missing, substitutions, optional = check_recipe_availability(recipe
-                , available_ingredients)
-            recipe_status.append((
-                recipe["type"],
-                recipe["name"], 
-                len(missing), 
-                "\n".join(missing),
-                "\n".join(optional),
-                "\n".join(substitutions),
-                ))
-    headers = ["Type","Recipe Name", "Total Missing", "Missing Ingredients", "Optional Missing", "Substitutions"]
+        if required_ingredients and not recipe_contains_ingredients(recipe, required_ingredients):
+            continue # Skip recipes that don't contain the required ingredients
+        missing, substitutions, optional, in_stock = check_recipe_availability(recipe, ingredients)
+        recipe_status.append((
+            recipe["type"],
+            recipe["name"], 
+            "\n".join(missing),
+            "\n".join(optional),
+            "\n".join(substitutions),
+            "\n".join(in_stock),
+            ))
+    headers = ["Type","Recipe Name", "Missing Ingredients", "Optional Missing", "Substitutions", "In Stock"]
 
+    # Sort the recipe status by the number of missing ingredients
     recipe_status.sort(key=lambda x: x[2])
     return recipe_status, headers
 
@@ -190,7 +175,7 @@ def main():
         return
     
     if args.ingredients:
-        recipe_status, headers = check_recipe_availability_by_ingredients(args.ingredients)
+        recipe_status, headers = retrieve_recipe_availability(args.ingredients)
     else:
         recipe_status, headers = retrieve_recipe_availability()
 
