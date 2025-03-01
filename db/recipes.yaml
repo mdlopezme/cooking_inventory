@@ -1,4 +1,119 @@
 recipes:
+- name: How Is It Healthy Chicken Sanwhich
+  type: lunch
+  source: BWS Cookbook
+  ingredients:
+  - name: chicken_breast
+    required: true
+  - name: unsweetened_almond_milk
+    required: true
+  - name: lemon
+    required: true
+    substitutions:
+    - lime
+  - name: paprika
+    required: true
+  - name: garlic_powder
+    required: true
+  - name: salt
+    required: true
+  - name: panko_bread_crumbs
+    required: true
+    substitutions:
+    - shake_and_bake
+  - name: greek_yogurt
+    required: true
+  - name: hot_sauce
+    required: true
+  - name: whole_wheat_hamburger_bun
+    required: true
+  - name: pickles
+    required: false
+  - name: no_fat_french_fries
+    required: false
+  - name: ketchup
+    required: false
+- name: Not Pulled Pork Sanwhich
+  type: lunch
+  source: BWS Cookbook
+  ingredients:
+  - name: black_beans
+    required: true
+  - name: jackfruit
+    required: true
+  - name: paprika
+    required: true
+  - name: sugar_free_bbq_sauce
+    required: true
+    substitutions:
+    - homemade_tangy_bbq_sauce
+  - name: nutritional_yeast
+    required: true
+  - name: whole_wheat_hamburger_bun
+    required: true
+  - name: pickles
+    required: false
+- name: Guiltless Grilled Cheese
+  type: lunch
+  source: BWS Cookbook
+  ingredients:
+  - name: whole_wheat_bread
+    required: true
+  - name: low_fat_shredded_cheese
+    required: true
+  - name: deli_ham
+    required: true
+  - name: red_apple
+    required: true
+    substitutions:
+    - green_apple
+    - gala_apple
+  - name: balsamic_vinegar
+    required: true
+    substitutions:
+    - white_vinegar
+    - apple_cider_vinegar
+    - red_wine_vinegar
+  - name: ketchup
+    required: false
+  - name: tomato_sauce
+    required: false
+- name: French Dip
+  type: lunch
+  source: BWS Cookbook
+  ingredients:
+  - name: yellow_onion
+    required: true
+    substitutions:
+    - red_onion
+    - white_onion
+  - name: roast_beef
+    required: true
+  - name: low_fat_shredded_cheese
+    required: true
+  - name: whole_wheat_sub_roll
+    required: true
+  - name: beef_broth
+    required: true
+- name: Pizza Sub
+  type: lunch
+  source: BWS Cookbook
+  ingredients:
+  - name: whole_wheat_sub_roll
+    required: true
+  - name: tomato_sauce
+    required: true
+    substitutions:
+    - tomato_puree
+  - name: turkey_pepperoni
+    required: true
+  - name: yellow_onion
+    required: false
+    substitutions:
+    - red_onion
+    - white_onion
+  - name: low_fat_shredded_cheese
+    required: true
 - name: Apple Crisp French Toast
   type: breakfast
   source: BWS Cookbook

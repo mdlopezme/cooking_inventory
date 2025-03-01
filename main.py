@@ -117,6 +117,7 @@ def main():
     parser.add_argument("-p", "--print_limit", type=int, default=10, help="Number of recipes to display")
     parser.add_argument("-r", "--recipe", type=str, help="Specify a recipe name to check availability")
     parser.add_argument("-i", "--ingredients", nargs="+", help="List of ingredients to check availability for.")
+    parser.add_argument("-t", "--type", type=str, help="Specify a recipe type to check availability")
 
     args = parser.parse_args()
 
@@ -127,6 +128,9 @@ def main():
 
     if args.recipe:
         recipe_status = [item for item in recipe_status if args.recipe.lower() in item[1].lower()]
+
+    if args.type:
+        recipe_status = [item for item in recipe_status if args.type.lower() in item[0].lower()]
     
     print_recipe_availability(recipe_status, headers, args.print_limit)
 
