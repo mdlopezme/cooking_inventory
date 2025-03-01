@@ -1117,6 +1117,56 @@ recipes:
     required: false
   - name: ketchup
     required: false
+- name: Shrimp Fried Rice
+  type: lunch
+  source: BWS Cookbook
+  ingredients:
+  - name: soy_sauce
+    required: true
+  - name: miso_paste
+    required: true
+    substitutions:
+    - stevia
+  - name: rice_wine_vinegar
+    required: true
+    substitutions:
+    - lime
+  - name: fresh_ginger
+    required: true
+    substitutions:
+    - ground_ginger
+  - name: red_pepper_flakes
+    required: true
+    substitutions:
+    - hot_sauce
+  - name: shrimp
+    required: true
+  - name: salt
+    required: true
+  - name: egg_whites
+    required: true
+  - name: white_onion
+    required: true
+    substitutions:
+    - yellow_onion
+    - red_onion
+  - name: garlic
+    required: true
+  - name: green_bell_pepper
+    required: true
+    substitutions:
+    - red_bell_pepper
+    - yellow_bell_pepper
+  - name: spinach
+    required: true
+    substitutions:
+    - kale
+  - name: brown_rice
+    required: true
+    substitutions:
+    - white_rice
+  - name: cauliflower_rice
+    required: true
 - name: Strawberry Cheesecake French Toast
   type: breakfast
   source: BWS Cookbook
@@ -1213,3 +1263,44 @@ recipes:
     required: true
     substitutions:
     - white_rice
+- name: Veggie Lovers Fried Rice
+  type: lunch
+  source: BWS Cookbook
+  ingredients:
+  - name: soy_sauce
+    required: true
+  - name: orange
+    required: true
+    substitutions:
+    - lime
+  - name: fresh_ginger
+    required: true
+    substitutions:
+    - ground_ginger
+  - name: garlic
+    required: true
+  - name: red_pepper_flakes
+    required: true
+  - name: extra_firm_tofu
+    required: true
+  - name: egg_whites
+    required: true
+  - name: yellow_onion
+    required: true
+    substitutions:
+    - red_onion
+    - white_onion
+  - name: carrot
+    required: true
+  - name: snap_peas
+    required: true
+  - name: brown_rice
+    required: true
+    substitutions:
+    - white_rice
+  - name: cauliflower_rice
+    required: true
+  - name: salt
+    required: true
+  - name: ground_black_pepper
+    required: true

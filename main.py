@@ -139,7 +139,7 @@ def remove_ingredient_from_pantry(old_ingredients):
 
 def get_optimal_recipes(recipe_status, headers):
     new_recipe_status = []
-    types = set(item[0] for item in recipe_status)
+    types = set(item[0] for item in recipe_status)  # Get unique recipe types
 
     # Get only 1 recipe of each type
     for recipe_type in types:
@@ -153,6 +153,7 @@ def get_optimal_recipes(recipe_status, headers):
 
 
 def print_recipe_availability(recipe_status, headers, print_limit):
+    recipe_status.sort(key=lambda x: x[2])
     print(tabulate(recipe_status[:min(len(recipe_status), print_limit)], headers=headers, tablefmt="grid"))
 
 def main():
