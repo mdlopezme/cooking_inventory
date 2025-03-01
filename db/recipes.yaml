@@ -1,4 +1,97 @@
 recipes:
+- name: Creamy Pad Thai
+  type: lunch
+  source: BWS Cookbook
+  ingredients:
+  - name: thai_rice_noodles
+    required: true
+  - name: powdered_peanut_butter
+    required: true
+  - name: soy_sauce
+    required: true
+  - name: chili_garlic_sauce
+    required: true
+    substitutions:
+    - red_pepper_flakes
+  - name: fish_sauce
+    required: true
+  - name: fresh_ginger
+    required: true
+    substitutions:
+    - ground_ginger
+  - name: garlic
+    required: true
+  - name: stevia
+    required: true
+  - name: lime
+    required: true
+    substitutions:
+    - lemon
+  - name: chicken_breast
+    required: true
+  - name: white_onion
+    required: true
+    substitutions:
+    - yellow_onion
+    - red_onion
+  - name: carrot
+    required: true
+  - name: red_bell_pepper
+    required: true
+    substitutions:
+    - yellow_bell_pepper
+    - green_bell_pepper
+  - name: salt
+    required: true
+  - name: ground_black_pepper
+    required: true
+  - name: peanuts
+    required: false
+  - name: cilantro
+    required: false
+- name: Chicken Chow Mein
+  type: lunch
+  source: BWS Cookbook
+  ingredients:
+  - name: chow_mein_noodles
+    required: true
+    substitutions:
+    - hokkien_noodles
+  - name: soy_sauce
+    required: true
+  - name: rice_wine_vinegar
+    required: true
+    substitutions:
+    - lime
+  - name: hoisin_sauce
+    required: true
+  - name: sriracha
+    required: true
+  - name: garlic_powder
+    required: true
+  - name: fresh_ginger
+    required: true
+    substitutions:
+    - ground_ginger
+  - name: sesame_seeds
+    required: true
+  - name: chicken_breast
+    required: true
+  - name: cabbage
+    required: true
+  - name: white_onion
+    required: true
+    substitutions:
+    - yellow_onion
+    - red_onion
+  - name: snap_peas
+    required: true
+  - name: salt
+    required: true
+  - name: ground_black_pepper
+    required: true
+  - name: scallions
+    required: true
 - name: Apple Crisp French Toast
   type: breakfast
   source: BWS Cookbook

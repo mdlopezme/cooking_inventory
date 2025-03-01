@@ -152,6 +152,21 @@ def remove_ingredient_from_pantry(old_ingredients):
         yaml.dump({"ingredients": pantry}, file)
     print("Pantry updated.")
 
+def get_optimal_recipes(recipe_status, headers):
+    new_recipe_status = []
+    types = set(item[0] for item in recipe_status)
+
+    # Get only 1 recipe of each type
+    for recipe_type in types:
+        for item in recipe_status:
+            if recipe_type == item[0]:
+                new_recipe_status.append(item)
+                break
+
+    return new_recipe_status, headers
+        
+
+
 def print_recipe_availability(recipe_status, headers, print_limit):
     print(tabulate(recipe_status[:min(len(recipe_status), print_limit)], headers=headers, tablefmt="grid"))
 
@@ -163,6 +178,7 @@ def main():
     parser.add_argument("-t", "--type", type=str, help="Specify a recipe type to check availability")
     parser.add_argument("-a", "--add", nargs="+", help="Add ingredients to the pantry")
     parser.add_argument("-d", "--delete", nargs="+", help="Remove ingredients from the pantry")
+    parser.add_argument("-opt", "--optimal_recipes", action="store_true", help="Print optimal recipes")
 
     args = parser.parse_args()
 
@@ -172,7 +188,7 @@ def main():
     elif args.delete:
         remove_ingredient_from_pantry(args.delete)
         return
-
+    
     if args.ingredients:
         recipe_status, headers = check_recipe_availability_by_ingredients(args.ingredients)
     else:
@@ -183,6 +199,9 @@ def main():
 
     if args.type:
         recipe_status = [item for item in recipe_status if args.type.lower() in item[0].lower()]
+    
+    if args.optimal_recipes:
+        recipe_status, headers = get_optimal_recipes(recipe_status, headers)
     
     print_recipe_availability(recipe_status, headers, args.print_limit)
 
