@@ -1,0 +1,622 @@
+recipes:
+- name: Apple Crisp French Toast
+  type: breakfast
+  source: BWS Cookbook
+  ingredients:
+  - name: apple
+    required: true
+  - name: syrup
+    required: true
+  - name: egg_whites
+    required: true
+  - name: unsweetened_almond_milk
+    required: true
+  - name: vanilla_extract
+    required: true
+  - name: ground_cinnamon
+    required: true
+  - name: salt
+    required: true
+  - name: thick_sliced_bread
+    required: true
+- name: Banana Chocolate Chip Pancakes
+  type: breakfast
+  source: BWS Cookbook
+  ingredients:
+  - name: banana
+    required: true
+  - name: egg_whites
+    required: true
+  - name: greek_yogurt
+    required: true
+  - name: stevia
+    required: true
+  - name: all_purpose_flour
+    required: true
+    substitutions:
+    - oat
+  - name: baking_powder
+    required: true
+  - name: ground_cinnamon
+    required: true
+  - name: salt
+    required: true
+  - name: unsweetened_almond_milk
+    required: true
+  - name: chocolate_chips
+    required: true
+  - name: sugar_free_syrup
+    required: false
+- name: Banana French Toast Sticks
+  type: breakfast
+  source: BWS Cookbook
+  ingredients:
+  - name: thick_sliced_bread
+    required: true
+  - name: banana
+    required: true
+  - name: egg_whites
+    required: true
+  - name: unsweetened_almond_milk
+    required: true
+  - name: vanilla_extract
+    required: true
+    substitutions:
+    - almond_extract
+  - name: ground_cinnamon
+    required: true
+  - name: stevia
+    required: true
+  - name: salt
+    required: true
+  - name: sugar_free_syrup
+    required: false
+- name: Banana Nut Waffles
+  type: breakfast
+  source: BWS Cookbook
+  ingredients:
+  - name: protein_powder
+    required: true
+  - name: all_purpose_flour
+    required: true
+    substitutions:
+    - oat
+  - name: baking_powder
+    required: true
+  - name: salt
+    required: true
+  - name: vanilla_extract
+    required: true
+  - name: banana
+    required: true
+  - name: egg_whites
+    required: true
+  - name: unsweetened_almond_milk
+    required: true
+  - name: chocolate_chips
+    required: true
+  - name: chopped_walnuts
+    required: false
+  - name: syrup
+    required: false
+  - name: banana
+    required: false
+    substitutions:
+    - apple
+    - blueberries
+    - strawberries
+    - raspberries
+    - peaches
+    - pears
+    - kiwi
+    - mango
+    - pineapple
+    - plum
+    - nectarine
+    - grapefruit
+    - papaya
+    - cantaloupe
+    - honeydew
+    - tangerine
+    - pomegranate
+    - apricot
+    - cherries
+    - figs
+    - persimmons
+    - lychee
+    - dragonfruit
+    - starfruit
+    - guava
+    - kumquat
+    - jackfruit
+    - passionfruit
+    - durian
+    - rambutan
+    - sapodilla
+    - sapote
+- name: Blueberry Lemon French Toast
+  type: breakfast
+  source: BWS Cookbook
+  ingredients:
+  - name: egg_whites
+    required: true
+  - name: stevia
+    required: true
+  - name: lemon
+    required: true
+    substitutions:
+    - lime
+  - name: blueberry_jam
+    required: true
+    substitutions:
+    - strawberry_jam
+  - name: low_fat_cream_cheese
+    required: true
+  - name: unsweetened_almond_milk
+    required: true
+  - name: salt
+    required: true
+  - name: thick_sliced_bread
+    required: true
+  - name: syrup
+    required: false
+  - name: blueberries
+    required: false
+- name: Cinnamon Pumpkin Waffles
+  type: breakfast
+  source: BWS Cookbook
+  ingredients:
+  - name: protein_powder
+    required: true
+  - name: baking_powder
+    required: true
+  - name: salt
+    required: true
+  - name: ground_cinnamon
+    required: true
+  - name: vanilla_extract
+    required: true
+  - name: stevia
+    required: true
+  - name: pumpkin_puree
+    required: true
+  - name: egg_whites
+    required: true
+  - name: unsweetened_almond_milk
+    required: true
+  - name: chopped_walnuts
+    required: false
+  - name: sugar_free_syrup
+    required: false
+- name: Classic Eggs Benedict
+  type: breakfast
+  source: BWS Cookbook
+  ingredients:
+  - name: white_vinegar
+    required: true
+  - name: eggs
+    required: true
+  - name: greek_yogurt
+    required: true
+  - name: lemon
+    required: true
+  - name: nutritional_yeast
+    required: true
+  - name: tarragon
+    required: true
+    substitutions:
+    - basil
+    - parsley
+    - cilantro
+    - thyme
+    - oregano
+  - name: salt
+    required: true
+  - name: whole_wheat_english_muffin
+    required: true
+- name: Crispy Chicken And Waffles
+  type: breakfast
+  source: BWS Cookbook
+  ingredients:
+  - name: chicken_breast
+    required: true
+  - name: salt
+    required: true
+  - name: ground_black_pepper
+    required: true
+  - name: egg_whites
+    required: true
+  - name: all_purpose_flour
+    required: true
+  - name: low_fat_shredded_cheese
+    required: true
+  - name: nutritional_yeast
+    required: true
+  - name: paprika
+    required: true
+  - name: protein_powder
+    required: true
+  - name: baking_powder
+    required: true
+  - name: stevia
+    required: true
+  - name: ground_nutmeg
+    required: true
+  - name: vanilla_extract
+    required: true
+  - name: unsweetened_almond_milk
+    required: true
+  - name: syrup
+    required: false
+  - name: banana
+    required: true
+- name: Eggs Royale
+  type: breakfast
+  source: BWS Cookbook
+  ingredients:
+  - name: white_vinegar
+    required: true
+  - name: greek_yogurt
+    required: true
+  - name: lemon
+    required: true
+  - name: nutritional_yeast
+    required: true
+  - name: dill
+    required: false
+  - name: salt
+    required: true
+  - name: whole_wheat_english_muffin
+    required: true
+  - name: tomato
+    required: true
+  - name: smoked_salmon
+    required: true
+- name: Ginger-Spiced Carrot Cake Pancakes
+  type: breakfast
+  source: BWS Cookbook
+  ingredients:
+  - name: carrots
+    required: true
+  - name: ground_ginger
+    required: true
+  - name: ground_cinnamon
+    required: true
+  - name: baking_powder
+    required: true
+  - name: all_purpose_flour
+    required: true
+    substitutions:
+    - oat
+  - name: egg_whites
+    required: true
+  - name: stevia
+    required: true
+  - name: unsweetened_almond_milk
+    required: true
+  - name: salt
+    required: true
+  - name: sugar_free_syrup
+    required: false
+  - name: chopped_walnuts
+    required: false
+- name: Grande Tex-Mex Omelette
+  type: breakfast
+  source: BWS Cookbook
+  ingredients:
+  - name: mushrooms
+    required: true
+  - name: red_onion
+    required: true
+    substitutions:
+    - yellow_onion
+    - white_onion
+  - name: spinach
+    required: true
+  - name: salt
+    required: true
+  - name: ground_black_pepper
+    required: true
+  - name: taco_seasoning
+    required: true
+  - name: low_fat_shredded_cheese
+    required: true
+  - name: cilantro
+    required: true
+  - name: pico_de_gallo
+    required: true
+    substitutions:
+    - salsa
+  - name: greek_yogurt
+    required: true
+- name: Lean English Muffin
+  type: breakfast
+  source: BWS Cookbook
+  ingredients:
+  - name: egg_whites
+    required: true
+  - name: ground_black_pepper
+    required: true
+  - name: garlic_powder
+    required: true
+  - name: nutritional_yeast
+    required: true
+  - name: whole_wheat_english_muffin
+    required: true
+  - name: low_fat_shredded_cheese
+    required: true
+  - name: ketchup
+    required: false
+- name: Lemon Blueberry Pancakes
+  type: breakfast
+  source: BWS Cookbook
+  ingredients:
+  - name: cottage_cheese
+    required: true
+  - name: all_purpose_flour
+    required: true
+    substitutions:
+    - oat
+  - name: baking_powder
+    required: true
+  - name: protein_powder
+    required: true
+  - name: lemon
+    required: true
+  - name: vanilla_extract
+    required: true
+  - name: egg_whites
+    required: true
+  - name: syrup
+    required: true
+  - name: unsweetened_almond_milk
+    required: true
+  - name: salt
+    required: true
+  - name: blueberries
+    required: true
+- name: Monte Cristo
+  type: breakfast
+  source: BWS Cookbook
+  ingredients:
+  - name: egg_whites
+    required: true
+  - name: unsweetened_almond_milk
+    required: true
+  - name: syrup
+    required: true
+  - name: cayenne_pepper
+    required: true
+  - name: salt
+    required: true
+  - name: ground_black_pepper
+    required: true
+  - name: cheese_slices
+    required: true
+  - name: deli_ham
+    required: true
+  - name: thick_sliced_bread
+    required: true
+  - name: ketchup
+    required: false
+- name: Muscle Griddle
+  type: breakfast
+  source: BWS Cookbook
+  ingredients:
+  - name: turkey_bacon
+    required: true
+  - name: salt
+    required: true
+  - name: ground_black_pepper
+    required: true
+  - name: syrup
+    required: true
+  - name: nutritional_yeast
+    required: true
+  - name: egg_whites
+    required: true
+  - name: whole_wheat_english_muffin
+    required: true
+  - name: low_fat_shredded_cheese
+    required: true
+- name: Protein Puffed Cereal
+  type: breakfast
+  source: BWS Cookbook
+  ingredients:
+  - name: protein_powder
+    required: true
+  - name: unsweetened_almond_milk
+    required: true
+  - name: ground_cinnamon
+    required: true
+  - name: stevia
+    required: true
+  - name: wheat_puffs
+    required: true
+  - name: strawberries
+    required: true
+    substitutions:
+    - blueberries
+    - raspberries
+    - blackberries
+    - bananas
+- name: Pumpkin Pie Pancakes
+  type: breakfast
+  source: BWS Cookbook
+  ingredients:
+  - name: pumpkin_puree
+    required: true
+  - name: egg_whites
+    required: true
+  - name: greek_yogurt
+    required: true
+  - name: pumpkin_pie_spice
+    required: true
+    substitutions:
+    - ground_cinnamon
+  - name: baking_powder
+    required: true
+  - name: stevia
+    required: true
+  - name: salt
+    required: true
+  - name: all_purpose_flour
+    required: true
+    substitutions:
+    - oat
+  - name: unsweetened_almond_milk
+    required: true
+  - name: sugar_free_syrup
+    required: false
+  - name: chopped_walnuts
+    required: false
+- name: Rainbow Scramble
+  type: breakfast
+  source: BWS Cookbook
+  ingredients:
+  - name: zuchini
+    required: true
+  - name: red_bell_pepper
+    required: true
+    substitutions:
+    - yellow_bell_pepper
+    - green_bell_pepper
+  - name: mushrooms
+    required: true
+  - name: jalapeno
+    required: true
+  - name: salt
+    required: true
+  - name: ground_black_pepper
+    required: true
+  - name: egg_whites
+    required: true
+  - name: nutritional_yeast
+    required: true
+  - name: fresh_basil
+    required: true
+    substitutions:
+    - dried_basil
+  - name: ketchup
+    required: false
+  - name: low_calorie_whole_wheat_bread
+    required: false
+- name: Sausage & Sun-Dried Tomato Breakfast Wrap
+  type: breakfast
+  source: BWS Cookbook
+  ingredients:
+  - name: low_calorie_whole_wheat_tortilla
+    required: true
+    substitutions:
+    - josephs_lavash
+  - name: italian_chicken_sausage_link
+    required: true
+    substitutions:
+    - turkey_sausage_link
+  - name: sun_dried_tomatoes
+    required: true
+    substitutions:
+    - cherry_tomatoes
+  - name: spinach
+    required: true
+  - name: egg_whites
+    required: true
+  - name: salt
+    required: true
+  - name: ground_black_pepper
+    required: true
+  - name: garlic_powder
+    required: true
+  - name: nutritional_yeast
+    required: true
+  - name: low_fat_shredded_cheese
+    required: true
+  - name: ketchup
+    required: true
+    substitutions:
+    - spicy_mayo
+    - hot_sauce
+    - sriracha
+- name: Savory Waffles
+  type: breakfast
+  source: BWS Cookbook
+  ingredients:
+  - name: low_fat_shredded_cheese
+    required: true
+  - name: eggs
+    required: true
+  - name: garlic
+    required: true
+    substitutions:
+    - garlic_powder
+  - name: dried_basil
+    required: true
+  - name: salt
+    required: true
+  - name: potato
+    required: false
+  - name: banana
+    required: false
+    substitutions:
+    - apple
+    - blueberries
+    - strawberries
+    - raspberries
+    - peaches
+    - pears
+    - kiwi
+    - mango
+    - pineapple
+    - plum
+    - nectarine
+    - grapefruit
+    - papaya
+    - cantaloupe
+    - honeydew
+    - tangerine
+    - pomegranate
+    - apricot
+    - cherries
+    - figs
+    - persimmons
+    - lychee
+    - dragonfruit
+    - starfruit
+    - guava
+    - kumquat
+    - jackfruit
+    - passionfruit
+    - durian
+    - rambutan
+    - sapodilla
+    - sapote
+  - name: tomato_sauce
+    required: false
+  - name: ketchup
+    required: false
+- name: Strawberry Cheesecake French Toast
+  type: breakfast
+  source: BWS Cookbook
+  ingredients:
+  - name: egg_whites
+    required: true
+  - name: stevia
+    required: true
+  - name: unsweetened_almond_milk
+    required: true
+  - name: vanilla_extract
+    required: true
+  - name: salt
+    required: true
+  - name: thick_sliced_bread
+    required: true
+  - name: low_fat_cream_cheese
+    required: true
+  - name: unsweetened_almond_milk
+    required: true
+  - name: stevia
+    required: true
+  - name: strawberries
+    required: true
+  - name: sugar_free_syrup
+    required: false
