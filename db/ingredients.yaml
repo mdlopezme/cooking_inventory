@@ -2,6 +2,7 @@ ingredients:
   all_purpose_flour: true
   apple: true
   baking_powder: true
+  black_beans: true
   blueberries: true
   carrots: false
   cayenne_pepper: false
@@ -9,6 +10,7 @@ ingredients:
   chopped_walnuts: true
   egg_whites: true
   eggs: true
+  garlic_powder: true
   greek_yogurt: true
   ground_black_pepper: true
   ground_cinnamon: true
@@ -18,6 +20,7 @@ ingredients:
   low_fat_cream_cheese: true
   nutritional_yeast: true
   oat: false
+  pickles: true
   protein_powder: true
   salt: true
   stevia: true
@@ -26,3 +29,4 @@ ingredients:
   thick_sliced_bread: true
   unsweetened_almond_milk: false
   vanilla_extract: true
+  whole_wheat_hamburger_bun: true

@@ -1,119 +1,4 @@
 recipes:
-- name: How Is It Healthy Chicken Sanwhich
-  type: lunch
-  source: BWS Cookbook
-  ingredients:
-  - name: chicken_breast
-    required: true
-  - name: unsweetened_almond_milk
-    required: true
-  - name: lemon
-    required: true
-    substitutions:
-    - lime
-  - name: paprika
-    required: true
-  - name: garlic_powder
-    required: true
-  - name: salt
-    required: true
-  - name: panko_bread_crumbs
-    required: true
-    substitutions:
-    - shake_and_bake
-  - name: greek_yogurt
-    required: true
-  - name: hot_sauce
-    required: true
-  - name: whole_wheat_hamburger_bun
-    required: true
-  - name: pickles
-    required: false
-  - name: no_fat_french_fries
-    required: false
-  - name: ketchup
-    required: false
-- name: Not Pulled Pork Sanwhich
-  type: lunch
-  source: BWS Cookbook
-  ingredients:
-  - name: black_beans
-    required: true
-  - name: jackfruit
-    required: true
-  - name: paprika
-    required: true
-  - name: sugar_free_bbq_sauce
-    required: true
-    substitutions:
-    - homemade_tangy_bbq_sauce
-  - name: nutritional_yeast
-    required: true
-  - name: whole_wheat_hamburger_bun
-    required: true
-  - name: pickles
-    required: false
-- name: Guiltless Grilled Cheese
-  type: lunch
-  source: BWS Cookbook
-  ingredients:
-  - name: whole_wheat_bread
-    required: true
-  - name: low_fat_shredded_cheese
-    required: true
-  - name: deli_ham
-    required: true
-  - name: red_apple
-    required: true
-    substitutions:
-    - green_apple
-    - gala_apple
-  - name: balsamic_vinegar
-    required: true
-    substitutions:
-    - white_vinegar
-    - apple_cider_vinegar
-    - red_wine_vinegar
-  - name: ketchup
-    required: false
-  - name: tomato_sauce
-    required: false
-- name: French Dip
-  type: lunch
-  source: BWS Cookbook
-  ingredients:
-  - name: yellow_onion
-    required: true
-    substitutions:
-    - red_onion
-    - white_onion
-  - name: roast_beef
-    required: true
-  - name: low_fat_shredded_cheese
-    required: true
-  - name: whole_wheat_sub_roll
-    required: true
-  - name: beef_broth
-    required: true
-- name: Pizza Sub
-  type: lunch
-  source: BWS Cookbook
-  ingredients:
-  - name: whole_wheat_sub_roll
-    required: true
-  - name: tomato_sauce
-    required: true
-    substitutions:
-    - tomato_puree
-  - name: turkey_pepperoni
-    required: true
-  - name: yellow_onion
-    required: false
-    substitutions:
-    - red_onion
-    - white_onion
-  - name: low_fat_shredded_cheese
-    required: true
 - name: Apple Crisp French Toast
   type: breakfast
   source: BWS Cookbook
@@ -277,6 +162,54 @@ recipes:
     required: false
   - name: blueberries
     required: false
+- name: Chili-Lime Streak Burrito
+  type: lunch
+  source: BWS Cookbook
+  ingredients:
+  - name: garlic_powder
+    required: true
+  - name: taco_seasoning
+    required: true
+  - name: cumin
+    required: true
+  - name: taco_sauce
+    required: true
+  - name: salt
+    required: true
+  - name: ground_black_pepper
+    required: true
+  - name: lean_flank_steak
+    required: true
+    substitutions:
+    - lean_sirloin_steak
+  - name: green_bell_pepper
+    required: true
+    substitutions:
+    - red_bell_pepper
+    - yellow_bell_pepper
+  - name: yellow_onion
+    required: true
+    substitutions:
+    - red_onion
+    - white_onion
+  - name: cauliflower_rice
+    required: true
+  - name: black_beans
+    required: true
+  - name: lime
+    required: true
+  - name: low_calorie_whole_wheat_tortilla
+    required: true
+  - name: lettuce
+    required: true
+  - name: salsa
+    required: true
+  - name: guacamole
+    required: true
+    substitutions:
+    - holy_guacamole
+  - name: greek_yogurt
+    required: true
 - name: Cinnamon Pumpkin Waffles
   type: breakfast
   source: BWS Cookbook
@@ -329,6 +262,92 @@ recipes:
     required: true
   - name: whole_wheat_english_muffin
     required: true
+- name: Copycat Crunchwrap Supreme
+  type: lunch
+  source: BWS Cookbook
+  ingredients:
+  - name: white_onion
+    required: true
+    substitutions:
+    - yellow_onion
+    - red_onion
+  - name: green_bell_pepper
+    required: true
+    substitutions:
+    - red_bell_pepper
+    - yellow_bell_pepper
+  - name: ground_beef
+    required: true
+    substitutions:
+    - ground_turkey
+    - ground_chicken
+  - name: taco_seasoning
+    required: true
+  - name: lime
+    required: true
+    substitutions:
+    - lemon
+  - name: salt
+    required: true
+  - name: ground_black_pepper
+    required: true
+  - name: low_calorie_whole_wheat_tortilla
+    required: true
+    substitutions:
+    - josephs_lavash
+  - name: greek_yogurt
+    required: true
+  - name: salsa
+    required: true
+  - name: lettuce
+    required: true
+  - name: low_fat_shredded_cheese
+    required: true
+  - name: mini_tortilla_chips
+    required: true
+  - name: hot_sauce
+    required: false
+    substitutions:
+    - taco_sauce
+- name: Cheesy Shrimp Quesadilla
+  type: lunch
+  source: BWS Cookbook
+  ingredients:
+  - name: low_calorie_whole_wheat_tortilla
+    required: true
+    substitutions:
+    - josephs_lavash
+  - name: shrimp
+    required: true
+  - name: taco_seasoning
+    required: true
+    substitutions:
+    - chili_powder
+  - name: nutrioptional_yeast
+    required: true
+  - name: lime
+    required: true
+    substitutions:
+    - lemon
+  - name: salt
+    required: true
+  - name: ground_black_pepper
+    required: true
+  - name: red_bell_pepper
+    required: true
+    substitutions:
+    - yellow_bell_pepper
+    - green_bell_pepper
+  - name: low_fat_shredded_cheese
+    required: true
+  - name: guacamole
+    required: false
+    substitutions:
+    - holy_guacamole
+  - name: sugar_free_bbq_sauce
+    required: false
+    substitutions:
+    - homemade_tangy_bbq_sauce
 - name: Crispy Chicken And Waffles
   type: breakfast
   source: BWS Cookbook
@@ -387,6 +406,51 @@ recipes:
     required: true
   - name: smoked_salmon
     required: true
+- name: Fat Chicken Burrito
+  type: lunch
+  source: BWS Cookbook
+  ingredients:
+  - name: chicken_breast
+    required: true
+  - name: taco_seasoning
+    required: true
+  - name: salt
+    required: true
+  - name: cauliflower_rice
+    required: true
+  - name: hot_sauce
+    required: true
+    substitutions:
+    - taco_sauce
+  - name: spinach
+    required: true
+  - name: low_calorie_whole_wheat_tortilla
+    required: true
+    substitutions:
+    - josephs_lavash
+  - name: low_fat_shredded_cheese
+    required: true
+  - name: greek_yogurt
+    required: false
+  - name: salsa
+    required: false
+- name: French Dip
+  type: lunch
+  source: BWS Cookbook
+  ingredients:
+  - name: yellow_onion
+    required: true
+    substitutions:
+    - red_onion
+    - white_onion
+  - name: roast_beef
+    required: true
+  - name: low_fat_shredded_cheese
+    required: true
+  - name: whole_wheat_sub_roll
+    required: true
+  - name: beef_broth
+    required: true
 - name: Ginger-Spiced Carrot Cake Pancakes
   type: breakfast
   source: BWS Cookbook
@@ -444,6 +508,65 @@ recipes:
     - salsa
   - name: greek_yogurt
     required: true
+- name: Guiltless Grilled Cheese
+  type: lunch
+  source: BWS Cookbook
+  ingredients:
+  - name: whole_wheat_bread
+    required: true
+  - name: low_fat_shredded_cheese
+    required: true
+  - name: deli_ham
+    required: true
+  - name: red_apple
+    required: true
+    substitutions:
+    - green_apple
+    - gala_apple
+  - name: balsamic_vinegar
+    required: true
+    substitutions:
+    - white_vinegar
+    - apple_cider_vinegar
+    - red_wine_vinegar
+  - name: ketchup
+    required: false
+  - name: tomato_sauce
+    required: false
+- name: How Is It Healthy Chicken Sanwhich
+  type: lunch
+  source: BWS Cookbook
+  ingredients:
+  - name: chicken_breast
+    required: true
+  - name: unsweetened_almond_milk
+    required: true
+  - name: lemon
+    required: true
+    substitutions:
+    - lime
+  - name: paprika
+    required: true
+  - name: garlic_powder
+    required: true
+  - name: salt
+    required: true
+  - name: panko_bread_crumbs
+    required: true
+    substitutions:
+    - shake_and_bake
+  - name: greek_yogurt
+    required: true
+  - name: hot_sauce
+    required: true
+  - name: whole_wheat_hamburger_bun
+    required: true
+  - name: pickles
+    required: false
+  - name: no_fat_french_fries
+    required: false
+  - name: ketchup
+    required: false
 - name: Lean English Muffin
   type: breakfast
   source: BWS Cookbook
@@ -532,6 +655,45 @@ recipes:
     required: true
   - name: whole_wheat_english_muffin
     required: true
+  - name: low_fat_shredded_cheese
+    required: true
+- name: Not Pulled Pork Sanwhich
+  type: lunch
+  source: BWS Cookbook
+  ingredients:
+  - name: black_beans
+    required: true
+  - name: jackfruit
+    required: true
+  - name: paprika
+    required: true
+  - name: sugar_free_bbq_sauce
+    required: true
+    substitutions:
+    - homemade_tangy_bbq_sauce
+  - name: nutritional_yeast
+    required: true
+  - name: whole_wheat_hamburger_bun
+    required: true
+  - name: pickles
+    required: false
+- name: Pizza Sub
+  type: lunch
+  source: BWS Cookbook
+  ingredients:
+  - name: whole_wheat_sub_roll
+    required: true
+  - name: tomato_sauce
+    required: true
+    substitutions:
+    - tomato_puree
+  - name: turkey_pepperoni
+    required: true
+  - name: yellow_onion
+    required: false
+    substitutions:
+    - red_onion
+    - white_onion
   - name: low_fat_shredded_cheese
     required: true
 - name: Protein Puffed Cereal
