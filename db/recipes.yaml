@@ -1,4 +1,118 @@
 recipes:
+- name: Crunchy Mango Beef Tacos
+  type: lunch
+  source: BWS Cookbook
+  ingredients:
+  - name: white_onion
+    required: true
+    substitutions:
+    - yellow_onion
+    - red_onion
+  - name: ground_beef
+    required: true
+    substitutions:
+    - ground_turkey
+    - ground_chicken
+  - name: taco_seasoning
+    required: true
+  - name: salt
+    required: true
+  - name: ground_black_pepper
+    required: true
+  - name: tomato
+    required: true
+  - name: mango
+    required: true
+  - name: scallions
+    required: true
+  - name: cilantro
+    required: true
+  - name: lime
+    required: true
+    substitutions:
+    - lemon
+  - name: sriracha
+    required: true
+    substitutions:
+    - hot_sauce
+  - name: taco_shell
+    required: true
+  - name: greek_yogurt
+    required: true
+  - name: guacamole
+    required: true
+    substitutions:
+    - holy_guacamole
+- name: Loaded Veggie Taco Bowl
+  type: lunch
+  source: BWS Cookbook
+  ingredients:
+  - name: extra_firm_tofu
+    required: true
+  - name: salt
+    required: true
+  - name: ground_black_pepper
+    required: true
+  - name: tomato
+    required: true
+  - name: red_bell_pepper
+    required: true
+    substitutions:
+    - yellow_bell_pepper
+    - green_bell_pepper
+  - name: brown_rice
+    required: true
+    substitutions:
+    - white_rice
+  - name: cauliflower_rice
+    required: true
+  - name: spinach
+    required: true
+  - name: garlic_powder
+    required: true
+  - name: paprika
+    required: true
+  - name: taco_sauce
+    required: true
+    substitutions:
+    - taco_seasoning
+  - name: guacamole
+    required: true
+    substitutions:
+    - holy_guacamole
+  - name: salsa
+    required: true
+- name: Toned Turkey Tacos
+  type: lunch
+  source: BWS Cookbook
+  ingredients:
+  - name: yellow_onion
+    required: true
+    substitutions:
+    - red_onion
+    - white_onion
+  - name: red_bell_pepper
+    required: true
+    substitutions:
+    - yellow_bell_pepper
+    - green_bell_pepper
+  - name: ground_turkey
+    required: true
+    substitutions:
+    - ground_beef
+    - ground_chicken
+  - name: salsa
+    required: true
+  - name: salt
+    required: true
+  - name: ground_black_pepper
+    required: true
+  - name: low_calorie_whole_wheat_tortilla
+    required: true
+  - name: lettuce
+    required: true
+  - name: greek_yogurt
+    required: true
 - name: Apple Crisp French Toast
   type: breakfast
   source: BWS Cookbook
@@ -162,6 +276,45 @@ recipes:
     required: false
   - name: blueberries
     required: false
+- name: Cheesy Shrimp Quesadilla
+  type: lunch
+  source: BWS Cookbook
+  ingredients:
+  - name: low_calorie_whole_wheat_tortilla
+    required: true
+    substitutions:
+    - josephs_lavash
+  - name: shrimp
+    required: true
+  - name: taco_seasoning
+    required: true
+    substitutions:
+    - chili_powder
+  - name: nutritional_yeast
+    required: true
+  - name: lime
+    required: true
+    substitutions:
+    - lemon
+  - name: salt
+    required: true
+  - name: ground_black_pepper
+    required: true
+  - name: red_bell_pepper
+    required: true
+    substitutions:
+    - yellow_bell_pepper
+    - green_bell_pepper
+  - name: low_fat_shredded_cheese
+    required: true
+  - name: guacamole
+    required: false
+    substitutions:
+    - holy_guacamole
+  - name: sugar_free_bbq_sauce
+    required: false
+    substitutions:
+    - homemade_tangy_bbq_sauce
 - name: Chili-Lime Streak Burrito
   type: lunch
   source: BWS Cookbook
@@ -309,45 +462,6 @@ recipes:
     required: false
     substitutions:
     - taco_sauce
-- name: Cheesy Shrimp Quesadilla
-  type: lunch
-  source: BWS Cookbook
-  ingredients:
-  - name: low_calorie_whole_wheat_tortilla
-    required: true
-    substitutions:
-    - josephs_lavash
-  - name: shrimp
-    required: true
-  - name: taco_seasoning
-    required: true
-    substitutions:
-    - chili_powder
-  - name: nutrioptional_yeast
-    required: true
-  - name: lime
-    required: true
-    substitutions:
-    - lemon
-  - name: salt
-    required: true
-  - name: ground_black_pepper
-    required: true
-  - name: red_bell_pepper
-    required: true
-    substitutions:
-    - yellow_bell_pepper
-    - green_bell_pepper
-  - name: low_fat_shredded_cheese
-    required: true
-  - name: guacamole
-    required: false
-    substitutions:
-    - holy_guacamole
-  - name: sugar_free_bbq_sauce
-    required: false
-    substitutions:
-    - homemade_tangy_bbq_sauce
 - name: Crispy Chicken And Waffles
   type: breakfast
   source: BWS Cookbook

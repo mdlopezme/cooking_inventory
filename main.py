@@ -50,6 +50,9 @@ def check_recipe_availability(recipe, ingredients_available):
                 substitutions.append(substitution)
                 break
 
+        # Finally, if no substitutions are found, mark the ingredient as missing
+        missing.append(ingredient_name) # Add the ingredient to the missing list
+
     missing = list(set(missing))
     substitutions = list(set(substitutions))
     optional = list(set(optional))
