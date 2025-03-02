@@ -162,7 +162,7 @@ def main():
     parser.add_argument("-p", "--print_limit", type=int, default=10, help="Number of recipes to display")
     parser.add_argument("-r", "--recipe", type=str, help="Specify a recipe name to check availability")
     parser.add_argument("-i", "--ingredients", nargs="+", help="List of ingredients to check availability for.")
-    parser.add_argument("-t", "--type", type=str, help="Specify a recipe type to check availability")
+    parser.add_argument("-t", "--type", nargs="+", type=str, help="Specify a recipe type to check availability")
     parser.add_argument("-a", "--add", nargs="+", help="Add ingredients to the pantry")
     parser.add_argument("-d", "--delete", nargs="+", help="Remove ingredients from the pantry")
     parser.add_argument("-opt", "--optimal_recipes", action="store_true", help="Print optimal recipes")
@@ -185,8 +185,11 @@ def main():
         recipe_status = [item for item in recipe_status if args.recipe.lower() in item[1].lower()]
 
     if args.type:
-        recipe_status = [item for item in recipe_status if args.type.lower() in item[0].lower()]
-    
+        new_recipe_status = []
+        for recipe_type in args.type:
+            new_recipe_status += [item for item in recipe_status if recipe_type.lower() in item[0].lower()]
+        recipe_status = new_recipe_status
+
     if args.optimal_recipes:
         recipe_status, headers = get_optimal_recipes(recipe_status, headers)
     

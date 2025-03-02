@@ -44,11 +44,11 @@ recipes:
     required: true
   - name: ground_black_pepper
     required: true
-  - name: nutricional_yeast
+  - name: nutritional_yeast
     required: true
   - name: cottage_cheese
     required: true
-  - name: shredded_cheese
+  - name: shredded_mozzarella_cheese
     required: true
   - name: spinach
     required: true
@@ -185,7 +185,7 @@ recipes:
     required: true
     substitutions:
     - sugar_free_bbq_sauce
-  - name: shredded_cheese
+  - name: shredded_mozzarella_cheese
     required: true
   - name: mushrooms
     required: false
@@ -236,8 +236,11 @@ recipes:
     - mayo
   - name: ketchup
     required: true
-  - name: no_fat_french_fries
+  - name: no_fat_french_fries_side
     required: true
+    substitutions:
+    - cheesy_cauliflower_side
+    - cauliflower_mashed_potatoes_side
 - name: Blueberry Lemon French Toast
   type: breakfast
   source: BWS Cookbook
@@ -266,13 +269,29 @@ recipes:
     required: false
   - name: blueberries
     required: false
+- name: Cauliflower Mashed Potatoes
+  type: sides
+  source: BWS Cookbook
+  ingredients:
+  - name: cauliflower
+    required: true
+  - name: salt
+    required: true
+  - name: garlic_powder
+    required: true
+  - name: paprika
+    required: false
+  - name: nutritional_yeast
+    required: true
+  - name: greek_yogurt
+    required: true
 - name: Cheesy Bbq Fries
   type: dinner
   source: BWS Cookbook
   ingredients:
   - name: potato
     required: true
-  - name: nutricional_yeast
+  - name: nutritional_yeast
     required: true
   - name: garlic_powder
     required: true
@@ -291,10 +310,38 @@ recipes:
     required: true
     substitutions:
     - sugar_free_bbq_sauce
-  - name: shredded_cheese
+  - name: shredded_mozzarella_cheese
     required: true
+    substitutions:
+    - shredded_parmesan_cheese
+    - shredded_cheddar_cheese
   - name: ketchup
     required: false
+- name: Cheesy Cauliflower
+  type: sides
+  source: BWS Cookbook
+  ingredients:
+  - name: cauliflower
+    required: true
+  - name: salt
+    required: true
+  - name: ground_black_pepper
+    required: true
+  - name: whole_wheat_all_purpose_flour
+    required: true
+  - name: unsweetened_almond_milk
+    required: true
+  - name: nutritional_yeast
+    required: true
+  - name: garlic_powder
+    required: true
+  - name: greek_yogurt
+    required: true
+  - name: shredded_cheddar_cheese
+    required: true
+    substitutions:
+    - shredded_mozzarella_cheese
+    - shredded_parmesan_cheese
 - name: Cheesy Shrimp Quesadilla
   type: lunch
   source: BWS Cookbook
@@ -309,7 +356,7 @@ recipes:
     required: true
     substitutions:
     - chili_powder
-  - name: nutricional_yeast
+  - name: nutritional_yeast
     required: true
   - name: lime
     required: true
@@ -324,8 +371,11 @@ recipes:
     substitutions:
     - yellow_bell_pepper
     - green_bell_pepper
-  - name: shredded_cheese
+  - name: shredded_mozzarella_cheese
     required: true
+    substitutions:
+    - shredded_parmesan_cheese
+    - shredded_cheddar_cheese
   - name: guacamole
     required: false
     substitutions:
@@ -463,7 +513,7 @@ recipes:
     required: true
   - name: lemon
     required: true
-  - name: nutricional_yeast
+  - name: nutritional_yeast
     required: true
   - name: tarragon
     required: true
@@ -497,9 +547,10 @@ recipes:
     required: true
   - name: celery
     required: false
-  - name: tangy_bbq_sauce
+  - name: ketchup
     required: false
     substitutions:
+    - tangy_bbq_sauce
     - tzatziki_sauce
     - sweet_thai_chili_sauce
     - holy_guacamole_sauce
@@ -510,6 +561,11 @@ recipes:
     - honey_mustard_sauce
     - sweet_teriyaki_sauce
     - maple_garlic_sauce
+  - name: no_fat_french_fries_side
+    required: true
+    substitutions:
+    - cheesy_cauliflower_side
+    - cauliflower_mashed_potatoes_side
 - name: Copycat Crunchwrap Supreme
   type: lunch
   source: BWS Cookbook
@@ -549,8 +605,11 @@ recipes:
     required: true
   - name: lettuce
     required: true
-  - name: shredded_cheese
+  - name: shredded_mozzarella_cheese
     required: true
+    substitutions:
+    - shredded_parmesan_cheese
+    - shredded_cheddar_cheese
   - name: mini_tortilla_chips
     required: true
   - name: hot_sauce
@@ -619,7 +678,7 @@ recipes:
     required: true
   - name: greek_yogurt
     required: true
-  - name: nutricional_yeast
+  - name: nutritional_yeast
     required: true
   - name: stevia
     required: false
@@ -688,9 +747,12 @@ recipes:
     required: true
   - name: whole_wheat_all_purpose_flour
     required: true
-  - name: shredded_cheese
+  - name: shredded_mozzarella_cheese
     required: true
-  - name: nutricional_yeast
+    substitutions:
+    - shredded_cheddar_cheese
+    - shredded_parmesan_cheese
+  - name: nutritional_yeast
     required: true
   - name: paprika
     required: true
@@ -728,10 +790,27 @@ recipes:
     required: true
     substitutions:
     - shake_and_bake
-  - name: nutricional_yeast
+  - name: nutritional_yeast
     required: false
   - name: ketchup
     required: false
+    substitutions:
+    - tangy_bbq_sauce
+    - tzatziki_sauce
+    - sweet_thai_chili_sauce
+    - holy_guacamole_sauce
+    - chocolate_sauce
+    - creamy_ranch_sauce
+    - spicy_mayo_sauce
+    - ketchup_mayo_sauce
+    - honey_mustard_sauce
+    - sweet_teriyaki_sauce
+    - maple_garlic_sauce
+  - name: no_fat_french_fries_side
+    required: true
+    substitutions:
+    - cheesy_cauliflower_side
+    - cauliflower_mashed_potatoes_side
 - name: Crispy Teriyaki Cauliflower Bites
   type: dinner
   source: BWS Cookbook
@@ -847,6 +926,11 @@ recipes:
     - mayo
   - name: whole_wheat_hamburger_bun
     required: true
+  - name: no_fat_french_fries_side
+    required: true
+    substitutions:
+    - cheesy_cauliflower_side
+    - cauliflower_mashed_potatoes_side
 - name: Eggs Royale
   type: breakfast
   source: BWS Cookbook
@@ -857,7 +941,7 @@ recipes:
     required: true
   - name: lemon
     required: true
-  - name: nutricional_yeast
+  - name: nutritional_yeast
     required: true
   - name: dill
     required: false
@@ -891,8 +975,11 @@ recipes:
     required: true
     substitutions:
     - josephs_lavash
-  - name: shredded_cheese
+  - name: shredded_mozzarella_cheese
     required: true
+    substitutions:
+    - shredded_cheddar_cheese
+    - shredded_parmesan_cheese
   - name: greek_yogurt
     required: false
   - name: salsa
@@ -908,8 +995,11 @@ recipes:
     - white_onion
   - name: roast_beef
     required: true
-  - name: shredded_cheese
+  - name: shredded_mozzarella_cheese
     required: true
+    substitutions:
+    - shredded_cheddar_cheese
+    - shredded_parmesan_cheese
   - name: whole_wheat_sub_roll
     required: true
   - name: beef_broth
@@ -995,8 +1085,11 @@ recipes:
     required: true
   - name: taco_seasoning
     required: true
-  - name: shredded_cheese
+  - name: shredded_mozzarella_cheese
     required: true
+    substitutions:
+    - shredded_cheddar_cheese
+    - shredded_parmesan_cheese
   - name: cilantro
     required: true
   - name: pico_de_gallo
@@ -1011,8 +1104,11 @@ recipes:
   ingredients:
   - name: thick_sliced_bread
     required: true
-  - name: shredded_cheese
+  - name: shredded_mozzarella_cheese
     required: true
+    substitutions:
+    - shredded_cheddar_cheese
+    - shredded_parmesan_cheese
   - name: deli_ham
     required: true
   - name: red_apple
@@ -1042,8 +1138,11 @@ recipes:
     required: true
   - name: pizza_sauce
     required: true
-  - name: shredded_cheese
+  - name: shredded_mozzarella_cheese
     required: true
+    substitutions:
+    - shredded_cheddar_cheese
+    - shredded_parmesan_cheese
   - name: deli_ham
     required: true
   - name: pineapple
@@ -1071,7 +1170,7 @@ recipes:
   ingredients:
   - name: whole_wheat_tortilla
     required: true
-  - name: nutricional_yeast
+  - name: nutritional_yeast
     required: true
   - name: paprika
     required: true
@@ -1092,8 +1191,11 @@ recipes:
     required: true
     substitutions:
     - sugar_free_bbq_sauce
-  - name: shredded_cheese
+  - name: shredded_mozzarella_cheese
     required: true
+    substitutions:
+    - shredded_cheddar_cheese
+    - shredded_parmesan_cheese
   - name: scallion
     required: true
   - name: tomato
@@ -1128,16 +1230,22 @@ recipes:
     required: true
   - name: pickles
     required: false
-  - name: no_fat_french_fries
-    required: false
+  - name: no_fat_french_fries_side
+    required: true
+    substitutions:
+    - cheesy_cauliflower_side
+    - cauliflower_mashed_potatoes_side
   - name: ketchup
     required: false
 - name: I Can't Believe It Worked Cheese Pizza
   type: dinner
   source: BWS Cookbook
   ingredients:
-  - name: shredded_cheese
+  - name: shredded_mozzarella_cheese
     required: true
+    substitutions:
+    - shredded_cheddar_cheese
+    - shredded_parmesan_cheese
   - name: egg_whites
     required: true
   - name: cream_cheese
@@ -1164,7 +1272,7 @@ recipes:
     required: true
   - name: garlic_powder
     required: true
-  - name: nutricional_yeast
+  - name: nutritional_yeast
     required: true
   - name: whole_wheat_english_muffin
     required: true
@@ -1223,8 +1331,11 @@ recipes:
     required: true
   - name: garlic_powder
     required: true
-  - name: shredded_cheese
+  - name: shredded_mozzarella_cheese
     required: true
+    substitutions:
+    - shredded_cheddar_cheese
+    - shredded_parmesan_cheese
   - name: tomato
     required: true
   - name: greek_yogurt
@@ -1248,7 +1359,7 @@ recipes:
     required: true
   - name: dried_basil
     required: true
-  - name: nutricional_yeast
+  - name: nutritional_yeast
     required: true
   - name: salt
     required: true
@@ -1260,8 +1371,11 @@ recipes:
     required: true
   - name: zucchini
     required: true
-  - name: shredded_cheese
+  - name: shredded_mozzarella_cheese
     required: true
+    substitutions:
+    - shredded_cheddar_cheese
+    - shredded_parmesan_cheese
 - name: Loaded Veggie Taco Bowl
   type: lunch
   source: BWS Cookbook
@@ -1329,6 +1443,25 @@ recipes:
     - ground_ginger
   - name: red_pepper_flakes
     required: true
+  - name: ketchup
+    required: false
+    substitutions:
+    - tangy_bbq_sauce
+    - tzatziki_sauce
+    - sweet_thai_chili_sauce
+    - holy_guacamole_sauce
+    - chocolate_sauce
+    - creamy_ranch_sauce
+    - spicy_mayo_sauce
+    - ketchup_mayo_sauce
+    - honey_mustard_sauce
+    - sweet_teriyaki_sauce
+    - maple_garlic_sauce
+  - name: no_fat_french_fries_side
+    required: true
+    substitutions:
+    - cheesy_cauliflower_side
+    - cauliflower_mashed_potatoes_side
 - name: Margherita Pizza Bites
   type: dinner
   source: BWS Cookbook
@@ -1345,8 +1478,11 @@ recipes:
     required: true
   - name: salt
     required: true
-  - name: shredded_cheese
+  - name: shredded_mozzarella_cheese
     required: true
+    substitutions:
+    - shredded_cheddar_cheese
+    - shredded_parmesan_cheese
 - name: Meat Lover's Calzone
   type: dinner
   source: BWS Cookbook
@@ -1371,8 +1507,11 @@ recipes:
     required: true
   - name: ground_black_pepper
     required: true
-  - name: shredded_cheese
+  - name: shredded_mozzarella_cheese
     required: true
+    substitutions:
+    - shredded_cheddar_cheese
+    - shredded_parmesan_cheese
   - name: egg_whites
     required: true
   - name: tomato_sauce
@@ -1407,8 +1546,11 @@ recipes:
     required: false
   - name: ketchup
     required: false
-  - name: no_fat_french_fries
+  - name: no_fat_french_fries_side
     required: true
+    substitutions:
+    - cheesy_cauliflower_side
+    - cauliflower_mashed_potatoes_side
 - name: Monte Cristo
   type: breakfast
   source: BWS Cookbook
@@ -1445,14 +1587,48 @@ recipes:
     required: true
   - name: sugar_free_syrup
     required: true
-  - name: nutricional_yeast
+  - name: nutritional_yeast
     required: true
   - name: egg_whites
     required: true
   - name: whole_wheat_english_muffin
     required: true
-  - name: shredded_cheese
+  - name: shredded_mozzarella_cheese
     required: true
+    substitutions:
+    - shredded_cheddar_cheese
+    - shredded_parmesan_cheese
+- name: Not Fat French Fries
+  type: sides
+  source: BWS Cookbook
+  ingredients:
+  - name: sweet_potato
+    required: true
+    substitutions:
+    - potato
+    - yam
+  - name: nutritional_yeast
+    required: true
+  - name: garlic_powder
+    required: true
+  - name: salt
+    required: true
+  - name: ground_black_pepper
+    required: true
+  - name: ketchup
+    required: false
+    substitutions:
+    - tangy_bbq_sauce
+    - tzatziki_sauce
+    - sweet_thai_chili_sauce
+    - holy_guacamole_sauce
+    - chocolate_sauce
+    - creamy_ranch_sauce
+    - spicy_mayo_sauce
+    - ketchup_mayo_sauce
+    - honey_mustard_sauce
+    - sweet_teriyaki_sauce
+    - maple_garlic_sauce
 - name: Not Pulled Pork Sanwhich
   type: lunch
   source: BWS Cookbook
@@ -1467,7 +1643,7 @@ recipes:
     required: true
     substitutions:
     - tangy_bbq_sauce
-  - name: nutricional_yeast
+  - name: nutritional_yeast
     required: true
   - name: whole_wheat_hamburger_bun
     required: true
@@ -1524,8 +1700,11 @@ recipes:
     substitutions:
     - red_onion
     - white_onion
-  - name: shredded_cheese
+  - name: shredded_mozzarella_cheese
     required: true
+    substitutions:
+    - shredded_cheddar_cheese
+    - shredded_parmesan_cheese
 - name: Protein Puffed Cereal
   type: breakfast
   source: BWS Cookbook
@@ -1598,7 +1777,7 @@ recipes:
     required: true
   - name: egg_whites
     required: true
-  - name: nutricional_yeast
+  - name: nutritional_yeast
     required: true
   - name: fresh_basil
     required: true
@@ -1634,10 +1813,13 @@ recipes:
     required: true
   - name: garlic_powder
     required: true
-  - name: nutricional_yeast
+  - name: nutritional_yeast
     required: true
-  - name: shredded_cheese
+  - name: shredded_mozzarella_cheese
     required: true
+    substitutions:
+    - shredded_cheddar_cheese
+    - shredded_parmesan_cheese
   - name: ketchup
     required: true
     substitutions:
@@ -1648,8 +1830,11 @@ recipes:
   type: breakfast
   source: BWS Cookbook
   ingredients:
-  - name: shredded_cheese
+  - name: shredded_mozzarella_cheese
     required: true
+    substitutions:
+    - shredded_cheddar_cheese
+    - shredded_parmesan_cheese
   - name: eggs
     required: true
   - name: garlic
@@ -1911,9 +2096,12 @@ recipes:
     required: false
   - name: pickles
     required: false
-  - name: no_fat_french_fries
+  - name: no_fat_french_fries_side
     required: true
+    substitutions:
+    - cheesy_cauliflower_side
+    - cauliflower_mashed_potatoes_side
   - name: ketchup
     required: false
-  - name: spicy_mayo_sauce
-    required: false
+    substitutions:
+    - spicy_mayo_sauce
