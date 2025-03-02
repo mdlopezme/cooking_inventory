@@ -85,12 +85,13 @@ def retrieve_recipe_availability(required_ingredients=None):
         recipe_status.append((
             recipe["type"],
             recipe["name"], 
+            len(missing),
             "\n".join(missing),
             "\n".join(optional),
             "\n".join(substitutions),
             "\n".join(in_stock),
             ))
-    headers = ["Type","Recipe Name", "Missing Ingredients", "Optional Missing", "Substitutions", "In Stock"]
+    headers = ["Type","Recipe Name", "M", "Missing Ingredients", "Optional Missing", "Substitutions", "In Stock"]
 
     # Sort the recipe status by the number of missing ingredients
     recipe_status.sort(key=lambda x: x[2])

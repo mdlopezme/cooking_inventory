@@ -1,4 +1,138 @@
 recipes:
+- name: Creamy Penne Shrimp Alfredo
+  type: dinner
+  source: BWS Cookbook
+  ingredients:
+  - name: penne_pasta
+    required: true
+  - name: garlic
+    required: true
+  - name: shrimp
+    required: true
+  - name: greek_yogurt
+    required: true
+  - name: nutricional_yeast
+    required: true
+  - name: stevia
+    required: false
+  - name: paprika
+    required: true
+  - name: shredded_cheese
+    required: false
+  - name: salt
+    required: true
+  - name: ground_black_pepper
+    required: true
+  - name: fresh_parsley
+    required: true
+    substitutions:
+    - dried_parsley
+- name: Baked Mac and Cheese
+  type: dinner
+  source: BWS Cookbook
+  ingredients:
+  - name: macaroni_pasta
+    required: true
+  - name: cauliflower
+    required: true
+  - name: light_butter
+    required: true
+  - name: white_onion
+    required: true
+    substitutions:
+    - yellow_onion
+    - red_onion
+  - name: whole_wheat_all_purpose_flour
+    required: true
+  - name: unsweetened_almond_milk
+    required: true
+  - name: garlic_powder
+    required: true
+  - name: salt
+    required: true
+  - name: ground_black_pepper
+    required: true
+  - name: nutricional_yeast
+    required: true
+  - name: cottage_cheese
+    required: true
+  - name: shredded_cheese
+    required: true
+  - name: spinach
+    required: true
+  - name: panko_bread_crumbs
+    required: true
+    substitutions:
+    - shake_and_bake
+  - name: ketchup
+    required: false
+- name: Creamy Tomato Protein Pasta
+  type: dinner
+  source: BWS Cookbook
+  ingredients:
+  - name: spaghetti
+    required: true
+  - name: zucchini
+    required: true
+  - name: garlic
+    required: true
+  - name: yellow_onion
+    required: true
+    substitutions:
+    - red_onion
+    - white_onion
+  - name: salt
+    required: true
+  - name: ground_black_pepper
+    required: true
+  - name: mushrooms
+    required: true
+  - name: ground_beef
+    required: true
+    substitutions:
+    - ground_turkey
+    - ground_chicken
+    - ground_shrimp
+  - name: paprika
+    required: true
+  - name: red_pepper_flakes
+    required: true
+  - name: tomato_sauce
+    required: true
+  - name: cream_cheese
+    required: true
+  - name: canned_tomatoes
+    required: true
+  - name: shredded_cheese
+    required: false
+- name: Loaded Cheese Veggie Lasagna
+  type: dinner
+  source: BWS Cookbook
+  ingredients:
+  - name: extra_firm_tofu
+    required: true
+  - name: mushrooms
+    required: true
+  - name: tomato_puree
+    required: true
+  - name: garlic_powder
+    required: true
+  - name: dried_basil
+    required: true
+  - name: nutricional_yeast
+    required: true
+  - name: salt
+    required: true
+  - name: ground_black_pepper
+    required: true
+  - name: cream_cheese
+    required: true
+  - name: egg_whites
+    required: true
+  - name: zucchini
+    required: true
+  - name: shredded_cheese
+    required: true
 - name: Apple Crisp French Toast
   type: breakfast
   source: BWS Cookbook
