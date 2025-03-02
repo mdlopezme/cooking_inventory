@@ -1,32 +1,24 @@
 recipes:
-- name: Creamy Penne Shrimp Alfredo
-  type: dinner
+- name: Apple Crisp French Toast
+  type: breakfast
   source: BWS Cookbook
   ingredients:
-  - name: penne_pasta
+  - name: apple
     required: true
-  - name: garlic
+  - name: sugar_free_syrup
     required: true
-  - name: shrimp
+  - name: egg_whites
     required: true
-  - name: greek_yogurt
+  - name: unsweetened_almond_milk
     required: true
-  - name: nutricional_yeast
+  - name: vanilla_extract
     required: true
-  - name: stevia
-    required: false
-  - name: paprika
+  - name: ground_cinnamon
     required: true
-  - name: shredded_cheese
-    required: false
   - name: salt
     required: true
-  - name: ground_black_pepper
+  - name: thick_sliced_bread
     required: true
-  - name: fresh_parsley
-    required: true
-    substitutions:
-    - dried_parsley
 - name: Baked Mac and Cheese
   type: dinner
   source: BWS Cookbook
@@ -66,93 +58,6 @@ recipes:
     - shake_and_bake
   - name: ketchup
     required: false
-- name: Creamy Tomato Protein Pasta
-  type: dinner
-  source: BWS Cookbook
-  ingredients:
-  - name: spaghetti
-    required: true
-  - name: zucchini
-    required: true
-  - name: garlic
-    required: true
-  - name: yellow_onion
-    required: true
-    substitutions:
-    - red_onion
-    - white_onion
-  - name: salt
-    required: true
-  - name: ground_black_pepper
-    required: true
-  - name: mushrooms
-    required: true
-  - name: ground_beef
-    required: true
-    substitutions:
-    - ground_turkey
-    - ground_chicken
-    - ground_shrimp
-  - name: paprika
-    required: true
-  - name: red_pepper_flakes
-    required: true
-  - name: tomato_sauce
-    required: true
-  - name: cream_cheese
-    required: true
-  - name: canned_tomatoes
-    required: true
-  - name: shredded_cheese
-    required: false
-- name: Loaded Cheese Veggie Lasagna
-  type: dinner
-  source: BWS Cookbook
-  ingredients:
-  - name: extra_firm_tofu
-    required: true
-  - name: mushrooms
-    required: true
-  - name: tomato_puree
-    required: true
-  - name: garlic_powder
-    required: true
-  - name: dried_basil
-    required: true
-  - name: nutricional_yeast
-    required: true
-  - name: salt
-    required: true
-  - name: ground_black_pepper
-    required: true
-  - name: cream_cheese
-    required: true
-  - name: egg_whites
-    required: true
-  - name: zucchini
-    required: true
-  - name: shredded_cheese
-    required: true
-- name: Apple Crisp French Toast
-  type: breakfast
-  source: BWS Cookbook
-  ingredients:
-  - name: apple
-    required: true
-  - name: sugar_free_syrup
-    required: true
-  - name: egg_whites
-    required: true
-  - name: unsweetened_almond_milk
-    required: true
-  - name: vanilla_extract
-    required: true
-  - name: ground_cinnamon
-    required: true
-  - name: salt
-    required: true
-  - name: thick_sliced_bread
-    required: true
 - name: Banana Chocolate Chip Pancakes
   type: breakfast
   source: BWS Cookbook
@@ -268,6 +173,39 @@ recipes:
     - rambutan
     - sapodilla
     - sapote
+- name: Big Bbq Chicken Pizza
+  type: dinner
+  source: BWS Cookbook
+  ingredients:
+  - name: whole_wheat_all_purpose_flour
+    required: true
+  - name: baking_powder
+    required: true
+  - name: tangy_bbq_sauce
+    required: true
+    substitutions:
+    - sugar_free_bbq_sauce
+  - name: shredded_cheese
+    required: true
+  - name: mushrooms
+    required: false
+  - name: red_bell_pepper
+    required: false
+    substitutions:
+    - yellow_bell_pepper
+    - green_bell_pepper
+  - name: spinach
+    required: false
+  - name: pineapple
+    required: false
+  - name: salt
+    required: true
+  - name: ground_black_pepper
+    required: true
+  - name: garlic_powder
+    required: true
+  - name: chicken_breast
+    required: true
 - name: Bigger Big Mac
   type: dinner
   source: BWS Cookbook
@@ -334,7 +272,7 @@ recipes:
   ingredients:
   - name: potato
     required: true
-  - name: nutritional_yeast
+  - name: nutricional_yeast
     required: true
   - name: garlic_powder
     required: true
@@ -349,7 +287,7 @@ recipes:
     substitutions:
     - ground_chicken
     - ground_beef
-  - name: homemade_tangy_bbq_sauce
+  - name: tangy_bbq_sauce
     required: true
     substitutions:
     - sugar_free_bbq_sauce
@@ -395,7 +333,7 @@ recipes:
   - name: sugar_free_bbq_sauce
     required: false
     substitutions:
-    - homemade_tangy_bbq_sauce
+    - tangy_bbq_sauce
 - name: Chicken Chow Mein
   type: lunch
   source: BWS Cookbook
@@ -669,6 +607,73 @@ recipes:
     required: false
   - name: cilantro
     required: false
+- name: Creamy Penne Shrimp Alfredo
+  type: dinner
+  source: BWS Cookbook
+  ingredients:
+  - name: penne_pasta
+    required: true
+  - name: garlic
+    required: true
+  - name: shrimp
+    required: true
+  - name: greek_yogurt
+    required: true
+  - name: nutricional_yeast
+    required: true
+  - name: stevia
+    required: false
+  - name: paprika
+    required: true
+  - name: shredded_cheese
+    required: false
+  - name: salt
+    required: true
+  - name: ground_black_pepper
+    required: true
+  - name: fresh_parsley
+    required: true
+    substitutions:
+    - dried_parsley
+- name: Creamy Tomato Protein Pasta
+  type: dinner
+  source: BWS Cookbook
+  ingredients:
+  - name: spaghetti
+    required: true
+  - name: zucchini
+    required: true
+  - name: garlic
+    required: true
+  - name: yellow_onion
+    required: true
+    substitutions:
+    - red_onion
+    - white_onion
+  - name: salt
+    required: true
+  - name: ground_black_pepper
+    required: true
+  - name: mushrooms
+    required: true
+  - name: ground_beef
+    required: true
+    substitutions:
+    - ground_turkey
+    - ground_chicken
+    - ground_shrimp
+  - name: paprika
+    required: true
+  - name: red_pepper_flakes
+    required: true
+  - name: tomato_sauce
+    required: true
+  - name: cream_cheese
+    required: true
+  - name: canned_tomatoes
+    required: true
+  - name: shredded_cheese
+    required: false
 - name: Crispy Chicken And Waffles
   type: breakfast
   source: BWS Cookbook
@@ -723,7 +728,7 @@ recipes:
     required: true
     substitutions:
     - shake_and_bake
-  - name: nutritional_yeast
+  - name: nutricional_yeast
     required: false
   - name: ketchup
     required: false
@@ -1025,13 +1030,48 @@ recipes:
     required: false
   - name: tomato_sauce
     required: false
+- name: Heavenly Hawaiian Pizza
+  type: dinner
+  source: BWS Cookbook
+  ingredients:
+  - name: whole_wheat_all_purpose_flour
+    required: true
+  - name: baking_powder
+    required: true
+  - name: greek_yogurt
+    required: true
+  - name: pizza_sauce
+    required: true
+  - name: shredded_cheese
+    required: true
+  - name: deli_ham
+    required: true
+  - name: pineapple
+    required: true
+  - name: spinach
+    required: false
+  - name: mushrooms
+    required: false
+  - name: red_bell_pepper
+    required: false
+    substitutions:
+    - yellow_bell_pepper
+    - green_bell_pepper
+  - name: salt
+    required: true
+  - name: ground_black_pepper
+    required: true
+  - name: garlic_powder
+    required: true
+  - name: creamy_ranch_sauce
+    required: false
 - name: Holy Sh!t Nachos
   type: dinner
   source: BWS Cookbook
   ingredients:
   - name: whole_wheat_tortilla
     required: true
-  - name: nutritional_yeast
+  - name: nutricional_yeast
     required: true
   - name: paprika
     required: true
@@ -1048,7 +1088,7 @@ recipes:
     required: true
   - name: black_beans
     required: true
-  - name: homemade_tangy_bbq_sauce
+  - name: tangy_bbq_sauce
     required: true
     substitutions:
     - sugar_free_bbq_sauce
@@ -1092,6 +1132,28 @@ recipes:
     required: false
   - name: ketchup
     required: false
+- name: I Can't Believe It Worked Cheese Pizza
+  type: dinner
+  source: BWS Cookbook
+  ingredients:
+  - name: shredded_cheese
+    required: true
+  - name: egg_whites
+    required: true
+  - name: cream_cheese
+    required: true
+  - name: dried_oregano
+    required: true
+  - name: garlic_powder
+    required: true
+  - name: salt
+    required: true
+  - name: ground_black_pepper
+    required: true
+  - name: tomato_puree
+    required: true
+    substitutions:
+    - tomato_sauce
 - name: Lean English Muffin
   type: breakfast
   source: BWS Cookbook
@@ -1172,6 +1234,34 @@ recipes:
     substitutions:
     - yellow_onion
     - white_onion
+- name: Loaded Cheese Veggie Lasagna
+  type: dinner
+  source: BWS Cookbook
+  ingredients:
+  - name: extra_firm_tofu
+    required: true
+  - name: mushrooms
+    required: true
+  - name: tomato_puree
+    required: true
+  - name: garlic_powder
+    required: true
+  - name: dried_basil
+    required: true
+  - name: nutricional_yeast
+    required: true
+  - name: salt
+    required: true
+  - name: ground_black_pepper
+    required: true
+  - name: cream_cheese
+    required: true
+  - name: egg_whites
+    required: true
+  - name: zucchini
+    required: true
+  - name: shredded_cheese
+    required: true
 - name: Loaded Veggie Taco Bowl
   type: lunch
   source: BWS Cookbook
@@ -1346,7 +1436,7 @@ recipes:
   - name: sugar_free_bbq_sauce
     required: true
     substitutions:
-    - homemade_tangy_bbq_sauce
+    - tangy_bbq_sauce
   - name: nutricional_yeast
     required: true
   - name: whole_wheat_hamburger_bun
