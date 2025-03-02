@@ -1,14 +1,21 @@
 ingredients:
   apple_cider_vinegar: true
   baking_powder: true
+  banana: true
   black_beans: true
   blackberries: true
   blueberries: true
+  cauliflower_rice: true
+  cayenne_pepper: true
   cellentani_pasta: true
+  cheese_slices: true
+  chicken_breast: true
+  chicken_wings: true
   chili_powder: true
   chocolate_instant_pudding_mix: true
   chopped_walnuts: true
   cocoa_powder: true
+  cornstarch: true
   cream_cheese: true
   cumin: true
   dill_weed: true
@@ -44,14 +51,17 @@ ingredients:
   red_pepper_flakes: true
   rosemary: true
   salt: true
+  scallion: true
   sesame_seeds: true
   shredded_cheese: true
   soy_sauce: true
   spinach: true
   stevia: true
+  strawberry: true
   sugar_free_syrup: true
   thick_sliced_bread: true
   thyme: true
+  unsweetened_almond_milk: true
   vanilla_extract: true
   vanilla_instant_pudding_mix: true
   whipped_cream: true

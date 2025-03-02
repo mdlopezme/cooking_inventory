@@ -19,6 +19,45 @@ recipes:
     required: true
   - name: thick_sliced_bread
     required: true
+- name: Baked Mac and Cheese
+  type: dinner
+  source: BWS Cookbook
+  ingredients:
+  - name: macaroni_pasta
+    required: true
+  - name: cauliflower
+    required: true
+  - name: light_butter
+    required: true
+  - name: white_onion
+    required: true
+    substitutions:
+    - yellow_onion
+    - red_onion
+  - name: whole_wheat_all_purpose_flour
+    required: true
+  - name: unsweetened_almond_milk
+    required: true
+  - name: garlic_powder
+    required: true
+  - name: salt
+    required: true
+  - name: ground_black_pepper
+    required: true
+  - name: nutricional_yeast
+    required: true
+  - name: cottage_cheese
+    required: true
+  - name: shredded_cheese
+    required: true
+  - name: spinach
+    required: true
+  - name: panko_bread_crumbs
+    required: true
+    substitutions:
+    - shake_and_bake
+  - name: ketchup
+    required: false
 - name: Banana Chocolate Chip Pancakes
   type: breakfast
   source: BWS Cookbook
@@ -134,6 +173,71 @@ recipes:
     - rambutan
     - sapodilla
     - sapote
+- name: Big Bbq Chicken Pizza
+  type: dinner
+  source: BWS Cookbook
+  ingredients:
+  - name: whole_wheat_all_purpose_flour
+    required: true
+  - name: baking_powder
+    required: true
+  - name: tangy_bbq_sauce
+    required: true
+    substitutions:
+    - sugar_free_bbq_sauce
+  - name: shredded_cheese
+    required: true
+  - name: mushrooms
+    required: false
+  - name: red_bell_pepper
+    required: false
+    substitutions:
+    - yellow_bell_pepper
+    - green_bell_pepper
+  - name: spinach
+    required: false
+  - name: pineapple
+    required: false
+  - name: salt
+    required: true
+  - name: ground_black_pepper
+    required: true
+  - name: garlic_powder
+    required: true
+  - name: chicken_breast
+    required: true
+- name: Bigger Big Mac
+  type: dinner
+  source: BWS Cookbook
+  ingredients:
+  - name: ground_beef
+    required: true
+    substitutions:
+    - ground_chicken
+    - ground_turkey
+  - name: salt
+    required: true
+  - name: pepper
+    required: true
+  - name: cheese_slices
+    required: true
+  - name: whole_wheat_hamburger_bun
+    required: true
+  - name: pickles
+    required: true
+  - name: yellow_onion
+    required: true
+  - name: lettuce
+    required: true
+  - name: spicy_mayo_sauce
+    required: true
+    substitutions:
+    - greek_yogurt
+    - mayo
+  - name: ketchup
+    required: true
+  - name: no_fat_french_fries
+    required: true
 - name: Blueberry Lemon French Toast
   type: breakfast
   source: BWS Cookbook
@@ -161,6 +265,35 @@ recipes:
   - name: sugar_free_syrup
     required: false
   - name: blueberries
+    required: false
+- name: Cheesy Bbq Fries
+  type: dinner
+  source: BWS Cookbook
+  ingredients:
+  - name: potato
+    required: true
+  - name: nutricional_yeast
+    required: true
+  - name: garlic_powder
+    required: true
+  - name: salt
+    required: true
+  - name: ground_black_pepper
+    required: true
+  - name: turkey_bacon
+    required: true
+  - name: ground_turkey
+    required: true
+    substitutions:
+    - ground_chicken
+    - ground_beef
+  - name: tangy_bbq_sauce
+    required: true
+    substitutions:
+    - sugar_free_bbq_sauce
+  - name: shredded_cheese
+    required: true
+  - name: ketchup
     required: false
 - name: Cheesy Shrimp Quesadilla
   type: lunch
@@ -196,11 +329,11 @@ recipes:
   - name: guacamole
     required: false
     substitutions:
-    - holy_guacamole
+    - holy_guacamole_sauce
   - name: sugar_free_bbq_sauce
     required: false
     substitutions:
-    - homemade_tangy_bbq_sauce
+    - tangy_bbq_sauce
 - name: Chicken Chow Mein
   type: lunch
   source: BWS Cookbook
@@ -242,7 +375,7 @@ recipes:
     required: true
   - name: ground_black_pepper
     required: true
-  - name: scallions
+  - name: scallion
     required: true
 - name: Chili-Lime Streak Burrito
   type: lunch
@@ -289,7 +422,7 @@ recipes:
   - name: guacamole
     required: true
     substitutions:
-    - holy_guacamole
+    - holy_guacamole_sauce
   - name: greek_yogurt
     required: true
 - name: Cinnamon Pumpkin Waffles
@@ -344,6 +477,39 @@ recipes:
     required: true
   - name: whole_wheat_english_muffin
     required: true
+- name: Classic Hot Buffalo Wings
+  type: dinner
+  source: BWS Cookbook
+  ingredients:
+  - name: chicken_wings
+    required: true
+  - name: salt
+    required: true
+  - name: onion_powder
+    required: true
+  - name: garlic_powder
+    required: true
+  - name: cayenne_pepper
+    required: true
+  - name: hot_sauce
+    required: true
+  - name: cornstarch
+    required: true
+  - name: celery
+    required: false
+  - name: tangy_bbq_sauce
+    required: false
+    substitutions:
+    - tzatziki_sauce
+    - sweet_thai_chili_sauce
+    - holy_guacamole_sauce
+    - chocolate_sauce
+    - creamy_ranch_sauce
+    - spicy_mayo_sauce
+    - ketchup_mayo_sauce
+    - honey_mustard_sauce
+    - sweet_teriyaki_sauce
+    - maple_garlic_sauce
 - name: Copycat Crunchwrap Supreme
   type: lunch
   source: BWS Cookbook
@@ -441,6 +607,73 @@ recipes:
     required: false
   - name: cilantro
     required: false
+- name: Creamy Penne Shrimp Alfredo
+  type: dinner
+  source: BWS Cookbook
+  ingredients:
+  - name: penne_pasta
+    required: true
+  - name: garlic
+    required: true
+  - name: shrimp
+    required: true
+  - name: greek_yogurt
+    required: true
+  - name: nutricional_yeast
+    required: true
+  - name: stevia
+    required: false
+  - name: paprika
+    required: true
+  - name: shredded_cheese
+    required: false
+  - name: salt
+    required: true
+  - name: ground_black_pepper
+    required: true
+  - name: fresh_parsley
+    required: true
+    substitutions:
+    - dried_parsley
+- name: Creamy Tomato Protein Pasta
+  type: dinner
+  source: BWS Cookbook
+  ingredients:
+  - name: spaghetti
+    required: true
+  - name: zucchini
+    required: true
+  - name: garlic
+    required: true
+  - name: yellow_onion
+    required: true
+    substitutions:
+    - red_onion
+    - white_onion
+  - name: salt
+    required: true
+  - name: ground_black_pepper
+    required: true
+  - name: mushrooms
+    required: true
+  - name: ground_beef
+    required: true
+    substitutions:
+    - ground_turkey
+    - ground_chicken
+    - ground_shrimp
+  - name: paprika
+    required: true
+  - name: red_pepper_flakes
+    required: true
+  - name: tomato_sauce
+    required: true
+  - name: cream_cheese
+    required: true
+  - name: canned_tomatoes
+    required: true
+  - name: shredded_cheese
+    required: false
 - name: Crispy Chicken And Waffles
   type: breakfast
   source: BWS Cookbook
@@ -477,6 +710,60 @@ recipes:
     required: false
   - name: banana
     required: true
+- name: Crispy Chicken Strips
+  type: dinner
+  source: BWS Cookbook
+  ingredients:
+  - name: chicken_breast
+    required: true
+  - name: salt
+    required: true
+  - name: ground_black_pepper
+    required: true
+  - name: egg_whites
+    required: true
+  - name: garlic_powder
+    required: true
+  - name: panko_bread_crumbs
+    required: true
+    substitutions:
+    - shake_and_bake
+  - name: nutricional_yeast
+    required: false
+  - name: ketchup
+    required: false
+- name: Crispy Teriyaki Cauliflower Bites
+  type: dinner
+  source: BWS Cookbook
+  ingredients:
+  - name: cauliflower
+    required: true
+  - name: whole_wheat_all_purpose_flour
+    required: true
+  - name: garlic_powder
+    required: true
+  - name: salt
+    required: true
+  - name: unsweetened_almond_milk
+    required: true
+  - name: panko_bread_crumbs
+    required: true
+    substitutions:
+    - shake_and_bake
+  - name: soy_sauce
+    required: true
+  - name: chili_garlic_sauce
+    required: true
+  - name: sugar_free_syrup
+    required: true
+  - name: fresh_ginger
+    required: true
+    substitutions:
+    - ground_ginger
+  - name: cornstarch
+    required: true
+  - name: sesame_seeds
+    required: false
 - name: Crunchy Mango Beef Tacos
   type: lunch
   source: BWS Cookbook
@@ -501,7 +788,7 @@ recipes:
     required: true
   - name: mango
     required: true
-  - name: scallions
+  - name: scallion
     required: true
   - name: cilantro
     required: true
@@ -520,7 +807,46 @@ recipes:
   - name: guacamole
     required: true
     substitutions:
-    - holy_guacamole
+    - holy_guacamole_sauce
+- name: Crunchy Thai Turkey Burger
+  type: dinner
+  source: BWS Cookbook
+  ingredients:
+  - name: ground_turkey
+    required: true
+    substitutions:
+    - ground_chicken
+    - ground_beef
+  - name: scallion
+    required: true
+  - name: fresh_ginger
+    required: true
+    substitutions:
+    - ground_ginger
+  - name: garlic
+    required: true
+    substitutions:
+    - garlic_powder
+  - name: sriracha
+    required: true
+  - name: soy_sauce
+    required: true
+  - name: salt
+    required: true
+  - name: ground_black_pepper
+    required: true
+  - name: purple_cabbage
+    required: true
+  - name: lime
+    required: true
+    substitutions:
+    - lemon
+  - name: spicy_mayo_sauce
+    required: true
+    substitutions:
+    - mayo
+  - name: whole_wheat_hamburger_bun
+    required: true
 - name: Eggs Royale
   type: breakfast
   source: BWS Cookbook
@@ -614,7 +940,7 @@ recipes:
     required: true
   - name: sesame_seeds
     required: false
-  - name: scallions
+  - name: scallion
     required: false
   - name: cauliflower_rice
     required: true
@@ -704,6 +1030,74 @@ recipes:
     required: false
   - name: tomato_sauce
     required: false
+- name: Heavenly Hawaiian Pizza
+  type: dinner
+  source: BWS Cookbook
+  ingredients:
+  - name: whole_wheat_all_purpose_flour
+    required: true
+  - name: baking_powder
+    required: true
+  - name: greek_yogurt
+    required: true
+  - name: pizza_sauce
+    required: true
+  - name: shredded_cheese
+    required: true
+  - name: deli_ham
+    required: true
+  - name: pineapple
+    required: true
+  - name: spinach
+    required: false
+  - name: mushrooms
+    required: false
+  - name: red_bell_pepper
+    required: false
+    substitutions:
+    - yellow_bell_pepper
+    - green_bell_pepper
+  - name: salt
+    required: true
+  - name: ground_black_pepper
+    required: true
+  - name: garlic_powder
+    required: true
+  - name: creamy_ranch_sauce
+    required: false
+- name: Holy Sh!t Nachos
+  type: dinner
+  source: BWS Cookbook
+  ingredients:
+  - name: whole_wheat_tortilla
+    required: true
+  - name: nutricional_yeast
+    required: true
+  - name: paprika
+    required: true
+  - name: salt
+    required: true
+  - name: ground_black_pepper
+    required: true
+  - name: white_onion
+    required: true
+    substitutions:
+    - yellow_onion
+    - red_onion
+  - name: jackfruit
+    required: true
+  - name: black_beans
+    required: true
+  - name: tangy_bbq_sauce
+    required: true
+    substitutions:
+    - sugar_free_bbq_sauce
+  - name: shredded_cheese
+    required: true
+  - name: scallion
+    required: true
+  - name: tomato
+    required: true
 - name: How Is It Healthy Chicken Sanwhich
   type: lunch
   source: BWS Cookbook
@@ -738,6 +1132,28 @@ recipes:
     required: false
   - name: ketchup
     required: false
+- name: I Can't Believe It Worked Cheese Pizza
+  type: dinner
+  source: BWS Cookbook
+  ingredients:
+  - name: shredded_cheese
+    required: true
+  - name: egg_whites
+    required: true
+  - name: cream_cheese
+    required: true
+  - name: dried_oregano
+    required: true
+  - name: garlic_powder
+    required: true
+  - name: salt
+    required: true
+  - name: ground_black_pepper
+    required: true
+  - name: tomato_puree
+    required: true
+    substitutions:
+    - tomato_sauce
 - name: Lean English Muffin
   type: breakfast
   source: BWS Cookbook
@@ -786,6 +1202,66 @@ recipes:
     required: true
   - name: blueberries
     required: true
+- name: Loaded Beef Nachos
+  type: dinner
+  source: BWS Cookbook
+  ingredients:
+  - name: whole_wheat_tortilla
+    required: true
+  - name: paprika
+    required: true
+  - name: salt
+    required: true
+  - name: ground_beef
+    required: true
+    substitutions:
+    - ground_turkey
+    - ground_chicken
+  - name: hot_sauce
+    required: true
+  - name: cumin
+    required: true
+  - name: garlic_powder
+    required: true
+  - name: shredded_cheese
+    required: true
+  - name: tomato
+    required: true
+  - name: greek_yogurt
+    required: true
+  - name: red_onion
+    required: true
+    substitutions:
+    - yellow_onion
+    - white_onion
+- name: Loaded Cheese Veggie Lasagna
+  type: dinner
+  source: BWS Cookbook
+  ingredients:
+  - name: extra_firm_tofu
+    required: true
+  - name: mushrooms
+    required: true
+  - name: tomato_puree
+    required: true
+  - name: garlic_powder
+    required: true
+  - name: dried_basil
+    required: true
+  - name: nutricional_yeast
+    required: true
+  - name: salt
+    required: true
+  - name: ground_black_pepper
+    required: true
+  - name: cream_cheese
+    required: true
+  - name: egg_whites
+    required: true
+  - name: zucchini
+    required: true
+  - name: shredded_cheese
+    required: true
 - name: Loaded Veggie Taco Bowl
   type: lunch
   source: BWS Cookbook
@@ -822,8 +1298,116 @@ recipes:
   - name: guacamole
     required: true
     substitutions:
-    - holy_guacamole
+    - holy_guacamole_sauce
   - name: salsa
+    required: true
+- name: Maple Garlic Chicken Wings
+  type: dinner
+  source: BWS Cookbook
+  ingredients:
+  - name: chicken_wings
+    required: true
+  - name: salt
+    required: true
+  - name: red_pepper_flakes
+    required: true
+  - name: garlic_powder
+    required: true
+  - name: cornstarch
+    required: true
+  - name: soy_sauce
+    required: true
+  - name: rice_wine_vinegar
+    required: true
+  - name: sugar_free_syrup
+    required: true
+  - name: garlic
+    required: true
+  - name: fresh_ginger
+    required: true
+    substitutions:
+    - ground_ginger
+  - name: red_pepper_flakes
+    required: true
+- name: Margherita Pizza Bites
+  type: dinner
+  source: BWS Cookbook
+  ingredients:
+  - name: eggplant
+    required: true
+  - name: tomato_sauce
+    required: true
+  - name: white_beans
+    required: true
+  - name: garlic_powder
+    required: true
+  - name: dried_basil
+    required: true
+  - name: salt
+    required: true
+  - name: shredded_cheese
+    required: true
+- name: Meat Lover's Calzone
+  type: dinner
+  source: BWS Cookbook
+  ingredients:
+  - name: turkey_bacon
+    required: true
+  - name: chicken_breast
+    required: true
+  - name: mushrooms
+    required: true
+  - name: whole_wheat_tortilla
+    required: true
+  - name: tomato_puree
+    required: true
+    substitutions:
+    - tomato_sauce
+  - name: dried_oregano
+    required: true
+  - name: garlic_powder
+    required: true
+  - name: salt
+    required: true
+  - name: ground_black_pepper
+    required: true
+  - name: shredded_cheese
+    required: true
+  - name: egg_whites
+    required: true
+  - name: tomato_sauce
+    required: false
+- name: Meat Lover's Veggie Burger
+  type: dinner
+  source: BWS Cookbook
+  ingredients:
+  - name: yellow_onion
+    required: true
+  - name: mushrooms
+    required: true
+  - name: garlic_powder
+    required: true
+  - name: paprika
+    required: true
+  - name: salt
+    required: true
+  - name: ground_black_pepper
+    required: true
+  - name: cauliflower_rice
+    required: true
+  - name: black_beans
+    required: true
+  - name: soy_sauce
+    required: true
+  - name: whole_wheat_hamburger_bun
+    required: true
+  - name: tomato
+    required: false
+  - name: pickles
+    required: false
+  - name: ketchup
+    required: false
+  - name: no_fat_french_fries
     required: true
 - name: Monte Cristo
   type: breakfast
@@ -882,7 +1466,7 @@ recipes:
   - name: sugar_free_bbq_sauce
     required: true
     substitutions:
-    - homemade_tangy_bbq_sauce
+    - tangy_bbq_sauce
   - name: nutricional_yeast
     required: true
   - name: whole_wheat_hamburger_bun
@@ -915,7 +1499,7 @@ recipes:
     required: true
   - name: stevia
     required: false
-  - name: scallions
+  - name: scallion
     required: false
   - name: cauliflower_rice
     required: true
@@ -1304,3 +1888,32 @@ recipes:
     required: true
   - name: ground_black_pepper
     required: true
+- name: Your Classic American Cheeseburger
+  type: dinner
+  source: BWS Cookbook
+  ingredients:
+  - name: ground_beef
+    required: true
+    substitutions:
+    - ground_chicken
+    - ground_turkey
+  - name: salt
+    required: true
+  - name: ground_black_pepper
+    required: true
+  - name: whole_wheat_hamburger_bun
+    required: true
+  - name: tomato
+    required: false
+  - name: lettuce
+    required: false
+  - name: red_onion
+    required: false
+  - name: pickles
+    required: false
+  - name: no_fat_french_fries
+    required: true
+  - name: ketchup
+    required: false
+  - name: spicy_mayo_sauce
+    required: false
