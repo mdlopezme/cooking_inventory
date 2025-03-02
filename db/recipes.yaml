@@ -134,6 +134,38 @@ recipes:
     - rambutan
     - sapodilla
     - sapote
+- name: Bigger Big Mac
+  type: dinner
+  source: BWS Cookbook
+  ingredients:
+  - name: ground_beef
+    required: true
+    substitutions:
+    - ground_chicken
+    - ground_turkey
+  - name: salt
+    required: true
+  - name: pepper
+    required: true
+  - name: cheese_slices
+    required: true
+  - name: whole_wheat_hamburger_bun
+    required: true
+  - name: pickles
+    required: true
+  - name: yellow_onion
+    required: true
+  - name: lettuce
+    required: true
+  - name: spicy_mayo_sauce
+    required: true
+    substitutions:
+    - greek_yogurt
+    - mayo
+  - name: ketchup
+    required: true
+  - name: no_fat_french_fries
+    required: true
 - name: Blueberry Lemon French Toast
   type: breakfast
   source: BWS Cookbook
@@ -637,6 +669,45 @@ recipes:
     required: true
     substitutions:
     - holy_guacamole_sauce
+- name: Crunchy Thai Turkey Burger
+  type: dinner
+  source: BWS Cookbook
+  ingredients:
+  - name: ground_turkey
+    required: true
+    substitutions:
+    - ground_chicken
+    - ground_beef
+  - name: scallion
+    required: true
+  - name: fresh_ginger
+    required: true
+    substitutions:
+    - ground_ginger
+  - name: garlic
+    required: true
+    substitutions:
+    - garlic_powder
+  - name: sriracha
+    required: true
+  - name: soy_sauce
+    required: true
+  - name: salt
+    required: true
+  - name: ground_black_pepper
+    required: true
+  - name: purple_cabbage
+    required: true
+  - name: lime
+    required: true
+    substitutions:
+    - lemon
+  - name: spicy_mayo_sauce
+    required: true
+    substitutions:
+    - mayo
+  - name: whole_wheat_hamburger_bun
+    required: true
 - name: Eggs Royale
   type: breakfast
   source: BWS Cookbook
@@ -1051,6 +1122,38 @@ recipes:
   - name: salt
     required: true
   - name: shredded_cheese
+    required: true
+- name: Meat Lover's Veggie Burger
+  type: dinner
+  source: BWS Cookbook
+  ingredients:
+  - name: yellow_onion
+    required: true
+  - name: mushrooms
+    required: true
+  - name: garlic_powder
+    required: true
+  - name: paprika
+    required: true
+  - name: salt
+    required: true
+  - name: ground_black_pepper
+    required: true
+  - name: cauliflower_rice
+    required: true
+  - name: black_beans
+    required: true
+  - name: soy_sauce
+    required: true
+  - name: whole_wheat_hamburger_bun
+    required: true
+  - name: tomato
+    required: false
+  - name: pickles
+    required: false
+  - name: ketchup
+    required: false
+  - name: no_fat_french_fries
     required: true
 - name: Monte Cristo
   type: breakfast
@@ -1531,3 +1634,32 @@ recipes:
     required: true
   - name: ground_black_pepper
     required: true
+- name: Your Classic American Cheeseburger
+  type: dinner
+  source: BWS Cookbook
+  ingredients:
+  - name: ground_beef
+    required: true
+    substitutions:
+    - ground_chicken
+    - ground_turkey
+  - name: salt
+    required: true
+  - name: ground_black_pepper
+    required: true
+  - name: whole_wheat_hamburger_bun
+    required: true
+  - name: tomato
+    required: false
+  - name: lettuce
+    required: false
+  - name: red_onion
+    required: false
+  - name: pickles
+    required: false
+  - name: no_fat_french_fries
+    required: true
+  - name: ketchup
+    required: false
+  - name: spicy_mayo_sauce
+    required: false
