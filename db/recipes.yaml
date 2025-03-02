@@ -1347,6 +1347,36 @@ recipes:
     required: true
   - name: shredded_cheese
     required: true
+- name: Meat Lover's Calzone
+  type: dinner
+  source: BWS Cookbook
+  ingredients:
+  - name: turkey_bacon
+    required: true
+  - name: chicken_breast
+    required: true
+  - name: mushrooms
+    required: true
+  - name: whole_wheat_tortilla
+    required: true
+  - name: tomato_puree
+    required: true
+    substitutions:
+    - tomato_sauce
+  - name: dried_oregano
+    required: true
+  - name: garlic_powder
+    required: true
+  - name: salt
+    required: true
+  - name: ground_black_pepper
+    required: true
+  - name: shredded_cheese
+    required: true
+  - name: egg_whites
+    required: true
+  - name: tomato_sauce
+    required: false
 - name: Meat Lover's Veggie Burger
   type: dinner
   source: BWS Cookbook
