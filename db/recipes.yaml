@@ -162,6 +162,35 @@ recipes:
     required: false
   - name: blueberries
     required: false
+- name: Cheesy Bbq Fries
+  type: dinner
+  source: BWS Cookbook
+  ingredients:
+  - name: potato
+    required: true
+  - name: nutritional_yeast
+    required: true
+  - name: garlic_powder
+    required: true
+  - name: salt
+    required: true
+  - name: ground_black_pepper
+    required: true
+  - name: turkey_bacon
+    required: true
+  - name: ground_turkey
+    required: true
+    substitutions:
+    - ground_chicken
+    - ground_beef
+  - name: homemade_tangy_bbq_sauce
+    required: true
+    substitutions:
+    - sugar_free_bbq_sauce
+  - name: shredded_cheese
+    required: true
+  - name: ketchup
+    required: false
 - name: Cheesy Shrimp Quesadilla
   type: lunch
   source: BWS Cookbook
@@ -196,7 +225,7 @@ recipes:
   - name: guacamole
     required: false
     substitutions:
-    - holy_guacamole
+    - holy_guacamole_sauce
   - name: sugar_free_bbq_sauce
     required: false
     substitutions:
@@ -242,7 +271,7 @@ recipes:
     required: true
   - name: ground_black_pepper
     required: true
-  - name: scallions
+  - name: scallion
     required: true
 - name: Chili-Lime Streak Burrito
   type: lunch
@@ -289,7 +318,7 @@ recipes:
   - name: guacamole
     required: true
     substitutions:
-    - holy_guacamole
+    - holy_guacamole_sauce
   - name: greek_yogurt
     required: true
 - name: Cinnamon Pumpkin Waffles
@@ -344,6 +373,39 @@ recipes:
     required: true
   - name: whole_wheat_english_muffin
     required: true
+- name: Classic Hot Buffalo Wings
+  type: dinner
+  source: BWS Cookbook
+  ingredients:
+  - name: chicken_wings
+    required: true
+  - name: salt
+    required: true
+  - name: onion_powder
+    required: true
+  - name: garlic_powder
+    required: true
+  - name: cayenne_pepper
+    required: true
+  - name: hot_sauce
+    required: true
+  - name: cornstarch
+    required: true
+  - name: celery
+    required: false
+  - name: tangy_bbq_sauce
+    required: false
+    substitutions:
+    - tzatziki_sauce
+    - sweet_thai_chili_sauce
+    - holy_guacamole_sauce
+    - chocolate_sauce
+    - creamy_ranch_sauce
+    - spicy_mayo_sauce
+    - ketchup_mayo_sauce
+    - honey_mustard_sauce
+    - sweet_teriyaki_sauce
+    - maple_garlic_sauce
 - name: Copycat Crunchwrap Supreme
   type: lunch
   source: BWS Cookbook
@@ -477,6 +539,60 @@ recipes:
     required: false
   - name: banana
     required: true
+- name: Crispy Chicken Strips
+  type: dinner
+  source: BWS Cookbook
+  ingredients:
+  - name: chicken_breast
+    required: true
+  - name: salt
+    required: true
+  - name: ground_black_pepper
+    required: true
+  - name: egg_whites
+    required: true
+  - name: garlic_powder
+    required: true
+  - name: panko_bread_crumbs
+    required: true
+    substitutions:
+    - shake_and_bake
+  - name: nutritional_yeast
+    required: false
+  - name: ketchup
+    required: false
+- name: Crispy Teriyaki Cauliflower Bites
+  type: dinner
+  source: BWS Cookbook
+  ingredients:
+  - name: cauliflower
+    required: true
+  - name: whole_wheat_all_purpose_flour
+    required: true
+  - name: garlic_powder
+    required: true
+  - name: salt
+    required: true
+  - name: unsweetened_almond_milk
+    required: true
+  - name: panko_bread_crumbs
+    required: true
+    substitutions:
+    - shake_and_bake
+  - name: soy_sauce
+    required: true
+  - name: chili_garlic_sauce
+    required: true
+  - name: sugar_free_syrup
+    required: true
+  - name: fresh_ginger
+    required: true
+    substitutions:
+    - ground_ginger
+  - name: cornstarch
+    required: true
+  - name: sesame_seeds
+    required: false
 - name: Crunchy Mango Beef Tacos
   type: lunch
   source: BWS Cookbook
@@ -501,7 +617,7 @@ recipes:
     required: true
   - name: mango
     required: true
-  - name: scallions
+  - name: scallion
     required: true
   - name: cilantro
     required: true
@@ -520,7 +636,7 @@ recipes:
   - name: guacamole
     required: true
     substitutions:
-    - holy_guacamole
+    - holy_guacamole_sauce
 - name: Eggs Royale
   type: breakfast
   source: BWS Cookbook
@@ -614,7 +730,7 @@ recipes:
     required: true
   - name: sesame_seeds
     required: false
-  - name: scallions
+  - name: scallion
     required: false
   - name: cauliflower_rice
     required: true
@@ -704,6 +820,39 @@ recipes:
     required: false
   - name: tomato_sauce
     required: false
+- name: Holy Sh!t Nachos
+  type: dinner
+  source: BWS Cookbook
+  ingredients:
+  - name: whole_wheat_tortilla
+    required: true
+  - name: nutritional_yeast
+    required: true
+  - name: paprika
+    required: true
+  - name: salt
+    required: true
+  - name: ground_black_pepper
+    required: true
+  - name: white_onion
+    required: true
+    substitutions:
+    - yellow_onion
+    - red_onion
+  - name: jackfruit
+    required: true
+  - name: black_beans
+    required: true
+  - name: homemade_tangy_bbq_sauce
+    required: true
+    substitutions:
+    - sugar_free_bbq_sauce
+  - name: shredded_cheese
+    required: true
+  - name: scallion
+    required: true
+  - name: tomato
+    required: true
 - name: How Is It Healthy Chicken Sanwhich
   type: lunch
   source: BWS Cookbook
@@ -786,6 +935,38 @@ recipes:
     required: true
   - name: blueberries
     required: true
+- name: Loaded Beef Nachos
+  type: dinner
+  source: BWS Cookbook
+  ingredients:
+  - name: whole_wheat_tortilla
+    required: true
+  - name: paprika
+    required: true
+  - name: salt
+    required: true
+  - name: ground_beef
+    required: true
+    substitutions:
+    - ground_turkey
+    - ground_chicken
+  - name: hot_sauce
+    required: true
+  - name: cumin
+    required: true
+  - name: garlic_powder
+    required: true
+  - name: shredded_cheese
+    required: true
+  - name: tomato
+    required: true
+  - name: greek_yogurt
+    required: true
+  - name: red_onion
+    required: true
+    substitutions:
+    - yellow_onion
+    - white_onion
 - name: Loaded Veggie Taco Bowl
   type: lunch
   source: BWS Cookbook
@@ -822,8 +1003,54 @@ recipes:
   - name: guacamole
     required: true
     substitutions:
-    - holy_guacamole
+    - holy_guacamole_sauce
   - name: salsa
+    required: true
+- name: Maple Garlic Chicken Wings
+  type: dinner
+  source: BWS Cookbook
+  ingredients:
+  - name: chicken_wings
+    required: true
+  - name: salt
+    required: true
+  - name: red_pepper_flakes
+    required: true
+  - name: garlic_powder
+    required: true
+  - name: cornstarch
+    required: true
+  - name: soy_sauce
+    required: true
+  - name: rice_wine_vinegar
+    required: true
+  - name: sugar_free_syrup
+    required: true
+  - name: garlic
+    required: true
+  - name: fresh_ginger
+    required: true
+    substitutions:
+    - ground_ginger
+  - name: red_pepper_flakes
+    required: true
+- name: Margherita Pizza Bites
+  type: dinner
+  source: BWS Cookbook
+  ingredients:
+  - name: eggplant
+    required: true
+  - name: tomato_sauce
+    required: true
+  - name: white_beans
+    required: true
+  - name: garlic_powder
+    required: true
+  - name: dried_basil
+    required: true
+  - name: salt
+    required: true
+  - name: shredded_cheese
     required: true
 - name: Monte Cristo
   type: breakfast
@@ -915,7 +1142,7 @@ recipes:
     required: true
   - name: stevia
     required: false
-  - name: scallions
+  - name: scallion
     required: false
   - name: cauliflower_rice
     required: true
