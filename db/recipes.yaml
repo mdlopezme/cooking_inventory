@@ -82,7 +82,7 @@ recipes:
     required: true
   - name: unsweetened_almond_milk
     required: true
-  - name: chocolate_chips
+  - name: sugar_free_chocolate_chips
     required: true
   - name: sugar_free_syrup
     required: false
@@ -132,7 +132,7 @@ recipes:
     required: true
   - name: unsweetened_almond_milk
     required: true
-  - name: chocolate_chips
+  - name: sugar_free_chocolate_chips
     required: true
   - name: chopped_walnuts
     required: false
@@ -257,7 +257,7 @@ recipes:
     required: true
     substitutions:
     - strawberry_jam
-  - name: cream_cheese
+  - name: light_cream_cheese
     required: true
   - name: unsweetened_almond_milk
     required: true
@@ -727,7 +727,7 @@ recipes:
     required: true
   - name: tomato_sauce
     required: true
-  - name: cream_cheese
+  - name: light_cream_cheese
     required: true
   - name: canned_tomatoes
     required: true
@@ -1248,7 +1248,7 @@ recipes:
     - shredded_parmesan_cheese
   - name: egg_whites
     required: true
-  - name: cream_cheese
+  - name: light_cream_cheese
     required: true
   - name: dried_oregano
     required: true
@@ -1365,7 +1365,7 @@ recipes:
     required: true
   - name: ground_black_pepper
     required: true
-  - name: cream_cheese
+  - name: light_cream_cheese
     required: true
   - name: egg_whites
     required: true
@@ -1649,6 +1649,32 @@ recipes:
     required: true
   - name: pickles
     required: false
+- name: Not Your Typical Brownie
+  type: dessert
+  source: BWS Cookbook
+  ingredients:
+  - name: light_butter
+    required: true
+  - name: vanilla_extract
+    required: true
+  - name: stevia
+    required: true
+  - name: unsweetened_cocoa_powder
+    required: true
+  - name: whole_wheat_all_purpose_flour
+    required: true
+  - name: salt
+    required: true
+  - name: baking_powder
+    required: true
+  - name: zucchini
+    required: true
+  - name: sugar_free_chocolate_chips
+    required: false
+  - name: fat_free_whipped_cream
+    required: false
+  - name: low_Calorie_ice_cream
+    required: false
 - name: Orange Chicken
   type: lunch
   source: BWS Cookbook
@@ -1683,6 +1709,28 @@ recipes:
     required: true
     substitutions:
     - white_rice
+- name: Perfect Peanut Butter Cookies
+  type: dessert
+  source: BWS Cookbook
+  ingredients:
+  - name: whole_wheat_all_purpose_flour
+    required: true
+  - name: powdered_peanut_butter
+    required: true
+  - name: salt
+    required: true
+  - name: baking_powder
+    required: true
+  - name: stevia
+    required: true
+  - name: light_butter
+    required: true
+  - name: banana
+    required: true
+  - name: eggs
+    required: true
+  - name: vanilla_extract
+    required: true
 - name: Pizza Sub
   type: lunch
   source: BWS Cookbook
@@ -1936,6 +1984,26 @@ recipes:
     - white_rice
   - name: cauliflower_rice
     required: true
+- name: Soft Chocolate Chip Cookies
+  type: dessert
+  source: BWS Cookbook
+  ingredients:
+  - name: whole_wheat_all_purpose_flour
+    required: true
+  - name: baking_powder
+    required: true
+  - name: salt
+    required: true
+  - name: light_butter
+    required: true
+  - name: stevia
+    required: true
+  - name: vanilla_extract
+    required: true
+  - name: eggs
+    required: true
+  - name: sugar_free_chocolate_chips
+    required: true
 - name: Strawberry Cheesecake French Toast
   type: breakfast
   source: BWS Cookbook
@@ -1952,7 +2020,7 @@ recipes:
     required: true
   - name: thick_sliced_bread
     required: true
-  - name: cream_cheese
+  - name: light_cream_cheese
     required: true
   - name: unsweetened_almond_milk
     required: true
@@ -2135,3 +2203,29 @@ recipes:
     required: false
     substitutions:
     - spicy_mayo_sauce
+- name: Your Next Birthday Cake
+  type: dessert
+  source: BWS Cookbook
+  ingredients:
+  - name: unsweetened_cocoa_powder
+    required: true
+  - name: stevia
+    required: true
+  - name: oats
+    required: true
+    substitutions:
+    - whole_wheat_all_purpose_flour
+  - name: protein_powder
+    required: true
+  - name: baking_powder
+    required: true
+  - name: egg_whites
+    required: true
+  - name: sugar_free_chocolate_chips
+    required: false
+  - name: light_cream_cheese
+    required: true
+  - name: greek_yogurt
+    required: true
+  - name: sugar_free_syrup
+    required: true
