@@ -5,7 +5,6 @@ import os
 from tabulate import tabulate
 from argparse import ArgumentParser
 
-
 def load_ingredients():
     file_path = os.path.join(os.path.dirname(__file__), 'db/ingredients.yaml')
     with open(file_path, 'r') as file:
@@ -61,8 +60,6 @@ def check_recipe_availability(recipe, ingredients_available):
     in_stock = list(set(in_stock))
 
     return missing, substitutions, optional, in_stock
-
-
 
 def recipe_contains_ingredients(recipe, ingredients):
     count = 0
@@ -150,8 +147,6 @@ def get_optimal_recipes(recipe_status, headers):
                 break
 
     return new_recipe_status, headers
-        
-
 
 def print_recipe_availability(recipe_status, headers, print_limit):
     recipe_status.sort(key=lambda x: x[2])

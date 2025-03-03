@@ -1,11 +1,198 @@
 recipes:
+- name: Birthday Cake Blondies
+  type: dessert
+  source: BWS Cookbook
+  ingredients:
+  - name: light_butter
+    required: true
+  - name: eggs
+    required: true
+  - name: syrup
+    required: true
+  - name: vanilla_extract
+    required: true
+  - name: stevia
+    required: true
+  - name: whole_wheat_all_purpose_flour
+    required: true
+  - name: baking_powder
+    required: true
+  - name: salt
+    required: true
+  - name: vanilla_pudding_mix
+    required: true
+  - name: vanilla_protein_powder
+    required: true
+  - name: unsweetened_almond_milk
+    required: true
+  - name: sprinkles
+    required: false
+- name: Vanilla Sprinkle Donut
+  type: dessert
+  source: BWS Cookbook
+  ingredients:
+  - name: whole_wheat_all_purpose_flour
+    required: true
+  - name: stevia
+    required: true
+  - name: baking_powder
+    required: true
+  - name: salt
+    required: true
+  - name: light_butter
+    required: true
+  - name: eggs
+    required: true
+  - name: unsweetened_almond_milk
+    required: true
+  - name: vanilla_extract
+    required: true
+  - name: vanilla_pudding_mix
+    required: true
+  - name: vanilla_protein_powder
+    required: true
+  - name: sprinkles
+    required: false
+- name: Blueberry Lemon Donut
+  type: dessert
+  source: BWS Cookbook
+  ingredients:
+  - name: whole_wheat_all_purpose_flour
+    required: true
+  - name: stevia
+    required: true
+  - name: baking_powder
+    required: true
+  - name: salt
+    required: true
+  - name: light_butter
+    required: true
+  - name: eggs
+    required: true
+  - name: unsweetened_almond_milk
+    required: true
+  - name: vanilla_extract
+    required: true
+  - name: lemon
+    required: true
+    substitutions:
+    - lime
+  - name: blueberries
+    required: true
+    substitutions:
+    - raspberries
+    - blackberries
+  - name: greek_yogurt
+    required: true
+  - name: vanilla_protein_powder
+    required: true
+- name: Apple Fritter
+  type: dessert
+  source: BWS Cookbook
+  ingredients:
+  - name: whole_wheat_all_purpose_flour
+    required: true
+  - name: stevia
+    required: true
+  - name: salt
+    required: true
+  - name: cinnamon
+    required: true
+  - name: baking_powder
+    required: true
+  - name: light_butter
+    required: true
+  - name: red_apple
+    required: true
+    substitutions:
+    - green_apple
+  - name: greek_yogurt
+    required: true
+  - name: unsweetened_almond_milk
+    required: true
+  - name: low_fat_cream_cheese
+    required: true
+  - name: vanilla_protein_powder
+    required: true
+- name: Chocolate Frosted Donut
+  type: dessert
+  source: BWS Cookbook
+  ingredients:
+  - name: whole_wheat_all_purpose_flour
+    required: true
+  - name: stevia
+    required: true
+  - name: baking_powder
+    required: true
+  - name: salt
+    required: true
+  - name: light_butter
+    required: true
+  - name: eggs
+    required: true
+  - name: unsweetened_almond_milk
+    required: true
+  - name: chocolate_pudding_mix
+    required: true
+  - name: chocolate_protein_powder
+    required: true
+  - name: unsweetened_almond_milk
+    required: true
+- name: Cinnamon Spice And Everything Nice Donut
+  type: dessert
+  source: BWS Cookbook
+  ingredients:
+  - name: whole_wheat_all_purpose_flour
+    required: true
+  - name: stevia
+    required: true
+  - name: baking_powder
+    required: true
+  - name: salt
+    required: true
+  - name: light_butter
+    required: true
+  - name: eggs
+    required: true
+  - name: unsweetened_almond_milk
+    required: true
+  - name: vanilla_extract
+    required: true
+  - name: ground_cinnamon
+    required: true
+- name: It's That Easy Vanilla Cheesecake
+  type: dessert
+  source: BWS Cookbook
+  ingredients:
+  - name: cottage_cheese
+    required: true
+  - name: eggs
+    required: true
+  - name: vanilla_protein_powder
+    required: true
+    substitutions:
+    - vanilla_pudding_mix
+  - name: stevia
+    required: true
+  - name: graham_crackers
+    required: true
+  - name: greek_yogurt
+    required: true
+  - name: raspberry_jam
+    required: false
+    substitutions:
+    - strawberry_jam
+    - blueberry_jam
+    - peach_jam
+  - name: whipped_cream
+    required: false
 - name: Apple Crisp French Toast
   type: breakfast
   source: BWS Cookbook
   ingredients:
   - name: apple
     required: true
-  - name: sugar_free_syrup
+  - name: syrup
     required: true
   - name: egg_whites
     required: true
@@ -82,9 +269,9 @@ recipes:
     required: true
   - name: unsweetened_almond_milk
     required: true
-  - name: sugar_free_chocolate_chips
+  - name: chocolate_chips
     required: true
-  - name: sugar_free_syrup
+  - name: syrup
     required: false
 - name: Banana French Toast Sticks
   type: breakfast
@@ -108,14 +295,16 @@ recipes:
     required: true
   - name: salt
     required: true
-  - name: sugar_free_syrup
+  - name: syrup
     required: false
 - name: Banana Nut Waffles
   type: breakfast
   source: BWS Cookbook
   ingredients:
-  - name: protein_powder
+  - name: vanilla_protein_powder
     required: true
+    substitutions:
+    - chocolate_protein_powder
   - name: whole_wheat_all_purpose_flour
     required: true
     substitutions:
@@ -132,11 +321,11 @@ recipes:
     required: true
   - name: unsweetened_almond_milk
     required: true
-  - name: sugar_free_chocolate_chips
+  - name: chocolate_chips
     required: true
   - name: chopped_walnuts
     required: false
-  - name: sugar_free_syrup
+  - name: syrup
     required: false
   - name: banana
     required: false
@@ -184,7 +373,7 @@ recipes:
   - name: tangy_bbq_sauce
     required: true
     substitutions:
-    - sugar_free_bbq_sauce
+    - bbq_sauce
   - name: shredded_mozzarella_cheese
     required: true
   - name: mushrooms
@@ -265,7 +454,7 @@ recipes:
     required: true
   - name: thick_sliced_bread
     required: true
-  - name: sugar_free_syrup
+  - name: syrup
     required: false
   - name: blueberries
     required: false
@@ -309,7 +498,7 @@ recipes:
   - name: tangy_bbq_sauce
     required: true
     substitutions:
-    - sugar_free_bbq_sauce
+    - bbq_sauce
   - name: shredded_mozzarella_cheese
     required: true
     substitutions:
@@ -380,7 +569,7 @@ recipes:
     required: false
     substitutions:
     - holy_guacamole_sauce
-  - name: sugar_free_bbq_sauce
+  - name: bbq_sauce
     required: false
     substitutions:
     - tangy_bbq_sauce
@@ -479,8 +668,10 @@ recipes:
   type: breakfast
   source: BWS Cookbook
   ingredients:
-  - name: protein_powder
+  - name: vanilla_protein_powder
     required: true
+    substitutions:
+    - chocolate_protein_powder
   - name: baking_powder
     required: true
   - name: salt
@@ -499,7 +690,7 @@ recipes:
     required: true
   - name: chopped_walnuts
     required: false
-  - name: sugar_free_syrup
+  - name: syrup
     required: false
 - name: Classic Eggs Benedict
   type: breakfast
@@ -756,8 +947,10 @@ recipes:
     required: true
   - name: paprika
     required: true
-  - name: protein_powder
+  - name: vanilla_protein_powder
     required: true
+    substitutions:
+    - chocolate_protein_powder
   - name: baking_powder
     required: true
   - name: stevia
@@ -768,7 +961,7 @@ recipes:
     required: true
   - name: unsweetened_almond_milk
     required: true
-  - name: sugar_free_syrup
+  - name: syrup
     required: false
   - name: banana
     required: true
@@ -833,7 +1026,7 @@ recipes:
     required: true
   - name: chili_garlic_sauce
     required: true
-  - name: sugar_free_syrup
+  - name: syrup
     required: true
   - name: fresh_ginger
     required: true
@@ -1062,7 +1255,7 @@ recipes:
     required: true
   - name: salt
     required: true
-  - name: sugar_free_syrup
+  - name: syrup
     required: false
   - name: chopped_walnuts
     required: false
@@ -1190,7 +1383,7 @@ recipes:
   - name: tangy_bbq_sauce
     required: true
     substitutions:
-    - sugar_free_bbq_sauce
+    - bbq_sauce
   - name: shredded_mozzarella_cheese
     required: true
     substitutions:
@@ -1294,15 +1487,17 @@ recipes:
     - oat
   - name: baking_powder
     required: true
-  - name: protein_powder
+  - name: vanilla_protein_powder
     required: true
+    substitutions:
+    - chocolate_protein_powder
   - name: lemon
     required: true
   - name: vanilla_extract
     required: true
   - name: egg_whites
     required: true
-  - name: sugar_free_syrup
+  - name: syrup
     required: true
   - name: unsweetened_almond_milk
     required: true
@@ -1433,7 +1628,7 @@ recipes:
     required: true
   - name: rice_wine_vinegar
     required: true
-  - name: sugar_free_syrup
+  - name: syrup
     required: true
   - name: garlic
     required: true
@@ -1559,7 +1754,7 @@ recipes:
     required: true
   - name: unsweetened_almond_milk
     required: true
-  - name: sugar_free_syrup
+  - name: syrup
     required: true
   - name: cayenne_pepper
     required: true
@@ -1585,7 +1780,7 @@ recipes:
     required: true
   - name: ground_black_pepper
     required: true
-  - name: sugar_free_syrup
+  - name: syrup
     required: true
   - name: nutritional_yeast
     required: true
@@ -1639,7 +1834,7 @@ recipes:
     required: true
   - name: paprika
     required: true
-  - name: sugar_free_bbq_sauce
+  - name: bbq_sauce
     required: true
     substitutions:
     - tangy_bbq_sauce
@@ -1669,9 +1864,9 @@ recipes:
     required: true
   - name: zucchini
     required: true
-  - name: sugar_free_chocolate_chips
+  - name: chocolate_chips
     required: false
-  - name: fat_free_whipped_cream
+  - name: whipped_cream
     required: false
   - name: low_Calorie_ice_cream
     required: false
@@ -1757,7 +1952,7 @@ recipes:
   type: breakfast
   source: BWS Cookbook
   ingredients:
-  - name: protein_powder
+  - name: vanilla_protein_powder
     required: true
   - name: unsweetened_almond_milk
     required: true
@@ -1800,7 +1995,7 @@ recipes:
     - oat
   - name: unsweetened_almond_milk
     required: true
-  - name: sugar_free_syrup
+  - name: syrup
     required: false
   - name: chopped_walnuts
     required: false
@@ -2002,7 +2197,7 @@ recipes:
     required: true
   - name: eggs
     required: true
-  - name: sugar_free_chocolate_chips
+  - name: chocolate_chips
     required: true
 - name: Strawberry Cheesecake French Toast
   type: breakfast
@@ -2028,7 +2223,7 @@ recipes:
     required: true
   - name: strawberries
     required: true
-  - name: sugar_free_syrup
+  - name: syrup
     required: false
 - name: Sweet And Salty Popcorn
   type: snacks
@@ -2215,17 +2410,19 @@ recipes:
     required: true
     substitutions:
     - whole_wheat_all_purpose_flour
-  - name: protein_powder
+  - name: chocolate_protein_powder
     required: true
+    substitutions:
+    - vanilla_protein_powder
   - name: baking_powder
     required: true
   - name: egg_whites
     required: true
-  - name: sugar_free_chocolate_chips
+  - name: chocolate_chips
     required: false
   - name: light_cream_cheese
     required: true
   - name: greek_yogurt
     required: true
-  - name: sugar_free_syrup
+  - name: syrup
     required: true
