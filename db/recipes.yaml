@@ -1962,6 +1962,36 @@ recipes:
     required: true
   - name: sugar_free_syrup
     required: false
+- name: Sweet And Salty Popcorn
+  type: snacks
+  source: BWS Cookbook
+  ingredients:
+  - name: popcorn_kernels
+    required: true
+  - name: stevia
+    required: true
+  - name: salt
+    required: true
+- name: Sweet Chili Chips
+  type: snacks
+  source: BWS Cookbook
+  ingredients:
+  - name: nutritional_yeast
+    required: true
+  - name: chili_powder
+    required: true
+  - name: onion_powder
+    required: true
+  - name: garlic_powder
+    required: true
+  - name: paprika
+    required: true
+  - name: cumin
+    required: true
+  - name: salt
+    required: true
+  - name: whole_wheat_tortilla
+    required: true
 - name: Toned Turkey Tacos
   type: lunch
   source: BWS Cookbook
