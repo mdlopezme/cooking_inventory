@@ -1,90 +1,23 @@
 recipes:
-- name: Birthday Cake Blondies
-  type: dessert
+- name: Apple Crisp French Toast
+  type: breakfast
   source: BWS Cookbook
   ingredients:
-  - name: light_butter
-    required: true
-  - name: eggs
+  - name: apple
     required: true
   - name: syrup
     required: true
-  - name: vanilla_extract
-    required: true
-  - name: stevia
-    required: true
-  - name: whole_wheat_all_purpose_flour
-    required: true
-  - name: baking_powder
-    required: true
-  - name: salt
-    required: true
-  - name: vanilla_pudding_mix
-    required: true
-  - name: vanilla_protein_powder
-    required: true
-  - name: unsweetened_almond_milk
-    required: true
-  - name: sprinkles
-    required: false
-- name: Vanilla Sprinkle Donut
-  type: dessert
-  source: BWS Cookbook
-  ingredients:
-  - name: whole_wheat_all_purpose_flour
-    required: true
-  - name: stevia
-    required: true
-  - name: baking_powder
-    required: true
-  - name: salt
-    required: true
-  - name: light_butter
-    required: true
-  - name: eggs
+  - name: egg_whites
     required: true
   - name: unsweetened_almond_milk
     required: true
   - name: vanilla_extract
     required: true
-  - name: vanilla_pudding_mix
-    required: true
-  - name: vanilla_protein_powder
-    required: true
-  - name: sprinkles
-    required: false
-- name: Blueberry Lemon Donut
-  type: dessert
-  source: BWS Cookbook
-  ingredients:
-  - name: whole_wheat_all_purpose_flour
-    required: true
-  - name: stevia
-    required: true
-  - name: baking_powder
+  - name: ground_cinnamon
     required: true
   - name: salt
     required: true
-  - name: light_butter
-    required: true
-  - name: eggs
-    required: true
-  - name: unsweetened_almond_milk
-    required: true
-  - name: vanilla_extract
-    required: true
-  - name: lemon
-    required: true
-    substitutions:
-    - lime
-  - name: blueberries
-    required: true
-    substitutions:
-    - raspberries
-    - blackberries
-  - name: greek_yogurt
-    required: true
-  - name: vanilla_protein_powder
+  - name: thick_sliced_bread
     required: true
 - name: Apple Fritter
   type: dessert
@@ -113,98 +46,6 @@ recipes:
   - name: low_fat_cream_cheese
     required: true
   - name: vanilla_protein_powder
-    required: true
-- name: Chocolate Frosted Donut
-  type: dessert
-  source: BWS Cookbook
-  ingredients:
-  - name: whole_wheat_all_purpose_flour
-    required: true
-  - name: stevia
-    required: true
-  - name: baking_powder
-    required: true
-  - name: salt
-    required: true
-  - name: light_butter
-    required: true
-  - name: eggs
-    required: true
-  - name: unsweetened_almond_milk
-    required: true
-  - name: chocolate_pudding_mix
-    required: true
-  - name: chocolate_protein_powder
-    required: true
-  - name: unsweetened_almond_milk
-    required: true
-- name: Cinnamon Spice And Everything Nice Donut
-  type: dessert
-  source: BWS Cookbook
-  ingredients:
-  - name: whole_wheat_all_purpose_flour
-    required: true
-  - name: stevia
-    required: true
-  - name: baking_powder
-    required: true
-  - name: salt
-    required: true
-  - name: light_butter
-    required: true
-  - name: eggs
-    required: true
-  - name: unsweetened_almond_milk
-    required: true
-  - name: vanilla_extract
-    required: true
-  - name: ground_cinnamon
-    required: true
-- name: It's That Easy Vanilla Cheesecake
-  type: dessert
-  source: BWS Cookbook
-  ingredients:
-  - name: cottage_cheese
-    required: true
-  - name: eggs
-    required: true
-  - name: vanilla_protein_powder
-    required: true
-    substitutions:
-    - vanilla_pudding_mix
-  - name: stevia
-    required: true
-  - name: graham_crackers
-    required: true
-  - name: greek_yogurt
-    required: true
-  - name: raspberry_jam
-    required: false
-    substitutions:
-    - strawberry_jam
-    - blueberry_jam
-    - peach_jam
-  - name: whipped_cream
-    required: false
-- name: Apple Crisp French Toast
-  type: breakfast
-  source: BWS Cookbook
-  ingredients:
-  - name: apple
-    required: true
-  - name: syrup
-    required: true
-  - name: egg_whites
-    required: true
-  - name: unsweetened_almond_milk
-    required: true
-  - name: vanilla_extract
-    required: true
-  - name: ground_cinnamon
-    required: true
-  - name: salt
-    required: true
-  - name: thick_sliced_bread
     required: true
 - name: Baked Mac and Cheese
   type: dinner
@@ -430,6 +271,67 @@ recipes:
     substitutions:
     - cheesy_cauliflower_side
     - cauliflower_mashed_potatoes_side
+- name: Birthday Cake Blondies
+  type: dessert
+  source: BWS Cookbook
+  ingredients:
+  - name: light_butter
+    required: true
+  - name: eggs
+    required: true
+  - name: syrup
+    required: true
+  - name: vanilla_extract
+    required: true
+  - name: stevia
+    required: true
+  - name: whole_wheat_all_purpose_flour
+    required: true
+  - name: baking_powder
+    required: true
+  - name: salt
+    required: true
+  - name: vanilla_pudding_mix
+    required: true
+  - name: vanilla_protein_powder
+    required: true
+  - name: unsweetened_almond_milk
+    required: true
+  - name: sprinkles
+    required: false
+- name: Blueberry Lemon Donut
+  type: dessert
+  source: BWS Cookbook
+  ingredients:
+  - name: whole_wheat_all_purpose_flour
+    required: true
+  - name: stevia
+    required: true
+  - name: baking_powder
+    required: true
+  - name: salt
+    required: true
+  - name: light_butter
+    required: true
+  - name: eggs
+    required: true
+  - name: unsweetened_almond_milk
+    required: true
+  - name: vanilla_extract
+    required: true
+  - name: lemon
+    required: true
+    substitutions:
+    - lime
+  - name: blueberries
+    required: true
+    substitutions:
+    - raspberries
+    - blackberries
+  - name: greek_yogurt
+    required: true
+  - name: vanilla_protein_powder
+    required: true
 - name: Blueberry Lemon French Toast
   type: breakfast
   source: BWS Cookbook
@@ -664,6 +566,30 @@ recipes:
     - holy_guacamole_sauce
   - name: greek_yogurt
     required: true
+- name: Chocolate Frosted Donut
+  type: dessert
+  source: BWS Cookbook
+  ingredients:
+  - name: whole_wheat_all_purpose_flour
+    required: true
+  - name: stevia
+    required: true
+  - name: baking_powder
+    required: true
+  - name: salt
+    required: true
+  - name: light_butter
+    required: true
+  - name: eggs
+    required: true
+  - name: unsweetened_almond_milk
+    required: true
+  - name: chocolate_pudding_mix
+    required: true
+  - name: chocolate_protein_powder
+    required: true
+  - name: unsweetened_almond_milk
+    required: true
 - name: Cinnamon Pumpkin Waffles
   type: breakfast
   source: BWS Cookbook
@@ -692,6 +618,28 @@ recipes:
     required: false
   - name: syrup
     required: false
+- name: Cinnamon Spice And Everything Nice Donut
+  type: dessert
+  source: BWS Cookbook
+  ingredients:
+  - name: whole_wheat_all_purpose_flour
+    required: true
+  - name: stevia
+    required: true
+  - name: baking_powder
+    required: true
+  - name: salt
+    required: true
+  - name: light_butter
+    required: true
+  - name: eggs
+    required: true
+  - name: unsweetened_almond_milk
+    required: true
+  - name: vanilla_extract
+    required: true
+  - name: ground_cinnamon
+    required: true
 - name: Classic Eggs Benedict
   type: breakfast
   source: BWS Cookbook
@@ -1455,6 +1403,32 @@ recipes:
     required: true
     substitutions:
     - tomato_sauce
+- name: It's That Easy Vanilla Cheesecake
+  type: dessert
+  source: BWS Cookbook
+  ingredients:
+  - name: cottage_cheese
+    required: true
+  - name: eggs
+    required: true
+  - name: vanilla_protein_powder
+    required: true
+    substitutions:
+    - vanilla_pudding_mix
+  - name: stevia
+    required: true
+  - name: graham_crackers
+    required: true
+  - name: greek_yogurt
+    required: true
+  - name: raspberry_jam
+    required: false
+    substitutions:
+    - strawberry_jam
+    - blueberry_jam
+    - peach_jam
+  - name: whipped_cream
+    required: false
 - name: Lean English Muffin
   type: breakfast
   source: BWS Cookbook
@@ -2325,6 +2299,32 @@ recipes:
     required: true
     substitutions:
     - white_rice
+- name: Vanilla Sprinkle Donut
+  type: dessert
+  source: BWS Cookbook
+  ingredients:
+  - name: whole_wheat_all_purpose_flour
+    required: true
+  - name: stevia
+    required: true
+  - name: baking_powder
+    required: true
+  - name: salt
+    required: true
+  - name: light_butter
+    required: true
+  - name: eggs
+    required: true
+  - name: unsweetened_almond_milk
+    required: true
+  - name: vanilla_extract
+    required: true
+  - name: vanilla_pudding_mix
+    required: true
+  - name: vanilla_protein_powder
+    required: true
+  - name: sprinkles
+    required: false
 - name: Veggie Lovers Fried Rice
   type: lunch
   source: BWS Cookbook
