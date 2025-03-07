@@ -3,9 +3,11 @@ recipes:
   type: breakfast
   source: BWS Cookbook
   ingredients:
-  - name: apple
+  - name: red_apple
     required: true
-  - name: syrup
+    substitutions:
+    - green_apple
+  - name: sugar_free_syrup
     required: true
   - name: egg_whites
     required: true
@@ -29,7 +31,7 @@ recipes:
     required: true
   - name: salt
     required: true
-  - name: cinnamon
+  - name: ground_cinnamon
     required: true
   - name: baking_powder
     required: true
@@ -112,7 +114,7 @@ recipes:
     required: true
   - name: chocolate_chips
     required: true
-  - name: syrup
+  - name: sugar_free_syrup
     required: false
 - name: Banana French Toast Sticks
   type: breakfast
@@ -136,7 +138,7 @@ recipes:
     required: true
   - name: salt
     required: true
-  - name: syrup
+  - name: sugar_free_syrup
     required: false
 - name: Banana Nut Waffles
   type: breakfast
@@ -166,12 +168,13 @@ recipes:
     required: true
   - name: chopped_walnuts
     required: false
-  - name: syrup
+  - name: sugar_free_syrup
     required: false
   - name: banana
     required: false
     substitutions:
-    - apple
+    - red_apple
+    - green_apple
     - blueberries
     - strawberries
     - raspberries
@@ -279,7 +282,7 @@ recipes:
     required: true
   - name: eggs
     required: true
-  - name: syrup
+  - name: sugar_free_syrup
     required: true
   - name: vanilla_extract
     required: true
@@ -356,7 +359,7 @@ recipes:
     required: true
   - name: thick_sliced_bread
     required: true
-  - name: syrup
+  - name: sugar_free_syrup
     required: false
   - name: blueberries
     required: false
@@ -616,7 +619,7 @@ recipes:
     required: true
   - name: chopped_walnuts
     required: false
-  - name: syrup
+  - name: sugar_free_syrup
     required: false
 - name: Cinnamon Spice And Everything Nice Donut
   type: dessert
@@ -909,7 +912,7 @@ recipes:
     required: true
   - name: unsweetened_almond_milk
     required: true
-  - name: syrup
+  - name: sugar_free_syrup
     required: false
   - name: banana
     required: true
@@ -974,7 +977,7 @@ recipes:
     required: true
   - name: chili_garlic_sauce
     required: true
-  - name: syrup
+  - name: sugar_free_syrup
     required: true
   - name: fresh_ginger
     required: true
@@ -1203,7 +1206,7 @@ recipes:
     required: true
   - name: salt
     required: true
-  - name: syrup
+  - name: sugar_free_syrup
     required: false
   - name: chopped_walnuts
     required: false
@@ -1471,7 +1474,7 @@ recipes:
     required: true
   - name: egg_whites
     required: true
-  - name: syrup
+  - name: sugar_free_syrup
     required: true
   - name: unsweetened_almond_milk
     required: true
@@ -1602,7 +1605,7 @@ recipes:
     required: true
   - name: rice_wine_vinegar
     required: true
-  - name: syrup
+  - name: sugar_free_syrup
     required: true
   - name: garlic
     required: true
@@ -1728,7 +1731,7 @@ recipes:
     required: true
   - name: unsweetened_almond_milk
     required: true
-  - name: syrup
+  - name: sugar_free_syrup
     required: true
   - name: cayenne_pepper
     required: true
@@ -1754,7 +1757,7 @@ recipes:
     required: true
   - name: ground_black_pepper
     required: true
-  - name: syrup
+  - name: sugar_free_syrup
     required: true
   - name: nutritional_yeast
     required: true
@@ -1969,7 +1972,7 @@ recipes:
     - oat
   - name: unsweetened_almond_milk
     required: true
-  - name: syrup
+  - name: sugar_free_syrup
     required: false
   - name: chopped_walnuts
     required: false
@@ -2067,7 +2070,8 @@ recipes:
   - name: banana
     required: false
     substitutions:
-    - apple
+    - red_apple
+    - green_apple
     - blueberries
     - strawberries
     - raspberries
@@ -2197,7 +2201,7 @@ recipes:
     required: true
   - name: strawberries
     required: true
-  - name: syrup
+  - name: sugar_free_syrup
     required: false
 - name: Sweet And Salty Popcorn
   type: snacks
@@ -2424,5 +2428,5 @@ recipes:
     required: true
   - name: greek_yogurt
     required: true
-  - name: syrup
+  - name: sugar_free_syrup
     required: true
