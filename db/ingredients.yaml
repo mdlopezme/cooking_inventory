@@ -1,20 +1,23 @@
 ingredients:
   apple_cider_vinegar: true
+  apricot_jam: true
   baking_powder: true
   banana: true
+  bbq_sauce: true
   black_beans: true
   blackberries: true
   blueberries: true
+  blueberry_jam: true
   cauliflower_rice: true
   cayenne_pepper: true
   cellentani_pasta: true
   cheese_slices: true
   chicken_breast: true
-  chicken_wings: true
+  chicken_wings: false
   chili_powder: true
+  chocolate_chips: true
   chocolate_instant_pudding_mix: true
   chopped_walnuts: true
-  cocoa_powder: true
   cornstarch: true
   cream_cheese: true
   cumin: true
@@ -31,23 +34,28 @@ ingredients:
   ground_black_pepper: true
   ground_cinnamon: true
   ground_ginger: true
+  ground_nutmeg: true
   hot_sauce: true
   ketchup: true
   lettuce: true
-  light_butter: true
+  light_butter: false
+  lime: true
   mushrooms: true
+  no_fat_french_fries_side: true
   nutritional_yeast: true
   onion_powder: true
+  orange: true
   panko_bread_crumbs: true
   paprika: true
   parsley_flakes: true
   penne_pasta: true
   pickles: true
+  popcorn_kernels: true
   powdered_peanut_butter: true
   protein_powder: true
   pumpkin_pie_spice: true
   raspberries: true
-  red_apple: false
+  red_apple: true
   red_pepper_flakes: true
   rosemary: true
   salt: true
@@ -62,8 +70,10 @@ ingredients:
   thick_sliced_bread: true
   thyme: true
   unsweetened_almond_milk: true
+  unsweetened_cocoa_powder: true
   vanilla_extract: true
-  vanilla_instant_pudding_mix: true
+  vanilla_protein_powder: true
+  vanilla_pudding_mix: true
   whipped_cream: true
   white_rice: true
   white_vinegar: true

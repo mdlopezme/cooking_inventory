@@ -1,4 +1,84 @@
 recipes:
+- name: It's That Easy Peanut Butter Chocolate Cheesecake
+  type: dessert
+  source: BWS Cookbook
+  ingredients:
+  - name: cottage_cheese
+    required: true
+  - name: eggs
+    required: true
+  - name: chocolate_protein_powder
+    required: true
+    substitutions:
+    - chocolate_instant_pudding_mix
+  - name: stevia
+    required: true
+  - name: unsweetened_cocoa_powder
+    required: true
+  - name: unsweetened_almond_milk
+    required: true
+  - name: powdered_peanut_butter
+    required: true
+  - name: vanilla_extract
+    required: true
+  - name: chocolate_chips
+    required: true
+  - name: graham_cracker
+    required: true
+  - name: greek_yogurt
+    required: true
+  - name: whipped_cream
+    required: false
+- name: It's That Easy Pumpkin Cheesecake
+  type: dessert
+  source: BWS Cookbook
+  ingredients:
+  - name: cottage_cheese
+    required: true
+  - name: eggs
+    required: true
+  - name: vanilla_protein_powder
+    required: true
+    substitutions:
+    - vanilla_instant_pudding_mix
+  - name: pumpkin_puree
+    required: true
+  - name: ground_cinnamon
+    required: true
+  - name: pumpkin_spice
+    required: true
+  - name: stevia
+    required: true
+  - name: vanilla_extract
+    required: true
+  - name: graham_cracker
+    required: true
+  - name: greek_yogurt
+    required: true
+- name: It's that Easy Tiramisu Cheesecake
+  type: dessert
+  source: BWS Cookbook
+  ingredients:
+  - name: cottage_cheese
+    required: true
+  - name: eggs
+    required: true
+  - name: chocolate_protein_powder
+    required: true
+    substitutions:
+    - chocolate_instant_pudding_mix
+  - name: stevia
+    required: true
+  - name: instant_coffee
+    required: true
+  - name: vanilla_extract
+    required: true
+  - name: graham_cracker
+    required: true
+  - name: greek_yogurt
+    required: true
+  - name: whipped_cream
+    required: true
 - name: Apple Crisp French Toast
   type: breakfast
   source: BWS Cookbook

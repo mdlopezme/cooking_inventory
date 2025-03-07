@@ -4,6 +4,7 @@ import yaml
 import os
 from tabulate import tabulate
 from argparse import ArgumentParser
+import random
 
 def load_ingredients():
     file_path = os.path.join(os.path.dirname(__file__), 'db/ingredients.yaml')
@@ -139,13 +140,21 @@ def get_optimal_recipes(recipe_status, headers):
     new_recipe_status = []
     types = set(item[0] for item in recipe_status)  # Get unique recipe types
 
-    # Get only 1 recipe of each type
     for recipe_type in types:
-        for item in recipe_status:
-            if recipe_type == item[0]:
-                new_recipe_status.append(item)
-                break
+        recipes_with_type = [item for item in recipe_status if item[0] == recipe_type]
+        recipes_with_type.sort(key=lambda x: x[2])
+        min_missing = recipes_with_type[0][2]
+        recipes_with_type = [item for item in recipes_with_type if item[2] == min_missing]
 
+        if len(recipes_with_type) > 1:
+            recipe = random.choice(recipes_with_type)
+        else:
+            recipe = recipes_with_type[0]
+        new_recipe_status.append(recipe)
+
+    order = ["breakfast", "lunch", "dinner", "sides", "dessert", "snacks"]
+    new_recipe_status.sort(key=lambda x: order.index(x[0]) if x[0] in order else len(order))
+    
     return new_recipe_status, headers
 
 def print_recipe_availability(recipe_status, headers, print_limit):
@@ -154,7 +163,7 @@ def print_recipe_availability(recipe_status, headers, print_limit):
 
 def main():
     parser = ArgumentParser(description="Check recipe availability based on pantry ingredients.")
-    parser.add_argument("-p", "--print_limit", type=int, default=10, help="Number of recipes to display")
+    parser.add_argument("-p", "--print_limit", type=int, default=5, help="Number of recipes to display")
     parser.add_argument("-r", "--recipe", type=str, help="Specify a recipe name to check availability")
     parser.add_argument("-i", "--ingredients", nargs="+", help="List of ingredients to check availability for.")
     parser.add_argument("-t", "--type", nargs="+", type=str, help="Specify a recipe type to check availability")
