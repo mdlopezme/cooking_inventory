@@ -27,6 +27,30 @@ def load_recipes():
         yaml.dump(recipes, file, sort_keys=False, default_flow_style=False)
     return sorted_recipes
 
+def get_unique_ingredients(recipes):
+    unique_ingredients = set()
+    for recipe in recipes:
+        for item in recipe["ingredients"]:
+            ingredient_name = item["name"]
+            if ingredient_name not in unique_ingredients:
+                unique_ingredients.add(ingredient_name)
+    return unique_ingredients
+
+def generate_ingredient_list():
+    recipes = load_recipes()
+    unique_ingredients = get_unique_ingredients(recipes)
+    
+    in_stock_ingredients = load_ingredients()
+
+    for ingredient in unique_ingredients:
+        if ingredient in in_stock_ingredients:
+            continue
+        in_stock_ingredients[ingredient] = False
+    
+    file_path = ingredient_path
+    with open(file_path, 'w') as file:
+        yaml.dump({"ingredients": in_stock_ingredients}, file)        
+
 def check_recipe_availability(recipe, ingredients_available):
     in_stock = []
     missing = []
@@ -99,28 +123,25 @@ def retrieve_recipe_availability(required_ingredients=None):
 
 def add_ingredient_to_pantry(new_ingredients):
     pantry = load_ingredients()
+    unique_ingredients = get_unique_ingredients(load_recipes())
     ingredient_to_add = []
     for new_ingredient in new_ingredients:
         if new_ingredient in pantry:
             if not pantry[new_ingredient]:
-                print(f"{new_ingredient} is already in the pantry but marked as unavailable.")
+                print(f"\033[92m{new_ingredient} is now available.\033[0m")
                 pantry[new_ingredient] = True
+        elif new_ingredient not in unique_ingredients:
+            print(f"\033[91m{new_ingredient} is not a valid ingredient.\033[0m")
+            continue
         else:
             ingredient_to_add.append(new_ingredient)
 
-    if not ingredient_to_add:
-        print("No new ingredients to add.")
-        return
     # Ask the user for confirmation
-    print(f"Are you sure you want to add {', '.join(ingredient_to_add)} to the pantry? (y/n)")
+    print(f"Are you sure you want to save the above changes? (y/n)")
     confirmation = input().strip().lower()
     if confirmation != 'y':
         print("Operation cancelled.")
         return
-    # Add the new ingredients to the pantry
-    for new_ingredient in ingredient_to_add:
-        pantry[new_ingredient] = True
-    print(f"Added {', '.join(ingredient_to_add)} to the pantry.")
     file_path = ingredient_path
     with open(file_path, 'w') as file:
         yaml.dump({"ingredients": pantry}, file)
@@ -172,6 +193,7 @@ def main():
     parser.add_argument("-a", "--add", nargs="+", help="Add ingredients to the pantry")
     parser.add_argument("-d", "--delete", nargs="+", help="Remove ingredients from the pantry")
     parser.add_argument("-opt", "--optimal_recipes", action="store_true", help="Print optimal recipes")
+    parser.add_argument("-gen", "--generate", action="store_true", help="Generate a list of ingredients for the entire recipe database")
 
     args = parser.parse_args()
 
@@ -180,6 +202,9 @@ def main():
         return
     elif args.delete:
         remove_ingredient_from_pantry(args.delete)
+        return
+    elif args.generate:
+        generate_ingredient_list()
         return
     
     if args.ingredients:

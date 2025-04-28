@@ -2161,7 +2161,7 @@ recipes:
   type: breakfast
   source: BWS Cookbook
   ingredients:
-  - name: zuchini
+  - name: zucchini
     required: true
   - name: red_bell_pepper
     required: true
