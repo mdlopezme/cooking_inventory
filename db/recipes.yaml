@@ -341,7 +341,7 @@ recipes:
     required: true
   - name: skir
     required: true
-  - substitutions:
+    substitutions:
     - greek_yogurt
   - name: low_fat_cream_cheese
     required: true

@@ -6,8 +6,10 @@ from tabulate import tabulate
 from argparse import ArgumentParser
 import random
 
+ingredient_path = os.path.join(os.path.dirname(__file__), 'pantry/ingredients.yaml')
+
 def load_ingredients():
-    file_path = os.path.join(os.path.dirname(__file__), 'db/ingredients.yaml')
+    file_path = ingredient_path
     with open(file_path, 'r') as file:
         pantry = yaml.safe_load(file)
     sorted_ingredients = dict(sorted(pantry["ingredients"].items()))
@@ -119,7 +121,7 @@ def add_ingredient_to_pantry(new_ingredients):
     for new_ingredient in ingredient_to_add:
         pantry[new_ingredient] = True
     print(f"Added {', '.join(ingredient_to_add)} to the pantry.")
-    file_path = os.path.join(os.path.dirname(__file__), 'db/ingredients.yaml')
+    file_path = ingredient_path
     with open(file_path, 'w') as file:
         yaml.dump({"ingredients": pantry}, file)
     print("Pantry updated.")
@@ -131,7 +133,7 @@ def remove_ingredient_from_pantry(old_ingredients):
             pantry[old_ingredient] = False
         else:
             print(f"{old_ingredient} is not in the pantry.")
-    file_path = os.path.join(os.path.dirname(__file__), 'db/ingredients.yaml')
+    file_path = ingredient_path
     with open(file_path, 'w') as file:
         yaml.dump({"ingredients": pantry}, file)
     print("Pantry updated.")
