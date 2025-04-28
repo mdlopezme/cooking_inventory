@@ -1,84 +1,35 @@
 recipes:
-- name: It's That Easy Peanut Butter Chocolate Cheesecake
+- name: Apple Cinnamon Mug Cake
   type: dessert
   source: BWS Cookbook
   ingredients:
-  - name: cottage_cheese
+  - name: whole_wheat_all_purpose_flour
     required: true
-  - name: eggs
+  - name: baking_powder
     required: true
-  - name: chocolate_protein_powder
-    required: true
-    substitutions:
-    - chocolate_instant_pudding_mix
   - name: stevia
     required: true
-  - name: unsweetened_cocoa_powder
+  - name: salt
+    required: true
+  - name: egg_whites
+    required: true
+  - name: light_butter
     required: true
   - name: unsweetened_almond_milk
     required: true
-  - name: powdered_peanut_butter
+  - name: unsweetened_applesauce
     required: true
-  - name: vanilla_extract
+  - name: red_apple
     required: true
-  - name: chocolate_chips
-    required: true
-  - name: graham_cracker
-    required: true
-  - name: greek_yogurt
-    required: true
-  - name: whipped_cream
+    substitutions:
+    - green_apple
+    - fiji_apple
+    - honeycrisp_apple
+    - gala_apple
+  - name: fat_free_whipped_cream
     required: false
-- name: It's That Easy Pumpkin Cheesecake
-  type: dessert
-  source: BWS Cookbook
-  ingredients:
-  - name: cottage_cheese
-    required: true
-  - name: eggs
-    required: true
-  - name: vanilla_protein_powder
-    required: true
-    substitutions:
-    - vanilla_instant_pudding_mix
-  - name: pumpkin_puree
-    required: true
-  - name: ground_cinnamon
-    required: true
-  - name: pumpkin_spice
-    required: true
-  - name: stevia
-    required: true
-  - name: vanilla_extract
-    required: true
-  - name: graham_cracker
-    required: true
-  - name: greek_yogurt
-    required: true
-- name: It's that Easy Tiramisu Cheesecake
-  type: dessert
-  source: BWS Cookbook
-  ingredients:
-  - name: cottage_cheese
-    required: true
-  - name: eggs
-    required: true
-  - name: chocolate_protein_powder
-    required: true
-    substitutions:
-    - chocolate_instant_pudding_mix
-  - name: stevia
-    required: true
-  - name: instant_coffee
-    required: true
-  - name: vanilla_extract
-    required: true
-  - name: graham_cracker
-    required: true
-  - name: greek_yogurt
-    required: true
-  - name: whipped_cream
-    required: true
+  - name: sugar_free_syrup
+    required: false
 - name: Apple Crisp French Toast
   type: breakfast
   source: BWS Cookbook
@@ -1328,11 +1279,8 @@ recipes:
   ingredients:
   - name: thick_sliced_bread
     required: true
-  - name: shredded_mozzarella_cheese
+  - name: cheese_slices
     required: true
-    substitutions:
-    - shredded_cheddar_cheese
-    - shredded_parmesan_cheese
   - name: deli_ham
     required: true
   - name: red_apple
@@ -1486,6 +1434,62 @@ recipes:
     required: true
     substitutions:
     - tomato_sauce
+- name: It's That Easy Peanut Butter Chocolate Cheesecake
+  type: dessert
+  source: BWS Cookbook
+  ingredients:
+  - name: cottage_cheese
+    required: true
+  - name: eggs
+    required: true
+  - name: chocolate_protein_powder
+    required: true
+    substitutions:
+    - chocolate_instant_pudding_mix
+  - name: stevia
+    required: true
+  - name: unsweetened_cocoa_powder
+    required: true
+  - name: unsweetened_almond_milk
+    required: true
+  - name: powdered_peanut_butter
+    required: true
+  - name: vanilla_extract
+    required: true
+  - name: chocolate_chips
+    required: true
+  - name: graham_cracker
+    required: true
+  - name: greek_yogurt
+    required: true
+  - name: whipped_cream
+    required: false
+- name: It's That Easy Pumpkin Cheesecake
+  type: dessert
+  source: BWS Cookbook
+  ingredients:
+  - name: cottage_cheese
+    required: true
+  - name: eggs
+    required: true
+  - name: vanilla_protein_powder
+    required: true
+    substitutions:
+    - vanilla_instant_pudding_mix
+  - name: pumpkin_puree
+    required: true
+  - name: ground_cinnamon
+    required: true
+  - name: pumpkin_spice
+    required: true
+  - name: stevia
+    required: true
+  - name: vanilla_extract
+    required: true
+  - name: graham_cracker
+    required: true
+  - name: greek_yogurt
+    required: true
 - name: It's That Easy Vanilla Cheesecake
   type: dessert
   source: BWS Cookbook
@@ -1512,6 +1516,30 @@ recipes:
     - peach_jam
   - name: whipped_cream
     required: false
+- name: It's that Easy Tiramisu Cheesecake
+  type: dessert
+  source: BWS Cookbook
+  ingredients:
+  - name: cottage_cheese
+    required: true
+  - name: eggs
+    required: true
+  - name: chocolate_protein_powder
+    required: true
+    substitutions:
+    - chocolate_instant_pudding_mix
+  - name: stevia
+    required: true
+  - name: instant_coffee
+    required: true
+  - name: vanilla_extract
+    required: true
+  - name: graham_cracker
+    required: true
+  - name: greek_yogurt
+    required: true
+  - name: whipped_cream
+    required: true
 - name: Lean English Muffin
   type: breakfast
   source: BWS Cookbook
@@ -1803,6 +1831,36 @@ recipes:
     substitutions:
     - cheesy_cauliflower_side
     - cauliflower_mashed_potatoes_side
+- name: Microware Molten Mug Explosion
+  type: dessert
+  source: BWS Cookbook
+  ingredients:
+  - name: whole_wheat_all_purpose_flour
+    required: true
+  - name: baking_powder
+    required: true
+  - name: unsweetened_cocoa_powder
+    required: true
+  - name: stevia
+    required: true
+  - name: salt
+    required: true
+  - name: vanilla_extract
+    required: true
+  - name: egg_whites
+    required: true
+  - name: light_butter
+    required: true
+  - name: unsweetened_almond_milk
+    required: true
+  - name: sugar_free_chocolate_chips
+    required: true
+    substitutions:
+    - low_sugar_chocolate_chips
+  - name: fat_free_whipped_cream
+    required: false
+  - name: low_calorie_ice_cream
+    required: false
 - name: Monte Cristo
   type: breakfast
   source: BWS Cookbook
@@ -2459,6 +2517,10 @@ recipes:
     substitutions:
     - ground_chicken
     - ground_turkey
+  - name: cheese_slices
+    required: true
+    substitutions:
+    - shredded_mozzarella_cheese
   - name: salt
     required: true
   - name: ground_black_pepper
