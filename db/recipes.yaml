@@ -143,7 +143,7 @@ recipes:
     required: true
   - name: unsweetened_almond_milk
     required: true
-  - name: chocolate_chips
+  - name: sugar_free_chocolate_chips
     required: true
   - name: sugar_free_syrup
     required: false
@@ -195,7 +195,7 @@ recipes:
     required: true
   - name: unsweetened_almond_milk
     required: true
-  - name: chocolate_chips
+  - name: sugar_free_chocolate_chips
     required: true
   - name: chopped_walnuts
     required: false
@@ -281,7 +281,7 @@ recipes:
     - ground_turkey
   - name: salt
     required: true
-  - name: pepper
+  - name: ground_black_pepper
     required: true
   - name: cheese_slices
     required: true
@@ -847,7 +847,7 @@ recipes:
     substitutions:
     - yellow_onion
     - red_onion
-  - name: carrot
+  - name: carrots
     required: true
   - name: red_bell_pepper
     required: true
@@ -880,8 +880,10 @@ recipes:
     required: false
   - name: paprika
     required: true
-  - name: shredded_cheese
+  - name: shredded_cheddar_cheese
     required: false
+    substitutions:
+    - shredded_mozzarella_cheese
   - name: salt
     required: true
   - name: ground_black_pepper
@@ -927,8 +929,10 @@ recipes:
     required: true
   - name: canned_tomatoes
     required: true
-  - name: shredded_cheese
+  - name: shredded_cheddar_cheese
     required: false
+    substitutions:
+    - shredded_mozzarella_cheese
 - name: Crispy Chicken And Waffles
   type: breakfast
   source: BWS Cookbook
@@ -1479,9 +1483,9 @@ recipes:
     required: true
   - name: vanilla_extract
     required: true
-  - name: chocolate_chips
+  - name: sugar_free_chocolate_chips
     required: true
-  - name: graham_cracker
+  - name: graham_crackers
     required: true
   - name: greek_yogurt
     required: true
@@ -1509,7 +1513,7 @@ recipes:
     required: true
   - name: vanilla_extract
     required: true
-  - name: graham_cracker
+  - name: graham_crackers
     required: true
   - name: greek_yogurt
     required: true
@@ -1557,7 +1561,7 @@ recipes:
     required: true
   - name: vanilla_extract
     required: true
-  - name: graham_cracker
+  - name: graham_crackers
     required: true
   - name: greek_yogurt
     required: true
@@ -2002,11 +2006,11 @@ recipes:
     required: true
   - name: zucchini
     required: true
-  - name: chocolate_chips
+  - name: sugar_free_chocolate_chips
     required: false
   - name: whipped_cream
     required: false
-  - name: low_Calorie_ice_cream
+  - name: low_calorie_ice_cream
     required: false
 - name: Orange Chicken
   type: lunch
@@ -2356,7 +2360,7 @@ recipes:
     required: true
   - name: eggs
     required: true
-  - name: chocolate_chips
+  - name: sugar_free_chocolate_chips
     required: true
 - name: Strawberry Cheesecake French Toast
   type: breakfast
@@ -2537,7 +2541,7 @@ recipes:
     substitutions:
     - red_onion
     - white_onion
-  - name: carrot
+  - name: carrots
     required: true
   - name: snap_peas
     required: true
@@ -2607,7 +2611,7 @@ recipes:
     required: true
   - name: egg_whites
     required: true
-  - name: chocolate_chips
+  - name: sugar_free_chocolate_chips
     required: false
   - name: light_cream_cheese
     required: true
