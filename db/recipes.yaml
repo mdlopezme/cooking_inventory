@@ -333,6 +333,29 @@ recipes:
     required: true
   - name: sprinkles
     required: false
+- name: Blueberry Cheesecake Milkshake
+  type: dessert
+  source: BWS Cookbook
+  ingredients:
+  - name: banana
+    required: true
+  - name: skir
+    required: true
+  - substitutions:
+    - greek_yogurt
+  - name: low_fat_cream_cheese
+    required: true
+  - name: unsweetened_almond_milk
+    required: true
+  - name: sugar_free_syrup
+    required: true
+  - name: blueberries
+    required: true
+    substitutions:
+    - strawberries
+    - raspberries
+  - name: fat_free_whipped_cream
+    required: false
 - name: Blueberry Lemon Donut
   type: dessert
   source: BWS Cookbook
@@ -2019,6 +2042,26 @@ recipes:
     required: true
     substitutions:
     - white_rice
+- name: Peanut Butter Cup Milkshake
+  type: dessert
+  source: BWS Cookbook
+  ingredients:
+  - name: ice
+    required: true
+  - name: banana
+    required: true
+  - name: unsweetened_almond_milk
+    required: true
+  - name: unsweetened_cocoa_powder
+    required: true
+  - name: powdered_peanut_butter
+    required: true
+  - name: chocolate_protein_powder
+    required: true
+    substitutions:
+    - vanilla_protein_powder
+  - name: chopped_walnuts
+    required: false
 - name: Perfect Peanut Butter Cookies
   type: dessert
   source: BWS Cookbook
