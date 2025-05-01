@@ -130,6 +130,9 @@ def add_ingredient_to_pantry(new_ingredients):
             if not pantry[new_ingredient]:
                 print(f"\033[92m{new_ingredient} is now available.\033[0m")
                 pantry[new_ingredient] = True
+
+        # Ensure that only ingredients used in recipes can be added to the pantry.
+        # This restriction is intentional to maintain consistency between the pantry and recipes.
         elif new_ingredient not in unique_ingredients:
             print(f"\033[91m{new_ingredient} is not a valid ingredient.\033[0m")
             continue
