@@ -49,7 +49,8 @@ def generate_ingredient_list():
     
     file_path = ingredient_path
     with open(file_path, 'w') as file:
-        yaml.dump({"ingredients": in_stock_ingredients}, file)        
+        yaml.dump({"ingredients": in_stock_ingredients}, file)
+    print("Ingredient list successfully updated and saved to file.")
 
 def check_recipe_availability(recipe, ingredients_available):
     in_stock = []
