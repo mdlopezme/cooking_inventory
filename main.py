@@ -186,7 +186,7 @@ def print_recipe_availability(recipe_status, headers, print_limit):
 
 def main():
     parser = ArgumentParser(description="Check recipe availability based on pantry ingredients.")
-    parser.add_argument("-p", "--print_limit", type=int, default=6, help="Number of recipes to display")
+    parser.add_argument("-p", "--print_limit", type=int, default=7, help="Number of recipes to display")
     parser.add_argument("-r", "--recipe", type=str, help="Specify a recipe name to check availability")
     parser.add_argument("-i", "--ingredients", nargs="+", help="List of ingredients to check availability for.")
     parser.add_argument("-t", "--type", nargs="+", type=str, help="Specify a recipe type to check availability")

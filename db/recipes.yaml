@@ -665,6 +665,16 @@ recipes:
     required: true
   - name: unsweetened_almond_milk
     required: false
+- name: Chocolate Sauce
+  type: sauces
+  source: BWS Cookbook
+  ingredients:
+  - name: chocolate_pudding_mix
+    required: true
+  - name: chocolate_protein_powder
+    required: true
+  - name: unsweetened_almond_milk
+    required: true
 - name: Cinnamon Pumpkin Waffles
   type: breakfast
   source: BWS Cookbook
@@ -910,6 +920,22 @@ recipes:
     required: true
     substitutions:
     - dried_parsley
+- name: Creamy Ranch Sauce
+  type: sauces
+  source: BWS Cookbook
+  ingredients:
+  - name: skir
+    required: true
+    substitutions:
+    - greek_yogurt
+  - name: garlic_powder
+    required: true
+  - name: dried_chives
+    required: true
+    substitutions:
+    - fresh_chives
+  - name: salt
+    required: true
 - name: Creamy Tomato Protein Pasta
   type: dinner
   source: BWS Cookbook
@@ -1383,6 +1409,24 @@ recipes:
     required: true
   - name: creamy_ranch_sauce
     required: false
+- name: Holy Guacamole Sauce
+  type: sauces
+  source: BWS Cookbook
+  ingredients:
+  - name: avocado
+    required: true
+  - name: skir
+    required: true
+    substitutions:
+    - greek_yogurt
+  - name: garlic_powder
+    required: true
+  - name: salt
+    required: true
+  - name: cilantro
+    required: true
+  - name: red_onion
+    required: false
 - name: Holy Sh!t Nachos
   type: dinner
   source: BWS Cookbook
@@ -1418,6 +1462,20 @@ recipes:
   - name: scallion
     required: true
   - name: tomato
+    required: true
+- name: Honey Mustard Sauce
+  type: sauces
+  source: BWS Cookbook
+  ingredients:
+  - name: dijon_mustard
+    required: true
+  - name: balsamic_vinegar
+    required: true
+  - name: stevia
+    required: true
+  - name: garlic_powder
+    required: true
+  - name: salt
     required: true
 - name: How Is It Healthy Chicken Sanwhich
   type: lunch
@@ -1586,6 +1644,18 @@ recipes:
   - name: greek_yogurt
     required: true
   - name: whipped_cream
+    required: true
+- name: Ketchup Mayo Sauce
+  type: sauces
+  source: BWS Cookbook
+  ingredients:
+  - name: light_mayonnaise
+    required: true
+  - name: sugar_free_ketchup
+    required: true
+  - name: stevia
+    required: true
+  - name: salt
     required: true
 - name: Lean English Muffin
   type: breakfast
@@ -1789,6 +1859,26 @@ recipes:
     substitutions:
     - cheesy_cauliflower_side
     - cauliflower_mashed_potatoes_side
+- name: Maple Garlic Sauce
+  type: sauces
+  source: BWS Cookbook
+  ingredients:
+  - name: soy_sauce
+    required: true
+  - name: rice_vinegar
+    required: true
+  - name: sugar_free_syrup
+    required: true
+  - name: garlic
+    required: true
+    substitutions:
+    - garlic_powder
+  - name: ginger
+    required: true
+  - name: red_pepper_flakes
+    required: false
+  - name: cornstarch
+    required: false
 - name: Margherita Pizza Bites
   type: dinner
   source: BWS Cookbook
@@ -2412,6 +2502,18 @@ recipes:
     required: true
   - name: sugar_free_chocolate_chips
     required: true
+- name: Spicy Mayo Sauce
+  type: sauces
+  source: BWS Cookbook
+  ingredients:
+  - name: light_mayonnaise
+    required: true
+  - name: sriracha
+    required: true
+  - name: salt
+    required: true
+  - name: lime
+    required: true
 - name: Strawberry Banana Dream Ice Cream
   type: dessert
   source: BWS Cookbook
@@ -2492,6 +2594,64 @@ recipes:
     required: true
   - name: whole_wheat_tortilla
     required: true
+- name: Sweet Teriyaki Sauce
+  type: sauces
+  source: BWS Cookbook
+  ingredients:
+  - name: tomato_puree
+    required: true
+  - name: soy_sauce
+    required: true
+  - name: garlic_powder
+    required: true
+  - name: paprika
+    required: true
+  - name: stevia
+    required: true
+  - name: conrstarch
+    required: true
+- name: Sweet Thai Chili Sauce
+  type: sauces
+  source: BWS Cookbook
+  ingredients:
+  - name: thai_red_chili_peppers
+    required: true
+  - name: ginger
+    required: true
+  - name: garlic
+    required: true
+    substitutions:
+    - garlic_powder
+  - name: apple_cider_vinegar
+    required: true
+  - name: stevia
+    required: true
+  - name: soy_sauce
+    required: true
+  - name: cornstarch
+    required: true
+- name: Tangy BBQ Sauce
+  type: sauces
+  source: BWS Cookbook
+  ingredients:
+  - name: stevia
+    required: true
+  - name: sugar_free_ketchup
+    required: true
+  - name: red_wine_vinegar
+    required: true
+  - name: worcestershire_sauce
+    required: true
+  - name: dry_mustard
+    required: true
+  - name: paprika
+    required: true
+  - name: salt
+    required: true
+  - name: ground_black_pepper
+    required: true
+  - name: cornstarch
+    required: false
 - name: Toned Turkey Tacos
   type: lunch
   source: BWS Cookbook
@@ -2522,6 +2682,28 @@ recipes:
   - name: lettuce
     required: true
   - name: greek_yogurt
+    required: true
+- name: Tzatziki Sauce
+  type: sauces
+  source: BWS Cookbook
+  ingredients:
+  - name: skir
+    required: true
+    substitutions:
+    - greek_yogurt
+  - name: cucumber
+    required: true
+  - name: lemon
+    required: true
+  - name: garlic_powder
+    required: true
+  - name: fresh_dill
+    required: true
+    substitutions:
+    - dried_dill
+  - name: salt
+    required: true
+  - name: ground_black_pepper
     required: true
 - name: Unbuttered Butter Chicken
   type: lunch
