@@ -243,6 +243,10 @@ recipes:
   ingredients:
   - name: whole_wheat_all_purpose_flour
     required: true
+  - name: skir
+    required: true
+    substitutions:
+    - greek_yogurt
   - name: baking_powder
     required: true
   - name: tangy_bbq_sauce
@@ -647,6 +651,20 @@ recipes:
     required: true
   - name: unsweetened_almond_milk
     required: true
+- name: Chocolate Peanut Butter Soft Serve
+  type: dessert
+  source: BWS Cookbook
+  ingredients:
+  - name: banana
+    required: true
+  - name: powdered_peanut_butter
+    required: true
+  - name: sugar_free_syrup
+    required: true
+  - name: sugar_free_chocolate_chips
+    required: true
+  - name: unsweetened_almond_milk
+    required: false
 - name: Cinnamon Pumpkin Waffles
   type: breakfast
   source: BWS Cookbook
@@ -1333,8 +1351,10 @@ recipes:
     required: true
   - name: baking_powder
     required: true
-  - name: greek_yogurt
+  - name: skir
     required: true
+    substitutions:
+    - greek_yogurt
   - name: pizza_sauce
     required: true
   - name: shredded_mozzarella_cheese
@@ -1888,6 +1908,18 @@ recipes:
     required: false
   - name: low_calorie_ice_cream
     required: false
+- name: Mint Chocolate Chip Soft Serve
+  type: dessert
+  source: BWS Cookbook
+  ingredients:
+  - name: banana
+    required: true
+  - name: unsweetened_almond_milk
+    required: true
+  - name: cacao_nibs
+    required: true
+  - name: mint
+    required: true
 - name: Monte Cristo
   type: breakfast
   source: BWS Cookbook
@@ -2192,6 +2224,24 @@ recipes:
     required: false
   - name: thick_sliced_bread
     required: false
+- name: Salted Caramel Crack Soft Serve
+  type: dessert
+  source: BWS Cookbook
+  ingredients:
+  - name: dates
+    required: true
+  - name: sugar_free_syrup
+    required: true
+  - name: light_cocoa_powder
+    required: true
+  - name: salt
+    required: true
+  - name: banana
+    required: true
+  - name: powdered_peanut_butter
+    required: true
+  - name: vanilla_protein_powder
+    required: true
 - name: Sausage & Sun-Dried Tomato Breakfast Wrap
   type: breakfast
   source: BWS Cookbook
@@ -2362,6 +2412,30 @@ recipes:
     required: true
   - name: sugar_free_chocolate_chips
     required: true
+- name: Strawberry Banana Dream Ice Cream
+  type: dessert
+  source: BWS Cookbook
+  ingredients:
+  - name: light_coconut_milk
+    required: true
+  - name: skir
+    required: true
+    substitutions:
+    - greek_yogurt
+  - name: strawberries
+    required: true
+  - name: banana
+    required: true
+  - name: vanilla_protein_powder
+    required: true
+  - name: salt
+    required: true
+  - name: stevia
+    required: false
+  - name: vanilla_extract
+    required: false
+  - name: fat_free_whipped_cream
+    required: false
 - name: Strawberry Cheesecake French Toast
   type: breakfast
   source: BWS Cookbook
