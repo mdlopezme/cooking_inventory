@@ -10,6 +10,7 @@ ingredient_path = os.path.join(os.path.dirname(__file__), 'pantry/ingredients.ya
 
 def load_ingredients():
     if not os.path.exists(ingredient_path):
+        os.makedirs(os.path.dirname(ingredient_path), exist_ok=True)
         with open(ingredient_path, 'w') as file:
             yaml.dump({"ingredients": {}}, file)
     file_path = ingredient_path
