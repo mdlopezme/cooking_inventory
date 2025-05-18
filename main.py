@@ -37,6 +37,9 @@ def get_unique_ingredients(recipes):
     return unique_ingredients
 
 def generate_ingredient_list():
+    if not os.path.exists(ingredient_path):
+        with open(ingredient_path, 'w') as file:
+            yaml.dump({"ingredients": {}}, file)
     recipes = load_recipes()
     unique_ingredients = get_unique_ingredients(recipes)
     
