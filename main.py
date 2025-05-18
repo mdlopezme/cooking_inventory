@@ -9,6 +9,9 @@ import random
 ingredient_path = os.path.join(os.path.dirname(__file__), 'pantry/ingredients.yaml')
 
 def load_ingredients():
+    if not os.path.exists(ingredient_path):
+        with open(ingredient_path, 'w') as file:
+            yaml.dump({"ingredients": {}}, file)
     file_path = ingredient_path
     with open(file_path, 'r') as file:
         pantry = yaml.safe_load(file)
@@ -37,9 +40,6 @@ def get_unique_ingredients(recipes):
     return unique_ingredients
 
 def generate_ingredient_list():
-    if not os.path.exists(ingredient_path):
-        with open(ingredient_path, 'w') as file:
-            yaml.dump({"ingredients": {}}, file)
     recipes = load_recipes()
     unique_ingredients = get_unique_ingredients(recipes)
     
